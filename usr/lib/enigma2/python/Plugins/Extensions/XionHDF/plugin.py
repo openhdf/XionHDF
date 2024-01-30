@@ -71,66 +71,56 @@ config.plugins.XionHDF.weather_foundcity = ConfigText(default="")
 config.plugins.XionHDF.weather_latitude = ConfigText(default="")
 config.plugins.XionHDF.weather_longitude = ConfigText(default="")
 
-config.plugins.XionHDF.System = ConfigSelection(default="openhdf", choices=[
-								("openhdf", _(" "))
-								])
-
 config.plugins.XionHDF.BackgroundColorTrans = ConfigSelection(default="1c", choices=[
-								("00", _("Off")),
-								("1c", _("Lower")),
-								("2d", _("Low")),
-								("4a", _("Middle")),
-								("6c", _("Medium")),
-								("8c", _("High"))
-								])
+				("00", _("Off")),
+				("1c", _("Lower")),
+				("2d", _("Low")),
+				("4a", _("Middle")),
+				("6c", _("Medium")),
+				("8c", _("High"))
+				])
 
-ColorList = []
-ColorList.append(("00F0A30A", _("Amber")))
-ColorList.append(("00B27708", _("Amber dark")))
-ColorList.append(("001B1775", _("Blue")))
-ColorList.append(("000E0C3F", _("Blue dark")))
-ColorList.append(("007D5929", _("Brown")))
-ColorList.append(("003F2D15", _("Brown dark")))
-ColorList.append(("000050EF", _("Cobalt")))
-ColorList.append(("00001F59", _("Cobalt dark")))
-ColorList.append(("001BA1E2", _("Cyan")))
-ColorList.append(("000F5B7F", _("Cyan dark")))
-ColorList.append(("00FFEA04", _("Yellow")))
-ColorList.append(("00999999", _("Grey")))
-ColorList.append(("003F3F3F", _("Grey dark")))
-ColorList.append(("0070AD11", _("Green")))
-ColorList.append(("00213305", _("Green dark")))
-ColorList.append(("001DFF00", _("Neon green")))
-ColorList.append(("00FFFF00", _("Neon yellow")))
-ColorList.append(("006D8764", _("Olive")))
-ColorList.append(("00313D2D", _("Olive dark")))
-ColorList.append(("00C3461B", _("Orange")))
-ColorList.append(("00892E13", _("Orange dark")))
-ColorList.append(("00F472D0", _("Pink")))
-ColorList.append(("00723562", _("Pink dark")))
-ColorList.append(("00E51400", _("Red")))
-ColorList.append(("00330400", _("Red dark")))
-ColorList.append(("00000000", _("Black")))
-ColorList.append(("00647687", _("Steel")))
-ColorList.append(("00262C33", _("Steel dark")))
-ColorList.append(("006C0AAB", _("Violet")))
-ColorList.append(("001F0333", _("Violet dark")))
-ColorList.append(("00ffffff", _("White")))
+ColorList = [
+	("00F0A30A", _("Amber")),
+	("00B27708", _("Amber dark")),
+	("001B1775", _("Blue")),
+	("000E0C3F", _("Blue dark")),
+	("007D5929", _("Brown")),
+	("003F2D15", _("Brown dark")),
+	("000050EF", _("Cobalt")),
+	("00001F59", _("Cobalt dark")),
+	("001BA1E2", _("Cyan")),
+	("000F5B7F", _("Cyan dark")),
+	("00FFEA04", _("Yellow")),
+	("00999999", _("Grey")),
+	("003F3F3F", _("Grey dark")),
+	("0070AD11", _("Green")),
+	("00213305", _("Green dark")),
+	("001DFF00", _("Neon green")),
+	("00FFFF00", _("Neon yellow")),
+	("006D8764", _("Olive")),
+	("00313D2D", _("Olive dark")),
+	("00C3461B", _("Orange")),
+	("00892E13", _("Orange dark")),
+	("00F472D0", _("Pink")),
+	("00723562", _("Pink dark")),
+	("00E51400", _("Red")),
+	("00330400", _("Red dark")),
+	("00000000", _("Black")),
+	("00647687", _("Steel")),
+	("00262C33", _("Steel dark")),
+	("006C0AAB", _("Violet")),
+	("001F0333", _("Violet dark")),
+	("00ffffff", _("White"))
+	]
 
 config.plugins.XionHDF.SelectionBackground = ConfigSelection(default="00C3461B", choices=ColorList)
-
 config.plugins.XionHDF.Font1 = ConfigSelection(default="00ffffff", choices=ColorList)
-
 config.plugins.XionHDF.Font2 = ConfigSelection(default="00ffffff", choices=ColorList)
-
 config.plugins.XionHDF.SelectionFont = ConfigSelection(default="00ffffff", choices=ColorList)
-
 config.plugins.XionHDF.NotAvailableFont = ConfigSelection(default="00999999", choices=ColorList)
-
 config.plugins.XionHDF.ButtonText = ConfigSelection(default="00ffffff", choices=ColorList)
-
 config.plugins.XionHDF.Progress = ConfigSelection(default="00C3461B", choices=ColorList)
-
 config.plugins.XionHDF.Line = ConfigSelection(default="00ffffff", choices=ColorList)
 
 SelectionBorderList = [("none", _("Off"))]
@@ -138,63 +128,63 @@ SelectionBorderList = ColorList + SelectionBorderList
 config.plugins.XionHDF.SelectionBorder = ConfigSelection(default="none", choices=SelectionBorderList)
 
 config.plugins.XionHDF.EMCStyle = ConfigSelection(default="emc-nocover", choices=[
-								("emc-nocover", _("No cover")),
-								("emc-smallcover", _("Small cover")),
-								("emc-bigcover", _("Big cover")),
-								("emc-verybigcover", _("Very big cover")),
-								("emc-listbigcover", _("List big cover")),
-								("emc-minitv", _("MiniTV"))
-								])
+				("emc-nocover", _("No cover")),
+				("emc-smallcover", _("Small cover")),
+				("emc-bigcover", _("Big cover")),
+				("emc-verybigcover", _("Very big cover")),
+				("emc-listbigcover", _("List big cover")),
+				("emc-minitv", _("MiniTV"))
+				])
 
 config.plugins.XionHDF.MovieStyle = ConfigSelection(default="movieselectionnocover", choices=[
-								("movieselectionnocover", _("No cover")),
-								("movieselectionsmallcover", _("Small cover")),
-								("movieselectionbigcover", _("Big cover")),
-								("movieselectionlistbigcover", _("List big cover")),
-								("movieselectionminitv", _("MiniTV"))
-								])
+				("movieselectionnocover", _("No cover")),
+				("movieselectionsmallcover", _("Small cover")),
+				("movieselectionbigcover", _("Big cover")),
+				("movieselectionlistbigcover", _("List big cover")),
+				("movieselectionminitv", _("MiniTV"))
+				])
 
 config.plugins.XionHDF.InfobarStyle = ConfigSelection(default="infobar-style-xpicon", choices=[
-								("infobar-style-xpicon", _("X-Picon"))
-								])
+				("infobar-style-xpicon", _("X-Picon"))
+				])
 
 config.plugins.XionHDF.SIB = ConfigSelection(default="infobar-style-xpicon_end1", choices=[
-								("infobar-style-xpicon_end1", _("Only current program")),
-								("infobar-style-xpicon_end2", _("Top/Bottom")),
-								("infobar-style-xpicon_end3", _("Left/Right"))
-								])
+				("infobar-style-xpicon_end1", _("Only current program")),
+				("infobar-style-xpicon_end2", _("Top/Bottom")),
+				("infobar-style-xpicon_end3", _("Left/Right"))
+				])
 
 config.plugins.XionHDF.ChannelSelectionStyle = ConfigSelection(default="channelselection-twocolumns", choices=[
-								("channelselection-twocolumns", _("Two columns")),
-								("channelselection-threecolumns", _("Three columns")),
-								("channelselection-xpicon", _("X-Picon")),
-								("channelselection-minitv", _("MiniTV"))
-								])
+				("channelselection-twocolumns", _("Two columns")),
+				("channelselection-threecolumns", _("Three columns")),
+				("channelselection-xpicon", _("X-Picon")),
+				("channelselection-minitv", _("MiniTV"))
+				])
 
 config.plugins.XionHDF.InfobarChannelname = ConfigSelection(default="infobar-style-xpicon_middle1", choices=[
-								("infobar-style-xpicon_middle1", _("Small")),
-								("infobar-style-xpicon_middle2", _("Big")),
-								("infobar-style-xpicon_middleP", _("Poster")),
-								("infobar-style-xpicon_middle3", _("Off"))
-								])
+				("infobar-style-xpicon_middle1", _("Small")),
+				("infobar-style-xpicon_middle2", _("Big")),
+				("infobar-style-xpicon_middleP", _("Poster")),
+				("infobar-style-xpicon_middle3", _("Off"))
+				])
 
 config.plugins.XionHDF.RunningText = ConfigSelection(default="movetype=running", choices=[
-								("movetype=running", _("On")),
-								("movetype=none", _("Off"))
-								])
+				("movetype=running", _("On")),
+				("movetype=none", _("Off"))
+				])
 
 config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", choices=[
-								("weather-off", _("Off")),
-								("weather-info", _("Infos in place of weather")),
-								("weather-big", _("Big")),
-								("weather-slim", _("Slim")),
-								("weather-small", _("Small"))
-								])
+				("weather-off", _("Off")),
+				("weather-info", _("Infos in place of weather")),
+				("weather-big", _("Big")),
+				("weather-slim", _("Slim")),
+				("weather-small", _("Small"))
+				])
 
 config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showNever", choices=[
-								("showOnDemand", _("On")),
-								("showNever", _("Off"))
-								])
+				("showOnDemand", _("On")),
+				("showNever", _("Off"))
+				])
 
 config.plugins.XionHDF.FontStyleHeight_1 = ConfigSelectionNumber(default=95, stepwidth=1, min=0, max=120, wraparound=True)
 config.plugins.XionHDF.FontStyleHeight_2 = ConfigSelectionNumber(default=95, stepwidth=1, min=0, max=120, wraparound=True)
@@ -224,52 +214,42 @@ else:
 		else:
 			bmem = int(mem_info[0])
 
-SkinModeList = []
-SkinModeList.append(("hd", _("HD Skin 1280 x 720")))
+SkinModeList = [("hd", _("HD Skin 1280 x 720"))]
 if bmem > 180:
 	SkinModeList.append(("fullhd", _("FullHD Skin 1920 x 1080")))
-#if bmem > 440:
-#	if getBoxType() == 'vusolo4k':
-#		SkinModeList.append(("uhd", _("UHD Skin 3840 x 2160")))
-#		SkinModeList.append(("4khd", _("4K Skin 4096 x 2160")))
-#if bmem > 880:
-#	SkinModeList.append(("fulluhd", _("FullUHD Skin 7680 x 4320")))
-#	SkinModeList.append(("8khd", _("8K Skin 8192 x 4320")))
-#SkinModeList.append(("userdef", _("User Selection")))
-
 config.plugins.XionHDF.skin_mode = ConfigSelection(default="hd", choices=SkinModeList)
 
 #######################################################################
 
 class XionHDF(ConfigListScreen, Screen):
 	skin = """
-<screen name="XionHDF-Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="#00000000">
-<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="64,662" size="148,48" text="Cancel" transparent="1" />
-<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
-<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
-<widget name="config" position="70,75" size="708,572" itemHeight="27" font="Regular;23" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00000000" />
-<eLabel position="70,12" size="708,46" text="XionHDF - Konfigurationstool" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
-<eLabel position="847,200" size="368,2" backgroundColor="#00ffffff" />
-<eLabel position="847,409" size="368,2" backgroundColor="#00ffffff" />
-<eLabel position="845,200" size="2,211" backgroundColor="#00ffffff" />
-<eLabel position="1215,200" size="2,211" backgroundColor="#00ffffff" />
-<eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-<ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_red1.png" position="22,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
-<ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_green1.png" position="222,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
-<ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_yellow1.png" position="422,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
-<ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_blue1.png" position="622,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
-<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="#00000000" transparent="1" valign="center" foregroundColor="#00ffffff">
-<convert type="ClockToText">Default</convert>
-</widget>
-<eLabel position="830,80" size="402,46" text="XionHDF" font="Regular; 36" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
-<eLabel position="845,130" size="372,46" text="Version: 1.6" font="Regular; 30" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
-<ePixmap backgroundColor="#00000000" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/openhdf.png" position="847,202" size="368,207" zPosition="-9" />
-<widget name="helperimage" position="847,202" size="368,207" zPosition="1" backgroundColor="#00000000" />
-<widget source="help" render="Label" position="847,450" size="368,168" font="Regular2;20" backgroundColor="#00000000" foregroundColor="#00ffffff" halign="center" valign="top" transparent="1" />
-<eLabel backgroundColor="#00ffffff" position="0,64" size="1280,2" zPosition="2" />
-<eLabel backgroundColor="#00ffffff" position="0,656" size="1280,2" zPosition="2" />
-</screen>
-"""
+	<screen name="XionHDF-Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="#00000000">
+		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="64,662" size="148,48" text="Cancel" transparent="1" />
+		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
+		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
+		<widget name="config" position="70,75" size="708,572" itemHeight="27" font="Regular;23" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00000000" />
+		<eLabel position="70,12" size="708,46" text="XionHDF - Konfigurationstool" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+		<eLabel position="847,200" size="368,2" backgroundColor="#00ffffff" />
+		<eLabel position="847,409" size="368,2" backgroundColor="#00ffffff" />
+		<eLabel position="845,200" size="2,211" backgroundColor="#00ffffff" />
+		<eLabel position="1215,200" size="2,211" backgroundColor="#00ffffff" />
+		<eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
+		<ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_red1.png" position="22,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_green1.png" position="222,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_yellow1.png" position="422,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_blue1.png" position="622,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="#00000000" transparent="1" valign="center" foregroundColor="#00ffffff">
+		<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="830,80" size="402,46" text="XionHDF" font="Regular; 36" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+		<eLabel position="845,130" size="372,46" text="Version: 1.6" font="Regular; 30" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+		<ePixmap backgroundColor="#00000000" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/openhdf.png" position="847,202" size="368,207" zPosition="-9" />
+		<widget name="helperimage" position="847,202" size="368,207" zPosition="1" backgroundColor="#00000000" />
+		<widget source="help" render="Label" position="847,450" size="368,168" font="Regular2;20" backgroundColor="#00000000" foregroundColor="#00ffffff" halign="center" valign="top" transparent="1" />
+		<eLabel backgroundColor="#00ffffff" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="#00ffffff" position="0,656" size="1280,2" zPosition="2" />
+	</screen>
+	"""
 
 	def __init__(self, session, args=None, picPath=None):
 		self.skin_lines = []
@@ -285,19 +265,13 @@ class XionHDF(ConfigListScreen, Screen):
 		self["help"] = StaticText()
 		self.searchString = str(config.plugins.XionHDF.weather_cityname.value)
 
-		ConfigListScreen.__init__(
-						self,
-						self.mylist(),
-						session=session,
-						on_change=self.__selectionChanged
-						)
+		ConfigListScreen.__init__(self, self.mylist(), session=session, on_change=self.__selectionChanged)
 
 		self["actions"] = ActionMap(["OkCancelActions", "DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft, "down": self.keyDown, "up": self.keyUp, "right": self.keyRight, "red": self.exit, "yellow": self.reboot, "blue": self.showInfo, "green": self.checkWeather, "cancel": self.exit, "ok": self.keyOK}, -1)
 		self.onLayoutFinish.append(self.UpdatePicture)
 
 	def mylist(self):
 		list = []
-		#list.append(getConfigListEntry(_("_____________________________ Styles __________________________________"), config.plugins.XionHDF.System, _(" ")))
 		list.append(getConfigListEntry(_("Skinmode"), config.plugins.XionHDF.skin_mode, _("This option set the resolution of skin.")))
 		list.append(getConfigListEntry(_("Running text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
 		list.append(getConfigListEntry(_("Scrollbars"), config.plugins.XionHDF.ScrollBar, _("This option activates the scrollbars for some parts of skin.")))
@@ -307,11 +281,9 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Second Infobar"), config.plugins.XionHDF.SIB, _("This option changes the view of second infobar.")))
 		list.append(getConfigListEntry(_("EnhancedMovieCenter"), config.plugins.XionHDF.EMCStyle, _("This option changes the view of cover inside from EnhancedMovieCenter.")))
 		list.append(getConfigListEntry(_("MovieSelection"), config.plugins.XionHDF.MovieStyle, _("This option changes the view of cover inside from MovieSelection.")))
-		#list.append(getConfigListEntry(_("_____________________________ Weather _________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
 		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_cityname, _("Here you can insert your city, district, zip code or alltogether.\nLeave blank to automatically detect your location via the IP adress.\nPress OK to insert your location manually.")))
 		list.append(getConfigListEntry(_("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
-		#list.append(getConfigListEntry(_("_____________________________ Colors __________________________________"), ))
 		list.append(getConfigListEntry(_("Line"), config.plugins.XionHDF.Line, _("Please select the color of lines inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection"), config.plugins.XionHDF.SelectionBackground, _("Please select the color of listselection inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection border"), config.plugins.XionHDF.SelectionBorder, _("Please select the bordercolor of selection bars or deactivate borders completely.")))
@@ -458,8 +430,6 @@ class XionHDF(ConfigListScreen, Screen):
 				self["config"].getCurrent()[1].value = callback
 				self.searchString = str(callback)
 				self.getWeatherData()
-			else:
-				pass
 		except:
 			pass
 
@@ -493,8 +463,6 @@ class XionHDF(ConfigListScreen, Screen):
 			os.system("cp /usr/share/enigma2/XionHDF/extensions/hd/*.* /usr/share/enigma2/XionHDF/extensions")
 			os.system("cp /usr/share/enigma2/XionHDF/icons/hd/*.* /usr/share/enigma2/XionHDF/icons")
 			os.system("tar xf /usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/bsWindow_hd.tar.gz -C /usr/share/enigma2/XionHDF/bsWindow/")
-		else:
-			pass
 
 		if self.skin_mode == 'fullhd':
 			self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
@@ -503,17 +471,12 @@ class XionHDF(ConfigListScreen, Screen):
 			os.system("cp /usr/share/enigma2/XionHDF/extensions/fhd/*.* /usr/share/enigma2/XionHDF/extensions")
 			os.system("cp /usr/share/enigma2/XionHDF/icons/fhd/*.* /usr/share/enigma2/XionHDF/icons")
 			os.system("tar xf /usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/bsWindow_fhd.tar.gz -C /usr/share/enigma2/XionHDF/bsWindow/")
-		else:
-			pass
 
 		for x in self["config"].list:
 			if len(x) > 1:
 				x[1].save()
-			else:
-				pass
 
 		try:
-			#global tag search and replace in all skin elements
 			self.skinSearchAndReplace = []
 			self.FontStyleHeight_1 = config.plugins.XionHDF.FontStyleHeight_1.value
 			self.skinSearchAndReplace.append(['<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="95" />', '<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="%s" />' % str(self.FontStyleHeight_1)])
@@ -672,8 +635,6 @@ class XionHDF(ConfigListScreen, Screen):
 		for x in self["config"].list:
 			if len(x) > 1:
 				x[1].cancel()
-			else:
-				pass
 		self.close()
 
 	def debug(self, what):
