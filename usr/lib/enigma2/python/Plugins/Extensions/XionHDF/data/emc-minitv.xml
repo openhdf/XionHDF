@@ -35,6 +35,6 @@
 		<widget source="session.VideoPicture" render="Pig" position="49,108" size="400,220" backgroundColor="transparent" zPosition="2" />
 		<widget name="Cover" position="730,108" size="100,151" zPosition="4" backgroundColor="XionBackground" alphatest="on" transparent="1" />
 		<panel name="template_emc4" />
-		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey" />
 	</screen>
 		<!-- EMC MiniTV */-->

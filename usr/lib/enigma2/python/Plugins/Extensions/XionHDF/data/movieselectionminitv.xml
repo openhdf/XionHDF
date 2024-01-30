@@ -34,5 +34,5 @@
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
 		<widget source="session.VideoPicture" render="Pig" position="888,167" size="377,207" backgroundColor="transparent" zPosition="2" />
-		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey" />
 	</screen>

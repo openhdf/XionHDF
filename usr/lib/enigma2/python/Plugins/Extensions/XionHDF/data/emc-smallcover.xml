@@ -34,6 +34,6 @@
 		</widget>
 		<widget name="Cover" position="1167,52" size="100,151" zPosition="4" backgroundColor="XionBackground" alphatest="on" transparent="0" />
 		<panel name="template_emc2" />
-		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey" />
 	</screen>
 		<!-- EMC SmallCover */-->

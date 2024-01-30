@@ -33,5 +33,5 @@
 		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont1">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey" />
 	</screen>

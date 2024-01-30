@@ -34,6 +34,6 @@
 			<convert type="XionHDFEventsInfo">PrimeTime,noDuration</convert>
 		</widget>
 		<panel name="template_menu_cs_button" />
-		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey" />
 	</screen>
 		<!-- /* ChannelSelection Two Columns -->

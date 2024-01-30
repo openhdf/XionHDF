@@ -35,5 +35,5 @@
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
 		<widget source="Service" render="XionHDFCover" position="888,190" size="374,445" zPosition="4" backgroundColor="XionBackground" alphatest="on" transparent="1" />
-		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey" />
 	</screen>

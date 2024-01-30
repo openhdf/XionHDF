@@ -31,5 +31,5 @@
 		</widget>
 		<widget source="session.VideoPicture" render="Pig" position="853,95" size="400,200" backgroundColor="transparent" zPosition="2" />
 		<panel name="template_menu_cs2_button" />
-		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey" />
 	</screen>

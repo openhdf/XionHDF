@@ -31,6 +31,6 @@
 			<convert type="EMCClockToText">InMinutes</convert>
 		</widget>
 		<panel name="template_emc2" />
-		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey" />
 	</screen>
 		<!-- EMC ListBigCover */-->
