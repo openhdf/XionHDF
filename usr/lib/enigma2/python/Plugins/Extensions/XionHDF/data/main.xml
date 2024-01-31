@@ -276,7 +276,8 @@
 		<widget backgroundColor="XionBackground" foregroundColor="XionFont2" font="Regular2; 30" halign="right" name="datetime" position="928,85" size="307,60" transparent="1" valign="center" />
 		<widget backgroundColor="XionBackground" font="Regular2; 24" halign="center" name="duration" position="965,603" size="270,40" transparent="1" foregroundColor="XionFont2" />
 		<panel name="template_menu_full" />
-		<panel name="template_colorkey" />
+		<panel name="TemplateButtonRed"/>
+		<panel name="TemplateButtonGreen"/>
 	</screen>
 	<!-- InfoBarEventView -->
 	<screen name="InfoBarEventView" position="0,0" size="1280,170" backgroundColor="XionBackground" flags="wfNoBorder">
@@ -314,7 +315,8 @@
 		<widget backgroundColor="XionBackground" foregroundColor="XionFont2" font="Regular2; 30" halign="right" name="datetime" position="928,85" size="307,60" transparent="1" valign="center" />
 		<widget backgroundColor="XionBackground" font="Regular2; 24" halign="center" name="duration" position="965,603" size="270,40" transparent="1" foregroundColor="XionFont2" />
 		<panel name="template_menu_full" />
-		<panel name="template_colorkey" />
+		<panel name="TemplateButtonRed"/>
+		<panel name="TemplateButtonGreen"/>
 	</screen>
 		<!-- EPGSelectionMulti -->
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
@@ -2262,8 +2264,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont1">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<panel name="template_colorkey" />
 		<panel name="template_menu_full" />
+		<panel name="TemplateButtonRed"/>
+		<panel name="TemplateButtonGreen"/>
+		<panel name="TemplateButtonYellow"/>
 	</screen>
 		<!-- PositionerSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PositionerSetup" position="0,0" size="1280,720" title="Positioner setup...">

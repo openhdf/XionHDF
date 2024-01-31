@@ -93,39 +93,51 @@ class ChangeSkin():
 
 				if 'value="' in line and '<parameter' in line:
 					self.skipper = '2'
-					try:
-						old_value = re.search('(value="(.+?),(.+?),(.+?),(.+?)")', str(line)).groups(1)
-						wposition = old_value[1]
-						xposition = old_value[2]
-						yposition = old_value[3]
-						zposition = old_value[4]
-						wposition = self.get_new_value(old_value[1], 'x')
-						xposition = self.get_new_value(old_value[2], 'y')
-						yposition = self.get_new_value(old_value[3], 'x')
-						zposition = self.get_new_value(old_value[4], 'y')
-						new_position_string = 'value="%s,%s,%s,%s"' % (wposition, xposition, yposition, zposition)
-					except AttributeError:
+					if "Regular" in line:
+						old_value = re.search('(value="Regular;(.+?)")', str(line)).groups(1)
+						xposition = old_value[1]
+						xposition = self.get_new_value(old_value[1], 'x')
+						new_position_string = 'value="Regular;%s"' % (xposition)
+					else:
 						try:
-							old_value = re.search('(value="(.+?),(.+?),(.+?)")', str(line)).groups(1)
+							old_value = re.search('(value="(.+?),(.+?),(.+?),(.+?)")', str(line)).groups(1)
 							wposition = old_value[1]
 							xposition = old_value[2]
 							yposition = old_value[3]
+							zposition = old_value[4]
 							wposition = self.get_new_value(old_value[1], 'x')
 							xposition = self.get_new_value(old_value[2], 'y')
-							yposition = self.get_new_value(old_value[3], 'y')
-							new_position_string = 'value="%s,%s,%s"' % (wposition, xposition, yposition)
+							yposition = self.get_new_value(old_value[3], 'x')
+							zposition = self.get_new_value(old_value[4], 'y')
+							new_position_string = 'value="%s,%s,%s,%s"' % (wposition, xposition, yposition, zposition)
 						except AttributeError:
-							old_value = re.search('(value="(.+?),(.+?)")', str(line)).groups(1)
-							xposition = old_value[1]
-							yposition = old_value[2]
-							xposition = self.get_new_value(old_value[1], 'x')
-							yposition = self.get_new_value(old_value[2], 'y')
-							new_position_string = 'value="%s,%s"' % (xposition, yposition)
+							try:
+								old_value = re.search('(value="(.+?),(.+?),(.+?)")', str(line)).groups(1)
+								wposition = old_value[1]
+								xposition = old_value[2]
+								yposition = old_value[3]
+								wposition = self.get_new_value(old_value[1], 'x')
+								xposition = self.get_new_value(old_value[2], 'y')
+								yposition = self.get_new_value(old_value[3], 'y')
+								new_position_string = 'value="%s,%s,%s"' % (wposition, xposition, yposition)
+							except AttributeError:
+								try:
+									old_value = re.search('(value="(.+?),(.+?)")', str(line)).groups(1)
+									xposition = old_value[1]
+									yposition = old_value[2]
+									xposition = self.get_new_value(old_value[1], 'x')
+									yposition = self.get_new_value(old_value[2], 'y')
+									new_position_string = 'value="%s,%s"' % (xposition, yposition)
+								except AttributeError:
+									old_value = re.search('(value="(.+?)")', str(line)).groups(1)
+									xposition = old_value[1]
+									xposition = self.get_new_value(old_value[1], 'x')
+									new_position_string = 'value="%s"' % (xposition)
 
 					old_position_string = old_value[0]
 					line = line.replace(old_position_string, new_position_string)
 
-				if 'position="' in line:
+				if 'position="' in line and not '"fill"' in line:
 					self.skipper = '2.1'
 					old_value = re.search('(position="(.+?),(.+?)")', str(line)).groups(1)
 					xposition = old_value[1]
@@ -345,11 +357,18 @@ class ChangeSkin():
 
 				if 'itemHeight":' in line:
 					self.skipper = '15'
-					old_value = re.search('(itemHeight":(.*))', str(line)).groups(1)
-					yposition = self.get_new_value(old_value[1], 'y')
-					old_position_string = old_value[0]
-					new_position_string = 'itemHeight": %s' % (yposition)
-					line = line.replace(old_position_string, new_position_string)
+					if "," in line:
+						old_value = re.search('(itemHeight":(.+?),)', str(line)).groups(1)
+						yposition = self.get_new_value(old_value[1], 'y')
+						old_position_string = old_value[0]
+						new_position_string = 'itemHeight": %s,' % (yposition)
+						line = line.replace(old_position_string, new_position_string)
+					else:
+						old_value = re.search('(itemHeight":(.*))', str(line)).groups(1)
+						yposition = self.get_new_value(old_value[1], 'y')
+						old_position_string = old_value[0]
+						new_position_string = 'itemHeight": %s' % (yposition)
+						line = line.replace(old_position_string, new_position_string)
 
 				if 'default":' in line:
 					self.skipper = '16'
@@ -439,13 +458,16 @@ class ChangeSkin():
 
 				if 'wsizex = ' in line:
 					self.skipper = '25'
-					old_value = re.search('(wsizex = (.*))', str(line)).groups(1)
-					value = old_value[1]
-					if not 'text' in value:
-						xposition = self.get_new_value(value, 'x')
-						old_position_string = old_value[0]
-						new_position_string = 'wsizex = %s' % (xposition)
-						line = line.replace(old_position_string, new_position_string)
+					try:
+						old_value = re.search('(wsizex = (.*))', str(line)).groups(1)
+						value = old_value[1]
+						if not 'text' in value:
+							xposition = self.get_new_value(value, 'x')
+							old_position_string = old_value[0]
+							new_position_string = 'wsizex = %s' % (xposition)
+							line = line.replace(old_position_string, new_position_string)
+					except:
+						line = line
 
 				if '&gt; wsizex):' in line:
 					self.skipper = '26'
@@ -457,29 +479,37 @@ class ChangeSkin():
 
 				if '(wsizex - ' in line:
 					self.skipper = '27'
-					old_value = re.search('([(]wsizex [-] (\d+),(\d+)[)])', str(line)).groups(1)
-					xposition = self.get_new_value(old_value[1], 'x')
-					yposition = self.get_new_value(old_value[2], 'y')
-					old_position_string = old_value[0]
-					new_position_string = '(wsizex - %s, %s)' % (xposition, yposition)
-					line = line.replace(old_position_string, new_position_string)
+					try:
+						old_value = re.search('([(]wsizex [-] (\d+),(\d+)[)])', str(line)).groups(1)
+						xposition = self.get_new_value(old_value[1], 'x')
+						yposition = self.get_new_value(old_value[2], 'y')
+						old_position_string = old_value[0]
+						new_position_string = '(wsizex - %s, %s)' % (xposition, yposition)
+						line = line.replace(old_position_string, new_position_string)
+					except:
+						line = line
 
 				if '].instance.move(ePoint(' in line:
 					self.skipper = '28'
-					old_value = re.search('(ePoint[(](.+?),)', str(line)).groups(1)
-					xposition = self.get_new_value(old_value[1], 'x')
-					old_position_string = old_value[0]
-					new_position_string = 'ePoint(%s,' % (xposition)
-					line = line.replace(old_position_string, new_position_string)
+					try:
+						old_value = re.search('(ePoint[(](.+?),)', str(line)).groups(1)
+						xposition = self.get_new_value(old_value[1], 'x')
+						old_position_string = old_value[0]
+						new_position_string = 'ePoint(%s,' % (xposition)
+						line = line.replace(old_position_string, new_position_string)
+					except:
+						line = line
 
-				if '(wsizex,' in line:
+				if '(wsizex,' in line and not 'wsizey)' in line:
 					self.skipper = '29'
-					if not 'wsizey)' in line:
+					try:
 						old_value = re.search('([(]wsizex.* (\d+)[)])', str(line)).groups(1)
 						yposition = self.get_new_value(old_value[1], 'y')
 						old_position_string = old_value[0]
 						new_position_string = '(wsizex, %s)' % (yposition)
 						line = line.replace(old_position_string, new_position_string)
+					except:
+						line = line
 
 				if ' Cool' in line:
 					old_value = re.findall('(Cool(.+?)="(.+?)")', str(line))

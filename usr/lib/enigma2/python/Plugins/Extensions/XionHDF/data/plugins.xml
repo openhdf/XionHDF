@@ -471,7 +471,9 @@
 		<widget backgroundColor="XionBackground" font="Regular; 20" name="extralabel" position=" 70,170" size="1170,350" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;20" foregroundColor="XionFont2" name="statusbar" position=" 70,595" size="700,28" transparent="1" />
 		<panel name="template_menu_left_logo_off" />
-		<panel name="template_colorkey" />
+		<panel name="TemplateButtonRed"/>
+		<panel name="TemplateButtonGreen"/>
+		<panel name="TemplateButtonYellow"/>
 	</screen>
 		<!-- getCover -->
 	<screen name="getCover" position="0,0" size="1280,720" title="EMC Cover Selecter" flags="wfNoBorder" backgroundColor="transparent">
@@ -1639,7 +1641,8 @@
 						font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
 					],
 				"fonts": [gFont("Regular",20), gFont("Regular",13)],
-				"itemHeight": 110}
+				"itemHeight": 110
+				}
 			</convert>
 		</widget>
 		<widget name="thumbnail" position="0,0" backgroundColor="XionBackground" itemHeight="110" transparent="1" alphatest="on" size="100,72" />
@@ -1655,7 +1658,8 @@
 				{"template": [MultiContentEntryText(pos=(15,1), size=(870,45), \
 					font=0, flags=RT_HALIGN_LEFT, text=0)],
 				"fonts": [gFont("Regular",20)],
-				"itemHeight": 45}
+				"itemHeight": 45
+				}
 			</convert>
 		</widget>
 		<widget name="HelpWindow" position="120,500" size="100,100" zPosition="1" pixmap="skin_default/vkey_icon.png" transparent="1" alphatest="on" />
