@@ -1230,7 +1230,8 @@
 		<widget name="lab2" position="70,140" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="XionFont1" zPosition="1" />
 		<widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="XionFont1" zPosition="2" />
-		<panel name="template_colorkey" />
+		<panel name="TemplateButtonGreen"/>
+		<panel name="TemplateButtonYellow"/>
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- NetworkFtp -->
@@ -1239,7 +1240,8 @@
 		<widget name="lab2" position="70,140" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="XionFont1" zPosition="1" />
 		<widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="XionFont1" zPosition="2" />
-		<panel name="template_colorkey" />
+		<panel name="TemplateButtonGreen"/>
+		<panel name="TemplateButtonYellow"/>
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- NetworkInadyn -->
