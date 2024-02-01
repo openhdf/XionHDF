@@ -1464,7 +1464,13 @@
 		<widget name="timerlist" rowSplit="26" iconMargin="5" satPosLeft="160" itemHeight="50" setFont="Regular;18" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" position="45,79" size="766,550" backgroundColor="XionBackground" enableWrapAround="1" transparent="1" />
 		<widget name="description" position="888,80" size="377,550" font="Regular2; 22" foregroundColor="XionFont2" halign="center" backgroundColor="XionBackground" valign="center" transparent="1" />
 		<panel name="template_menu_full" />
-		<panel name="template_colorkey" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_red" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget name="red" pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<panel name="TemplateButtonGreen"/>
+		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="464,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget name="yellow" pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="664,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget name="blue" pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
 		<!-- TimerEntry -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" title="Timer entry">
@@ -3129,7 +3135,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left" />
 		<panel name="TemplateButtonRed"/>
 		<panel name="TemplateButtonGreen"/>
-		<widget font="Regular;20" valign="center" name="key_blue" position="664,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="664,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget name="blue" pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
 		<!-- Backup Software Restore Manager -->
