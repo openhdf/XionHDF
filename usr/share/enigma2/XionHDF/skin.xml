@@ -2201,14 +2201,14 @@
 	</screen>
 		<!-- UserManager -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="UserManager" position="0,0" size="1280,720" title="UserManager">
-		<widget position="20,80" render="Listbox" size="708,420" source="config" itemHeight="26" font="Regular;22" transparent="1" zPosition="3">
+		<widget backgroundColor="XionBackground" position="70,80" render="Listbox" size="708,450" source="config" font="Regular;22" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (80, 4), size = (590, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # index 4 is the status pixmap
+						MultiContentEntryText(pos = (80, 2), size = (500, 46), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryPixmapAlphaTest(pos = (10, 1), size = (48, 48), png = 3), # index 4 is the status pixmap
 					],
-				"fonts": [gFont("Regular", 40)],
-				"itemHeight": 60
+				"fonts": [gFont("Regular", 34)],
+				"itemHeight": 50
 				}
 			</convert>
 		</widget>
@@ -2219,7 +2219,7 @@
 		<!-- WlanScan -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="WlanScan" position="0,0" size="1280,720" title="Choose a Wireless Network">
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" position="20,80" render="Label" size="708,30" source="info" transparent="1" />
-		<widget position="70,125" render="Listbox" size="708,450" source="list" itemHeight="75" font="Regular;22" transparent="1">
+		<widget backgroundColor="XionBackground" position="70,125" render="Listbox" size="708,450" source="list" itemHeight="75" font="Regular;22" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 8), size = (650, 35), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
