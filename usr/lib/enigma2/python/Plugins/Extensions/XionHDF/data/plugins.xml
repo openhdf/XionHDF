@@ -93,10 +93,10 @@
 	<!-- ********** HD File Commander ********** -->
 	<!-- File Commander -->
 	<screen name="FileCommanderScreen" position="0,0" size="1280,720" title="" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="list_left_head1" position="27,70" size="600,24" font="Regular;18" foregroundColor="yellow" backgroundColor="XionBackground" transparent="1" />
-		<widget name="list_left_filename" position="27,97" size="600,24" font="Regular; 18" noWrap="1" zPosition="1" foregroundColor="green" backgroundColor="XionBackground" transparent="1" />
-		<widget name="list_left_select" position="27,124" size="600,24" zPosition="1" font="Regular;18" backgroundColor="XionBackground" transparent="1" foregroundColor="blue" />
-		<widget source="list_left_head2" render="Listbox" position="27,124" size="600,24" foregroundColor="yellow" selectionDisabled="1" backgroundColor="XionBackground" transparent="1">
+		<widget name="list_left_head1" position="27,70" size="600,24" font="Regular;18" foregroundColor="white" backgroundColor="XionBackground" transparent="1" />
+		<widget name="list_left_filename" position="27,97" size="600,24" font="Regular; 18" noWrap="1" zPosition="1" foregroundColor="white" backgroundColor="XionBackground" transparent="1" />
+		<widget name="list_left_select" position="27,124" size="600,24" zPosition="1" font="Regular;18" backgroundColor="XionBackground" transparent="1" foregroundColor="white" />
+		<widget source="list_left_head2" render="Listbox" position="27,124" size="600,24" foregroundColor="white" selectionDisabled="1" backgroundColor="XionBackground" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (0, 0), size = (115, 20), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
@@ -109,10 +109,10 @@
 				}
 			</convert>
 		</widget>
-		<widget name="list_right_head1" position="653,70" size="600,24" font="Regular;18" foregroundColor="yellow" backgroundColor="XionBackground" transparent="1" />
-		<widget name="list_right_filename" position="653,97" size="600,24" font="Regular; 18" noWrap="1" foregroundColor="green" backgroundColor="XionBackground" transparent="1" zPosition="1" />
-		<widget name="list_right_select" position="653,124" size="600,24" zPosition="1" font="Regular;18" backgroundColor="XionBackground" transparent="1" foregroundColor="blue" />
-		<widget source="list_right_head2" render="Listbox" position="653,124" size="600,24" foregroundColor="yellow" selectionDisabled="1" backgroundColor="XionBackground" transparent="1">
+		<widget name="list_right_head1" position="653,70" size="600,24" font="Regular;18" foregroundColor="white" backgroundColor="XionBackground" transparent="1" />
+		<widget name="list_right_filename" position="653,97" size="600,24" font="Regular; 18" noWrap="1" foregroundColor="white" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+		<widget name="list_right_select" position="653,124" size="600,24" zPosition="1" font="Regular;18" backgroundColor="XionBackground" transparent="1" foregroundColor="white" />
+		<widget source="list_right_head2" render="Listbox" position="653,124" size="600,24" foregroundColor="white" selectionDisabled="1" backgroundColor="XionBackground" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (0, 0), size = (115, 20), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
