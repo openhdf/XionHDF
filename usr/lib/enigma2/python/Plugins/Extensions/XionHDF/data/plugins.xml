@@ -474,6 +474,7 @@
 		<panel name="TemplateButtonRed"/>
 		<panel name="TemplateButtonGreen"/>
 		<panel name="TemplateButtonYellow"/>
+		<panel name="TemplateButtonBlue"/>
 	</screen>
 		<!-- getCover -->
 	<screen name="getCover" position="0,0" size="1280,720" title="EMC Cover Selecter" flags="wfNoBorder" backgroundColor="transparent">
