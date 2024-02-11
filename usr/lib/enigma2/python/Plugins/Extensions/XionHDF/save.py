@@ -11,14 +11,12 @@ from .ChangeSkin import ChangeSkin
 
 skinSearchAndReplace = []
 skin_lines = []
-datei = "/usr/share/enigma2/XionHDF/skin.xml"
-dateiTMP = datei + ".tmp"
 FILE = "/usr/share/enigma2/XionHDF/skin.xml"
 TMPFILE = FILE + ".tmp"
 
 #############################################################
 
-from config import *
+from .config import *
 
 #######################################################################
 
@@ -55,18 +53,17 @@ def appendSkinFile(appendFileName, skinPartSearchAndReplace=None):
 
 def justSave():
 	skin_mode = config.plugins.XionHDF.skin_mode.value
+	daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
 	if os.path.exists("/usr/share/enigma2/XionHDF/buttons"):
 		rmtree("/usr/share/enigma2/XionHDF/buttons")
+
 	if skin_mode == 'hd':
-		daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
 		copytree('/usr/share/enigma2/XionHDF/buttonsets/hd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
 		os.system("cp /usr/share/enigma2/XionHDF/buttonsets/hd/infobar/*.* /usr/share/enigma2/XionHDF")
 		os.system("cp /usr/share/enigma2/XionHDF/extensions/hd/*.* /usr/share/enigma2/XionHDF/extensions")
 		os.system("cp /usr/share/enigma2/XionHDF/icons/hd/*.* /usr/share/enigma2/XionHDF/icons")
 		os.system("tar xf /usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/bsWindow_hd.tar.gz -C /usr/share/enigma2/XionHDF/bsWindow/")
-
-	if skin_mode == 'fullhd':
-		daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
+	elif skin_mode == 'fullhd':
 		copytree('/usr/share/enigma2/XionHDF/buttonsets/fhd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
 		os.system("cp /usr/share/enigma2/XionHDF/buttonsets/fhd/infobar/*.* /usr/share/enigma2/XionHDF")
 		os.system("cp /usr/share/enigma2/XionHDF/extensions/fhd/*.* /usr/share/enigma2/XionHDF/extensions")
@@ -75,10 +72,8 @@ def justSave():
 
 	# global tag search and replace in all skin elements
 	global skinSearchAndReplace
-	FontStyleHeight_1 = config.plugins.XionHDF.FontStyleHeight_1.value
-	skinSearchAndReplace.append(['<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="95" />', '<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="%s" />' % str(FontStyleHeight_1)])
-	FontStyleHeight_2 = config.plugins.XionHDF.FontStyleHeight_2.value
-	skinSearchAndReplace.append(['<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="95" />', '<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="%s" />' % str(FontStyleHeight_2)])
+	skinSearchAndReplace.append(['<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="95" />', '<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="%s" />' % str(config.plugins.XionHDF.FontStyleHeight_1.value)])
+	skinSearchAndReplace.append(['<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="95" />', '<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="%s" />' % str(config.plugins.XionHDF.FontStyleHeight_2.value)])
 	skinSearchAndReplace.append(['name="XionBackground" value="#00', 'name="XionBackground" value="#' + config.plugins.XionHDF.BackgroundColorTrans.value])
 	skinSearchAndReplace.append(['name="XionSelection" value="#000050EF', 'name="XionSelection" value="#' + config.plugins.XionHDF.SelectionBackground.value])
 	skinSearchAndReplace.append(['name="XionFont1" value="#00ffffff', 'name="XionFont1" value="#' + config.plugins.XionHDF.Font1.value])
@@ -91,55 +86,55 @@ def justSave():
 	skinSearchAndReplace.append(["movetype=running", config.plugins.XionHDF.RunningText.value])
 	skinSearchAndReplace.append(["showOnDemand", config.plugins.XionHDF.ScrollBar.value])
 
-	### Selectionborder
+	# Selectionborder
 	if not config.plugins.XionHDF.SelectionBorder.value == "none":
 		selectionbordercolor = config.plugins.XionHDF.SelectionBorder.value
 		borset = ("borset_" + selectionbordercolor + ".png")
 		skinSearchAndReplace.append(["borset.png", borset])
 
-	### Header
+	# Header
 	appendSkinFile(daten + "header_begin.xml")
 	if not config.plugins.XionHDF.SelectionBorder.value == "none":
 		appendSkinFile(daten + "header_middle.xml")
 	appendSkinFile(daten + "header_end.xml")
 
-	###ChannelSelection
+	# ChannelSelection
 	appendSkinFile(daten + config.plugins.XionHDF.ChannelSelectionStyle.value + ".xml")
 
-	###Infobar_main
+	# Infobar_main
 	appendSkinFile(daten + config.plugins.XionHDF.InfobarStyle.value + "_main.xml")
 
-	###weather-style
+	# weather-style
 	appendSkinFile(daten + config.plugins.XionHDF.WeatherStyle.value + ".xml")
 
-	###Infobar_middle
+	# Infobar_middle
 	appendSkinFile(daten + config.plugins.XionHDF.InfobarChannelname.value + ".xml")
 
-	###Infobar_end
+	# Infobar_end
 	appendSkinFile(daten + config.plugins.XionHDF.SIB.value + ".xml")
 
-	###Main XML
+	# Main XML
 	appendSkinFile(daten + "main.xml")
 
-	###Plugins XML
+	# Plugins XML
 	appendSkinFile(daten + "plugins.xml")
 
-	###emc-style
+	# emc-style
 	appendSkinFile(daten + config.plugins.XionHDF.EMCStyle.value + ".xml")
 
-	###movie-style
+	# movie-style
 	appendSkinFile(daten + config.plugins.XionHDF.MovieStyle.value + ".xml")
 
-	###skin-user
+	# skin-user
 	try:
 		appendSkinFile(daten + "skin-user.xml")
 	except:
 		pass
 
-	###skin-end
+	# skin-end
 	appendSkinFile(daten + "skin-end.xml")
 
-	xFile = open(dateiTMP, "w")
+	xFile = open(TMPFILE, "w")
 	for xx in skin_lines:
 		xFile.writelines(xx)
 	xFile.close()

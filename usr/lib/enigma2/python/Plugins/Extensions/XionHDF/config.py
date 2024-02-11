@@ -2,7 +2,7 @@ import os
 import re
 from Components.config import config, ConfigSelection, ConfigSubsection, ConfigSelectionNumber, ConfigText
 from Tools.Directories import fileExists
-from boxbranding import getBoxType
+from boxbranding import getBoxType, getImageArch
 
 ################# ColorList #########################################
 

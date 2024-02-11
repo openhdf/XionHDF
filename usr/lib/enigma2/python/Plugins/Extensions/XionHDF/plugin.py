@@ -23,7 +23,6 @@ from Screens.Console import Console
 from Screens.Standby import TryQuitMainloop
 from Screens.VirtualKeyBoard import VirtualKeyBoard
 from Components.ActionMap import ActionMap
-from Components.AVSwitch import iAVSwitch as eAVSwitch
 from Components.config import config, configfile, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection, ConfigNumber, ConfigText, ConfigInteger, ConfigSelectionNumber
 from Components.ConfigList import ConfigListScreen
 from Components.Sources.StaticText import StaticText
@@ -255,11 +254,8 @@ class XionHDF(ConfigListScreen, Screen):
 		self.skin_lines = []
 		Screen.__init__(self, session)
 		self.session = session
-		self.datei = "/usr/share/enigma2/XionHDF/skin.xml"
-		self.dateiTMP = self.datei + ".tmp"
 		self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
 		self.picPath = picPath
-		self.Scale = eAVSwitch.getFramebufferScale()
 		self.PicLoad = ePicLoad()
 		self["helperimage"] = Pixmap()
 		self["help"] = StaticText()
@@ -393,7 +389,7 @@ class XionHDF(ConfigListScreen, Screen):
 		self.onLayoutFinish.append(self.ShowPicture)
 
 	def ShowPicture(self):
-		self.PicLoad.setPara([self["helperimage"].instance.size().width(), self["helperimage"].instance.size().height(), self.Scale[0], self.Scale[1], 0, 1, "#002C2C39"])
+		self.PicLoad.setPara([self["helperimage"].instance.size().width(), self["helperimage"].instance.size().height(), 1, 1, 0, 1, "#002C2C39"])
 		self.PicLoad.startDecode(self.GetPicturePath())
 
 	def DecodePicture(self, PicInfo=""):
@@ -456,16 +452,14 @@ class XionHDF(ConfigListScreen, Screen):
 		self.skin_mode = config.plugins.XionHDF.skin_mode.value
 		if os.path.exists("/usr/share/enigma2/XionHDF/buttons"):
 			rmtree("/usr/share/enigma2/XionHDF/buttons")
+
 		if self.skin_mode == 'hd':
-			self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
 			copytree('/usr/share/enigma2/XionHDF/buttonsets/hd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
 			os.system("cp /usr/share/enigma2/XionHDF/buttonsets/hd/infobar/*.* /usr/share/enigma2/XionHDF")
 			os.system("cp /usr/share/enigma2/XionHDF/extensions/hd/*.* /usr/share/enigma2/XionHDF/extensions")
 			os.system("cp /usr/share/enigma2/XionHDF/icons/hd/*.* /usr/share/enigma2/XionHDF/icons")
 			os.system("tar xf /usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/bsWindow_hd.tar.gz -C /usr/share/enigma2/XionHDF/bsWindow/")
-
-		if self.skin_mode == 'fullhd':
-			self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
+		elif self.skin_mode == 'fullhd':
 			copytree('/usr/share/enigma2/XionHDF/buttonsets/fhd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
 			os.system("cp /usr/share/enigma2/XionHDF/buttonsets/fhd/infobar/*.* /usr/share/enigma2/XionHDF")
 			os.system("cp /usr/share/enigma2/XionHDF/extensions/fhd/*.* /usr/share/enigma2/XionHDF/extensions")
@@ -478,10 +472,8 @@ class XionHDF(ConfigListScreen, Screen):
 
 		try:
 			self.skinSearchAndReplace = []
-			self.FontStyleHeight_1 = config.plugins.XionHDF.FontStyleHeight_1.value
-			self.skinSearchAndReplace.append(['<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="95" />', '<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="%s" />' % str(self.FontStyleHeight_1)])
-			self.FontStyleHeight_2 = config.plugins.XionHDF.FontStyleHeight_2.value
-			self.skinSearchAndReplace.append(['<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="95" />', '<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="%s" />' % str(self.FontStyleHeight_2)])
+			self.skinSearchAndReplace.append(['<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="95" />', '<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="%s" />' % str(config.plugins.XionHDF.FontStyleHeight_1.value)])
+			self.skinSearchAndReplace.append(['<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="95" />', '<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="%s" />' % str(config.plugins.XionHDF.FontStyleHeight_2.value)])
 			self.skinSearchAndReplace.append(['name="XionBackground" value="#00', 'name="XionBackground" value="#' + config.plugins.XionHDF.BackgroundColorTrans.value])
 			self.skinSearchAndReplace.append(['name="XionSelection" value="#000050EF', 'name="XionSelection" value="#' + config.plugins.XionHDF.SelectionBackground.value])
 			self.skinSearchAndReplace.append(['name="XionFont1" value="#00ffffff', 'name="XionFont1" value="#' + config.plugins.XionHDF.Font1.value])
@@ -494,62 +486,59 @@ class XionHDF(ConfigListScreen, Screen):
 			self.skinSearchAndReplace.append(["movetype=running", config.plugins.XionHDF.RunningText.value])
 			self.skinSearchAndReplace.append(["showOnDemand", config.plugins.XionHDF.ScrollBar.value])
 
-			### Selectionborder
+			# Selectionborder
 			if not config.plugins.XionHDF.SelectionBorder.value == "none":
 				self.selectionbordercolor = config.plugins.XionHDF.SelectionBorder.value
 				self.borset = ("borset_" + self.selectionbordercolor + ".png")
 				self.skinSearchAndReplace.append(["borset.png", self.borset])
 
-			### Header
+			# Header
 			self.appendSkinFile(self.daten + "header_begin.xml")
 			if not config.plugins.XionHDF.SelectionBorder.value == "none":
 				self.appendSkinFile(self.daten + "header_middle.xml")
 			self.appendSkinFile(self.daten + "header_end.xml")
 
-			###ChannelSelection
+			# ChannelSelection
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.ChannelSelectionStyle.value + ".xml")
 
-			###Infobar_main
+			# Infobar_main
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.InfobarStyle.value + "_main.xml")
 
-			###weather-style
+			# weather-style
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.WeatherStyle.value + ".xml")
 
-			###Infobar_middle
+			# Infobar_middle
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.InfobarChannelname.value + ".xml")
 
-			###Infobar_end
+			# Infobar_end
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.SIB.value + ".xml")
 
-			###Main XML
+			# Main XML
 			self.appendSkinFile(self.daten + "main.xml")
 
-			###Plugins XML
+			# Plugins XML
 			self.appendSkinFile(self.daten + "plugins.xml")
 
-			###emc-style
+			# emc-style
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.EMCStyle.value + ".xml")
 
-			###movie-style
+			# movie-style
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.MovieStyle.value + ".xml")
 
-			###skin-user
+			# skin-user
 			try:
 				self.appendSkinFile(self.daten + "skin-user.xml")
 			except:
 				pass
 
-			###skin-end
+			# skin-end
 			self.appendSkinFile(self.daten + "skin-end.xml")
 
-			xFile = open(self.dateiTMP, "w")
+			xFile = open(TMPFILE, "w")
 			for xx in self.skin_lines:
 				xFile.writelines(xx)
 			xFile.close()
 
-			#move(self.dateiTMP, self.datei)
-
-			#os.system('rm -rf ' + self.dateiTMP)
 			Instance = ChangeSkin(self.session)
 
 			if fileExists(TMPFILE):

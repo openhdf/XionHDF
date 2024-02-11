@@ -569,7 +569,7 @@ class ChangeSkin():
 
 		wFile.close()
 		self.debug('End Convertion <0=======')
-		self.debug(str(count) + ' are Lines Changed')
+		self.debug(str(count) + ' lines are Changed')
 
 	def get_new_value(self, value, factor):
 		if factor == 'x':
