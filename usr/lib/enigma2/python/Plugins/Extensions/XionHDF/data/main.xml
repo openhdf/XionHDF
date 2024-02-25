@@ -20,7 +20,6 @@
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="Console" position="0,0" size="1280,720" title="Command execution...">
 		<widget backgroundColor="XionBackground" font="Console;15" name="text" position="70,120" size="808,500" transparent="1" foregroundColor="XionFont1" />
-		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -142,10 +141,10 @@
 		<widget backgroundColor="XionBackground" name="bouquets" position="70,560" zPosition="1" size="708,30" font="Regular2; 20" halign="left" valign="center" transparent="1" foregroundColor="XionFont2" />
 		<widget backgroundColor="XionBackground" name="netservers" position="70,590" zPosition="1" size="708,30" font="Regular2; 20" halign="left" valign="center" transparent="1" foregroundColor="XionFont2" />
 		<widget backgroundColor="XionBackground" name="config" itemHeight="32" font="Regular;20" foregroundColor="XionFont1" position="20,80" size="708,320" alphatest="blend" transparent="1" />
-		<widget font="Regular; 20" halign="left" valign="center" name="btt_red" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" name="btt_green" position="264,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" name="btt_yellow" position="464,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" name="btt_blue" position="664,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" name="btt_red" position="64,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" name="btt_green" position="264,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" name="btt_yellow" position="464,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" name="btt_blue" position="664,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_colorbuttons" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -467,10 +466,10 @@
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="335,229" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="570,230" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="800,230" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_red" position="140,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_green" position="375,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="610,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="840,220" size="280,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_red" position="140,219" size="180,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_green" position="375,219" size="180,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="610,219" size="180,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="840,219" size="280,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 	</screen>
 		<!-- QuickEPG -->
 	<screen name="QuickEPG" flags="wfNoBorder" position="0,435" size="1280,285" title="InfoBar" backgroundColor="XionBackground">
@@ -498,10 +497,10 @@
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="335,229" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="570,230" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="800,230" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_red" position="140,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_green" position="375,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="610,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="840,220" size="280,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_red" position="140,219" size="180,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_green" position="375,219" size="180,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="610,219" size="180,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="840,219" size="280,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 	</screen>
 		<!-- ********** Menu ********** -->
 		<!-- Menu -->
@@ -1464,20 +1463,20 @@
 		<widget name="timerlist" rowSplit="26" iconMargin="5" satPosLeft="160" itemHeight="50" setFont="Regular;18" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" position="45,79" size="766,550" backgroundColor="XionBackground" enableWrapAround="1" transparent="1" />
 		<widget name="description" position="888,80" size="377,550" font="Regular2; 22" foregroundColor="XionFont2" halign="center" backgroundColor="XionBackground" valign="center" transparent="1" />
 		<panel name="template_menu_full" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_red" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_red" position="64,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget name="red" pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<panel name="TemplateButtonGreen"/>
-		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="464,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="464,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget name="yellow" pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="664,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="664,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget name="blue" pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
 		<!-- TimerEntry -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" title="Timer entry">
 		<widget itemHeight="30" font="Regular;20" name="config" position="20,80" size="708,390" backgroundColor="XionBackground" transparent="1" />
 		<widget name="HelpWindow" position="156,479" size="532,170" flags="wfNoBorder" />
-		<eLabel font="Regular;20" halign="left" valign="center" text="Abort" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<eLabel font="Regular;20" halign="left" valign="center" text="OK" position="264,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<eLabel font="Regular;20" halign="left" valign="center" text="Abort" position="64,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<eLabel font="Regular;20" halign="left" valign="center" text="OK" position="264,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<panel name="template_menu_left" />
@@ -1499,10 +1498,10 @@
 		<ePixmap pixmap="XionHDF/buttons/key_green.png" position="370,338" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_yellow.png" position="70,622" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_blue.png" position="370,622" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
-		<eLabel font="Regular;20" halign="left" valign="center" text="Edit" position="110,325" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_green" position="410,325" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="110,610" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="410,610" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<eLabel font="Regular;20" halign="left" valign="center" text="Edit" position="110,323" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_green" position="410,323" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="110,608" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="410,608" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- TimerSelection -->
@@ -1552,7 +1551,6 @@
 		<widget name="lab2" position="320,80" size="150,24" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" valign="center" transparent="1" />
 		<widget name="key" position="70,605" size="553,25" font="Regular;20" halign="center" valign="center" backgroundColor="XionBackground" />
 		<panel name="template_menu_left" />
-		<panel name="template_colorkey" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- ********** Common Interface ********** -->
@@ -1805,9 +1803,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- PluginBrowser -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser">
 		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" enableWrapAround="1" name="list" position="20,80" size="708,555" transparent="1" />
-		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Remove Plugins" position="64,662" size="148,48" transparent="1" zPosition="1" />
-		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Download Plugins" position="264,662" size="148,48" transparent="1" zPosition="1" />
-		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Lock Plugins" position="664,662" size="148,48" transparent="1" zPosition="1" />
+		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Remove Plugins" position="64,660" size="148,52" transparent="1" zPosition="1" />
+		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Download Plugins" position="264,660" size="148,52" transparent="1" zPosition="1" />
+		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Lock Plugins" position="664,660" size="148,52" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
@@ -2040,10 +2038,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ThreeDSettings" position="0,0" size="1280,720" title="AutoSwitch 3D">
 		<widget name="config" itemHeight="30" font="Regular;22" position="20,80" size="708,540" transparent="1" zPosition="2" />
 		<panel name="template_menu_left" />
-		<widget font="Regular; 20" halign="left" valign="center" source="red" position="64,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" source="green" position="264,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" source="yellow" position="464,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" source="blue" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" source="red" position="64,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" source="green" position="264,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" source="yellow" position="464,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" source="blue" position="664,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_colorbuttons" />
 	</screen>
 		<!-- UI3DSetupScreen -->
@@ -2194,7 +2192,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="list" position="20,80" size="708,540" font="Regular;14" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
-		<panel name="template_colorkey" />
 	</screen>
 	<screen name="FlashImage" position="0,0" size="1280,720" title="FlashImage" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="header" position="30,100" size="500,40" font="Regular;22" transparent="0" noWrap="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
@@ -2210,7 +2207,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="description" render="Label" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" position="840,370" size="430,350" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
-		<panel name="template_colorkey" />
 	</screen>
 		<!-- JobView -->
 	<screen name="JobView" position="0,0" size="1280,720" title="JobView" flags="wfNoBorder" backgroundColor="transparent">
@@ -2218,13 +2214,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" source="job_progress" render="Label" position="285,220" size="280,32" font="Regular2;28" foregroundColor="XionFont2" zPosition="2" halign="center" transparent="1">
 			<convert type="ProgressToText" />
 		</widget>
-		<widget source="cancelable" render="FixedLabel" text="Cancel" position="64,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1">
+		<widget source="cancelable" render="FixedLabel" text="Cancel" position="64,660" size="148,52" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="finished" render="FixedLabel" text="OK" position="264,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" foregroundColor="XionButtonText" backgroundColor="XionBackground" transparent="1">
+		<widget source="finished" render="FixedLabel" text="OK" position="264,660" size="148,52" zPosition="1" font="Regular;20" halign="left" valign="center" foregroundColor="XionButtonText" backgroundColor="XionBackground" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="664,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" foregroundColor="XionButtonText" backgroundColor="XionBackground" transparent="1">
+		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="664,660" size="148,52" zPosition="1" font="Regular;20" halign="left" valign="center" foregroundColor="XionButtonText" backgroundColor="XionBackground" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
@@ -2840,10 +2836,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="SensorToText">
 			</convert>
 		</widget>
-		<widget font="Regular; 20" halign="left" valign="center" source="red" position="64,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" source="green" position="264,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" source="yellow" position="464,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" source="blue" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" source="red" position="64,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" source="green" position="264,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" source="yellow" position="464,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" source="blue" position="664,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_colorbuttons" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -2883,7 +2879,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel text="Team Kraven" position="890,510" size="355,40" font="Regular2;24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="center" />
 		<widget name="AboutScrollLabel" position="70,200" size="655,450" scrollbarMode="showOnDemand" font="Regular;16" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_info1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
-		<eLabel font="Regular; 20" halign="left" valign="center" text="HDF Update Info" position="64,662" size="248,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<eLabel font="Regular; 20" halign="left" valign="center" text="HDF Update Info" position="64,660" size="248,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -3038,7 +3034,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget font="Regular2;23" name="model" position="70,150" size="700,25" transparent="1" />
 		<widget font="Regular2;23" name="capacity" position="70,200" size="700,25" transparent="1" />
 		<widget font="Regular2;23" name="bus" position="70,250" size="700,25" transparent="1" />
-		<widget backgroundColor="XionBackground" halign="left" valign="center" font="Regular2;20" name="initializetext" position="64,662" size="148,48" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget backgroundColor="XionBackground" halign="left" valign="center" font="Regular;20" name="initializetext" position="64,660" size="148,52" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -3135,7 +3131,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left" />
 		<panel name="TemplateButtonRed"/>
 		<panel name="TemplateButtonGreen"/>
-		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="664,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="664,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget name="blue" pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
 		<!-- Backup Software Restore Manager -->
@@ -3215,7 +3211,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="ScrollLabel" scrollbarMode="showNever" position="20,80" size="708,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
 		<widget name="ScrollLabel2" scrollbarMode="showOnDemand" position="70,110" size="1108,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
 		<panel name="template_colorkey" />
-		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- Multiboot Selector -->
@@ -3224,7 +3219,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="options" render="Label" position="40,542" size="730,65" halign="left" font="Regular; 20" backgroundColor="XionBackground" />
 		<widget source="description" render="Label" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" position="840,370" size="430,350" transparent="1" />
 		<panel name="template_menu_left" />
-		<panel name="template_colorkey" />
 		<panel name="template_colorkey" />
 	</screen>
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="MultiBootStartupOPT" position="0,0" size="1280,720" >

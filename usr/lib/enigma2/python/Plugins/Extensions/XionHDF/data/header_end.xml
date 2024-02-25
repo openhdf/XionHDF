@@ -30,32 +30,32 @@
 		<widget source="key_red" render="Pixmap" pixmap="buttons/key_red1.png" position="22,670" size="32,37" alphatest="blend" objectTypes="key_red,StaticText" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="key_red" position="64,662" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_red,Button,Label" transparent="1" halign="left" valign="center" zPosition="1" />
-		<widget source="key_red" render="Label" position="64,650" size="148,48" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_red,StaticText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget name="key_red" position="64,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_red,Button,Label" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget source="key_red" render="Label" position="64,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_red,StaticText" transparent="1" halign="left" valign="center" zPosition="1" />
 	</screen>
 	<screen name="TemplateButtonGreen">
 		<ePixmap pixmap="buttons/key_green1.png" position="222,670" size="32,37" alphatest="blend" objectTypes="key_green,Button,Label" transparent="1" />
 		<widget source="key_green" render="Pixmap" pixmap="buttons/key_green1.png" position="222,670" size="32,37" alphatest="blend" objectTypes="key_green,StaticText" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="key_green" position="264,662" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_green,Button,Label" transparent="1" halign="left" valign="center" zPosition="1" />
-		<widget source="key_green" render="Label" position="264,656" size="148,48" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_green,StaticText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget name="key_green" position="264,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_green,Button,Label" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget source="key_green" render="Label" position="264,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_green,StaticText" transparent="1" halign="left" valign="center" zPosition="1" />
 	</screen>
 	<screen name="TemplateButtonYellow">
 		<ePixmap pixmap="buttons/key_yellow1.png" position="422,670" size="32,37" alphatest="blend" objectTypes="key_yellow,Button,Label" transparent="1" />
 		<widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow1.png" position="422,670" size="32,37" alphatest="blend" objectTypes="key_yellow,StaticText" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="key_yellow" position="464,662" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_yellow,Button,Label" transparent="1" halign="left" valign="center" zPosition="1" />
-		<widget source="key_yellow" render="Label" position="464,656" size="148,48" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_yellow,StaticText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget name="key_yellow" position="464,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_yellow,Button,Label" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget source="key_yellow" render="Label" position="464,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_yellow,StaticText" transparent="1" halign="left" valign="center" zPosition="1" />
 	</screen>
 	<screen name="TemplateButtonBlue">
 		<ePixmap pixmap="buttons/key_blue1.png" position="622,670" size="32,37" alphatest="blend" objectTypes="key_blue,Button,Label" transparent="1" />
 		<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue1.png" position="622,670" size="32,37" alphatest="blend" objectTypes="key_blue,StaticText" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="key_blue" position="664,662" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_blue,Button,Label" transparent="1" halign="left" valign="center" zPosition="1" />
-		<widget source="key_blue" render="Label" position="664,656" size="148,48" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_blue,StaticText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget name="key_blue" position="664,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_blue,Button,Label" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget source="key_blue" render="Label" position="664,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" objectTypes="key_blue,StaticText" transparent="1" halign="left" valign="center" zPosition="1" />
 	</screen>
 	<screen name="template_colorbuttons">
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
@@ -64,15 +64,15 @@
 		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
 	<screen name="template_colorkey_text_button">
-		<widget font="Regular; 20" halign="left" valign="center" name="buttonred" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" name="buttongreen" position="264,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" name="buttonyellow" position="464,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" name="buttonblue" position="664,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" name="buttonred" position="64,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" name="buttongreen" position="264,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" name="buttonyellow" position="464,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" name="buttonblue" position="664,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_colorbuttons" />
 	</screen>
 	<screen name="template_colorkey_text_kp">
-		<eLabel font="Regular; 20" halign="left" valign="center" text="Cancel" position="64,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<eLabel font="Regular; 20" halign="left" valign="center" text="Save" position="264,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<eLabel font="Regular; 20" halign="left" valign="center" text="Cancel" position="64,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<eLabel font="Regular; 20" halign="left" valign="center" text="Save" position="264,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
@@ -127,10 +127,10 @@
 		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget font="Regular; 20" halign="left" valign="center" name="key_red" position="92,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" name="key_green" position="342,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" name="key_yellow" position="592,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular; 20" halign="left" valign="center" name="key_blue" position="842,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="2" />
+		<widget font="Regular; 20" halign="left" valign="center" name="key_red" position="92,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" name="key_green" position="342,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" name="key_yellow" position="592,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" name="key_blue" position="842,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="2" />
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="50,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="300,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="550,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
@@ -177,10 +177,10 @@
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="230,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="501,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="701,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
-		<widget font="Regular2; 20" halign="left" name="key_red" position="63,672" size="150,24" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular2; 20" halign="left" name="key_green" position="263,672" size="150,24" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular2; 20" halign="left" name="key_yellow" position="532,672" size="150,24" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular2; 20" halign="left" name="key_blue" position="732,672" size="150,24" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" name="key_red" position="63,671" size="150,26" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" name="key_green" position="263,671" size="150,26" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" name="key_yellow" position="532,671" size="150,26" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" name="key_blue" position="732,671" size="150,26" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_menu1.png" position="933,668" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_info1.png" position="1075,668" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1228,668" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
