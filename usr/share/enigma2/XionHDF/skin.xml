@@ -4559,8 +4559,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap pixmap="XionHDF/buttons/key_ok.png" position="1232,674" size="32,32" alphatest="blend" />
 		<eLabel backgroundColor="XionLine" position="27,152" size="600,1" zPosition="2" />
 		<eLabel backgroundColor="XionLine" position="653,152" size="600,1" zPosition="2" />
-		<panel name="template_colorkey" />
-		<panel name="template_menu_full" />
+		<panel name="template_menu_left_logo_off" />
+		<panel name="TemplateButtonRed"/>
+		<panel name="TemplateButtonGreen"/>
+		<panel name="TemplateButtonYellow"/>
+		<panel name="TemplateButtonBlue"/>
 	</screen>
 	<screen name="FileCommanderFileStatInfo" position="400,200" size="544,370" title="File/Directory Status Information" flags="wfNoBorder">
 		<widget name="filename" position="10,10" size="532,47" font="Regular;20" />
@@ -4582,7 +4585,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 	<screen name="vEditorScreen" position="0,0" size="1280,720" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="list_head" position="30,80" size="1212,45" font="Regular;20" backgroundColor="XionBackground" transparent="1" />
-		<widget name="filedata" scrollbarMode="showOnDemand" position="30,133" size="1212,500" itemHeight="24" backgroundColor="XionBackground" transparent="1" />
+		<widget name="filedata" scrollbarMode="showOnDemand" position="30,133" size="1212,500" font="Regular;22" itemHeight="28" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_full" />		
 		<!-- ### do not remove this line. Set x-size and font same as is set "input" in InputBoxWide screen ### -->
