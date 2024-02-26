@@ -470,10 +470,10 @@
 		<widget backgroundColor="XionBackground" font="Regular; 20" name="extralabel" position=" 70,170" size="1170,350" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;20" foregroundColor="XionFont2" name="statusbar" position=" 70,595" size="700,28" transparent="1" />
 		<panel name="template_menu_left_logo_off" />
-		<panel name="TemplateButtonRed"/>
-		<panel name="TemplateButtonGreen"/>
-		<panel name="TemplateButtonYellow"/>
-		<panel name="TemplateButtonBlue"/>
+		<panel name="TemplateXionRed"/>
+		<panel name="TemplateXionGreen"/>
+		<panel name="TemplateXionYellow"/>
+		<panel name="TemplateXionBlue"/>
 	</screen>
 		<!-- getCover -->
 	<screen name="getCover" position="0,0" size="1280,720" title="EMC Cover Selecter" flags="wfNoBorder" backgroundColor="transparent">
@@ -2813,11 +2813,11 @@
 		<widget name="spinner_3" zPosition="1" position="190,420" size="16,16" transparent="1" alphatest="blend" />
 		<widget name="spinner_4" zPosition="1" position="206,420" size="16,16" transparent="1" alphatest="blend" />
 		<panel name="template_menu_full" />
-		<panel name="TemplateButtonRed"/>
+		<panel name="TemplateXionRed"/>
 		<widget font="Regular; 20" halign="left" valign="center" name="key_green_ext" position="264,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
-		<panel name="TemplateButtonYellow"/>
-		<panel name="TemplateButtonBlue"/>
+		<panel name="TemplateXionYellow"/>
+		<panel name="TemplateXionBlue"/>
 	</screen>
 	<screen name="IPTVDMWidget" position="0,0" title="E2iPlayer Download Manager" size="1280,720" backgroundColor="transparent">
 		<widget name="list" position="50,80" zPosition="2" size="1200,537" scrollbarMode="showOnDemand" transparent="1" backgroundColor="XionBackground" enableWrapAround="1" />
