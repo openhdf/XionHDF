@@ -148,4 +148,6 @@ def justSave():
 		else:
 			os.rename(TMPFILE, FILE)
 			debug('rename : ' + TMPFILE + ' to ' + FILE + "\n")
+
+	print("[SkinRestore]: XionHDF successfully restored")
 	return 0
