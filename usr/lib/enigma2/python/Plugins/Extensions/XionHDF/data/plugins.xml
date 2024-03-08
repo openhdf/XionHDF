@@ -3280,6 +3280,6 @@
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
 	</screen>
-	<screen name="HDFRadioPVRState" position="210,620" size="40,38" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
+	<screen name="HDFRadioPVRState" position="210,620" size="40,38" flags="wfNoBorder" backgroundColor="XionBackground" zPosition="99">
 		<widget backgroundColor="transparent" name="state" font="HDFRadioRegular;30" foregroundColor="XionFont2" position="0,0" size="40,38" transparent="1" />
 	</screen>
