@@ -3016,6 +3016,7 @@
 		<panel name="template_menu_left_logo_off" />
 		<panel name="TemplateXionRed" />
 		<panel name="TemplateXionGreen" />
+		<panel name="TemplateXionBlue" />
 	</screen>
 	<screen name="HDFRadioBrowser" position="0,0" size="1280,720" flags="wfNoBorder" title="HDFRadioBrowser" backgroundColor="transparent">
 		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
