@@ -2122,6 +2122,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap pixmap="XionHDF/buttons/key_ok.png" alphatest="blend" position="35,387" size="32,32" zPosition="3" />
 		<eLabel text="Selection" backgroundColor="Xionbackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" position="75,393" size="220,30" transparent="1" zPosition="3" />
 	</screen>
+	<!--  QuickSubtitlesConfigMenu  -->
+	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="QuickSubtitlesConfigMenu" position="center,center" size="735,402" title="Subtitle settings">
+		<widget backgroundColor="XionBackground" name="config" font="Regular;22" secondfont="Regular;22" position="10,7" size="708,380" foregroundColor="XionFont1" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="videofps" position="8,370" size="708,27" font="Regular;21" foregroundColor="XionFont2" zPosition="1" transparent="1"/>
+		<!--eLabel position="0,400" size="735,2" backgroundColor="XionLine" zPosition="-8"/>
+		<eLabel position="733,0" size="2,400" backgroundColor="XionLine" zPosition="-8"/-->
+	</screen>
 		<!-- Change_volume -->
 	<screen name="Change_volume" position="0,0" size="1280,720" title="Change Volume offset" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="config" position="20,80" size="708,540" itemHeight="30" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
