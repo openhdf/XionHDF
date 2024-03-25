@@ -3341,14 +3341,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
-	<screen name="Flash_Online" position="0,0" size="1280,720" title="FlashOnline" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="list" position="20,80" size="708,540" font="Regular;14" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
-		<widget source="description" render="Label" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" position="840,370" size="430,350" transparent="1" />
-		<panel name="template_menu_left" />
-		<panel name="template_colorkey" />
-	</screen>
 	<screen name="SelectImage" position="0,0" size="1280,720" title="FlashOnline" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="list" position="20,80" size="708,540" font="Regular;14" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="description" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" position="840,370" size="430,350" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
