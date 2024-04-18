@@ -124,8 +124,8 @@
 				}
 			</convert>
 		</widget>
-		<widget name="list_left" position="27,157" size="600,465" itemHeight="33" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
-		<widget name="list_right" position="653,157" size="600,465" itemHeight="33" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+		<widget name="list_left" position="27,157" size="600,465" itemHeight="31" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+		<widget name="list_right" position="653,157" size="600,465" itemHeight="31" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
 		<widget name="list_left_free" position="27,626" size="100,22" font="Regular; 18" backgroundColor="XionBackground" transparent="1" foregroundColor="yellow" />
 		<!-- for FileCommanderScreenFileSelect, do not remove it -->
 		<widget name="list_right_free" position="653,626" size="100,22" font="Regular; 18" backgroundColor="XionBackground" transparent="1" foregroundColor="yellow" />
@@ -2820,8 +2820,8 @@
 		<panel name="TemplateXionBlue"/>
 	</screen>
 	<screen name="IPTVDMWidget" position="0,0" title="E2iPlayer Download Manager" size="1280,720" backgroundColor="transparent">
-		<widget name="list" position="50,80" zPosition="2" size="1200,537" scrollbarMode="showOnDemand" transparent="1" backgroundColor="XionBackground" enableWrapAround="1" />
-		<widget name="titel" position="800,30" zPosition="1" size="1200,23" font="Regular;18" transparent="1" backgroundColor="XionBackground" />
+		<widget name="list" position="50,80" zPosition="2" size="1200,537" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" backgroundColor="XionBackground" enableWrapAround="1" />
+		<widget name="titel" position="800,30" zPosition="1" size="1200,23" font="Regular;22" transparent="1" backgroundColor="XionBackground" />
 		<panel name="template_menu_full" />
 		<panel name="template_colorkey" />
 	</screen>
