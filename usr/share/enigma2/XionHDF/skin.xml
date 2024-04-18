@@ -58,6 +58,12 @@
 		<alias name="PlayList" font="Regular" size="20" height="30" />
 		<alias name="ServiceInfo" font="Regular" size="20" height="30" />
 		<alias name="VirtualKeyboard" font="Regular" size="24" height="45" />
+		<!--alias name="iptvupdatelistitem_0" font="Regular" size="20" height="34" /-->
+		<!--alias name="iptvupdatelistitem_1" font="Regular" size="20" height="50" /-->
+		<alias name="iptvdwnlistitem_0" font="Regular" size="24" height="25"/>
+		<alias name="iptvdwnlistitem_1" font="Regular" size="15" height="20"/>
+		<alias name="iptvdwnlistitem_2" font="Regular" size="20" height="22"/>
+		<alias name="iptvlistitem" font="Regular" size="20" height="25"/>
 	</fonts>
 	<parameters>
 		<parameter name="SelectionListDescr" value="40,4,1042,41" />
