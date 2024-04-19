@@ -2825,6 +2825,22 @@
 		<panel name="template_menu_full" />
 		<panel name="template_colorkey" />
 	</screen>
+	<screen name="IPTVArticleRichVisualizer" position="center,center" size="1280,720" title="Info..." flags="wfNoBorder" backgroundColor="XionBackground">
+		<widget name="title" position="30,12" size="1280,44" font="Regular; 30" backgroundColor="background" borderColor="black" borderWidth="2" foregroundColor="#000E83F5" shadowColor="black" shadowOffset="-1,-1" transparent="1" halign="center" />
+		<eLabel backgroundColor="XionLine" position="center,293" size="950,1" zPosition="2" />
+		<widget name="cover" position="1050,0" size="150,350" zPosition="3" alphatest="blend" borderWidth="0" borderColor="background" />
+		<widget name="text" position="30,300" size="1180,480" zPosition="1" halign="left" font="Regular;26" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="dsc_label_1" noWrap="1" position="0,80" zPosition="10" size="220,40" font="Regular;32" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="#000E83F5" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="dsc_text_1" noWrap="1" position="240,80" zPosition="10" size="750,40" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="background" foregroundColor="#00EFEFEF" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="dsc_label_2" noWrap="1" position="0,120" zPosition="10" size="220,40" font="Regular;32" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="#000E83F5" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="dsc_text_2" noWrap="1" position="240,120" zPosition="10" size="750,40" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="background" foregroundColor="#00EFEFEF" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="dsc_label_3" noWrap="1" position="0,160" zPosition="10" size="220,40" font="Regular;32" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="#000E83F5" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="dsc_text_3" noWrap="1" position="240,160" zPosition="10" size="750,40" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="background" foregroundColor="#00EFEFEF" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="dsc_label_4" noWrap="1" position="0,200" zPosition="10" size="220,40" font="Regular;32" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="#000E83F5" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="dsc_text_4" noWrap="1" position="240,200" zPosition="10" size="750,40" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="background" foregroundColor="#00EFEFEF" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="dsc_label_5" noWrap="1" position="0,240" zPosition="10" size="220,40" font="Regular;32" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="#000E83F5" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="dsc_text_5" noWrap="1" position="240,240" zPosition="10" size="750,40" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="background" foregroundColor="#00EFEFEF" shadowColor="black" shadowOffset="-1,-1" />
+	</screen>
 	<screen name="IPTVDMNotificationWidget" position="center,70" zPosition="10" size="550,60" title="IPTVPlayer downloader" backgroundColor="XionBackground" >
 		<widget name="message_label" font="Regular;22" position="0,0" zPosition="2" valign="center" halign="center" size="550,60" backgroundColor="XionBackground" transparent="1" />
 	</screen>
