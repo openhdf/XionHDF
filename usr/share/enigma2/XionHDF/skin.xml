@@ -3271,7 +3271,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 	<!--  QuickSubtitlesConfigMenu  -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="QuickSubtitlesConfigMenu" position="center,center" size="735,402" title="Subtitle settings">
-		<widget backgroundColor="XionBackground" name="config" font="Regular;22" secondfont="Regular;22" position="10,7" size="708,380" foregroundColor="XionFont1" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="config" font="Regular;20" secondfont="Regular;20" position="10,7" size="708,380" foregroundColor="XionFont1" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="videofps" position="8,370" size="708,27" font="Regular;21" foregroundColor="XionFont2" zPosition="1" transparent="1"/>
 		<!--eLabel position="0,400" size="735,2" backgroundColor="XionLine" zPosition="-8"/>
 		<eLabel position="733,0" size="2,400" backgroundColor="XionLine" zPosition="-8"/-->
