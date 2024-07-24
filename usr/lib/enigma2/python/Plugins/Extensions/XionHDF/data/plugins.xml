@@ -3164,6 +3164,32 @@
 		<panel name="template_menu_left_logo_off" />
 		<panel name="TemplateXionRed" />
 	</screen>
+	<screen name="HDFRadioInfo" position="0,0" size="1280,720" flags="wfNoBorder" title="HDF-Radio Info" backgroundColor="transparent">
+		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget name="record" position="910,10" size="300,40" font="Regular;26" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="red" />
+		<widget backgroundColor="XionBackground" name="artistname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,78" size="160,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="artist" render="Label" font="Regular;22" foregroundColor="XionFont1" position="202,78" size="1036,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="songname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,108" size="160,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="song" render="Label" font="Regular;22" foregroundColor="XionFont1" position="202,108" size="1036,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="albumname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,138" size="160,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="album" render="Label" font="Regular;22" foregroundColor="XionFont1" position="202,138" size="1036,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="stationname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,168" size="160,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="station" render="Label" font="Regular;22" foregroundColor="XionFont1" position="202,168" size="1036,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="description" font="Regular;24" foregroundColor="XionFont1" position="42,210" size="960,390" scrollbarWidth="8" transparent="1" />
+		<widget backgroundColor="XionBackground" source="source" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,612" size="960,27" valign="center" transparent="1" />
+		<widget backgroundColor="#00000000" name="cover" position="1038,210" size="200,200" zPosition="1" />
+		<widget backgroundColor="XionBackground" name="bitratename" position="1038,612" size="90,27" font="Regular2;22" foregroundColor="XionFont2" halign="center" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="bitrate" position="1128,612" size="110,27" font="Regular;22" foregroundColor="XionFont1" halign="center" valign="center" transparent="1" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<panel name="template_menu_left_logo_off" />
+		<panel name="TemplateXionRed" />
+		<widget source="key_yellow" render="Label" position="464,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget name="yellow" pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+	</screen>
 	<screen name="HDFRadioPlayer" position="0,0" size="1280,720" flags="wfNoBorder" title="HDF-Radio Player" backgroundColor="transparent">
 		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
