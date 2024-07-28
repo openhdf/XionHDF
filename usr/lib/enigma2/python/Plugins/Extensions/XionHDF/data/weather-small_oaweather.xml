@@ -1,0 +1,15 @@
+		<!-- /* Weather -->
+		<widget backgroundColor="XionBackground" source="session.OAWeather" transparent="1" zPosition="8" position="1030,30" size="70,70" render="OAWeatherPixmap" alphatest="blend" scale="1">
+			<convert type="OAWeather">weathericon,current</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular2; 30" foregroundColor="XionFont2" render="Label" position="1100,42" size="80,40" source="session.OAWeather" zPosition="3" halign="center" valign="center" transparent="1">
+			<convert type="OAWeather">temperature_current</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 20" foregroundColor="XionFont1" render="Label" position="1180,33" size="60,26" source="session.OAWeather" zPosition="8" halign="center" valign="center" transparent="1">
+			<convert type="OAWeather">temperature_high,day1</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 20" foregroundColor="XionFont1" render="Label" position="1180,66" size="60,26" source="session.OAWeather" zPosition="8" halign="center" valign="center" transparent="1">
+			<convert type="OAWeather">temperature_low,day1</convert>
+		</widget>
+		<ePixmap pixmap="XionHDF/ibaror.png" position="0,0" size="1280,443" zPosition="-9" />
+		<!-- Weather */-->

@@ -150,6 +150,16 @@ config.plugins.XionHDF.RunningText = ConfigSelection(default="movetype=running",
 				("movetype=none", _("Off"))
 				])
 
+IconsList = [("none", _("off"))]
+IconDir = "/usr/share/enigma2/WeatherIconSets"
+if os.path.exists(IconDir):
+	folders = os.listdir(IconDir)
+	for folder in folders:
+		folderpath = os.path.join(IconDir, folder)
+		if os.path.isdir(folderpath):
+			IconsList.append((folder, folder))
+config.plugins.XionHDF.CustomWeatherFolder = ConfigSelection(default="none", choices=IconsList)
+
 config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", choices=[
 				("weather-off", _("Off")),
 				("weather-info", _("Infos in place of weather")),

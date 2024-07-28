@@ -34,7 +34,7 @@ from Components.Pixmap import Pixmap
 from Components.Label import Label
 import gettext, time, subprocess, re, requests, json, os
 from boxbranding import getBoxType, getImageArch
-from enigma import ePicLoad, getDesktop
+from enigma import ePicLoad, getDesktop, eTimer
 from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
 from .ChangeSkin import *
 FILE = "/usr/share/enigma2/XionHDF/skin.xml"
@@ -172,13 +172,20 @@ config.plugins.XionHDF.RunningText = ConfigSelection(default="movetype=running",
 				("movetype=none", _("Off"))
 				])
 
-config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", choices=[
-				("weather-off", _("Off")),
-				("weather-info", _("Infos in place of weather")),
-				("weather-big", _("Big")),
-				("weather-slim", _("Slim")),
-				("weather-small", _("Small"))
-				])
+WeatherStyleList = [
+	("weather-off", _("Off")),
+	("weather-info", _("Infos in place of weather")),
+	("weather-big", _("Big")),
+	("weather-slim", _("Slim")),
+	("weather-small", _("Small"))
+	]
+if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/OAWeather/plugin.pyc"):
+	WeatherStyleList.append(("weather-big_oaweather", _("Big") + " (OAWeather)"))
+	WeatherStyleList.append(("weather-slim_oaweather", _("Slim") + " (OAWeather)"))
+	WeatherStyleList.append(("weather-small_oaweather", _("Small") + " (OAWeather)"))
+
+config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", choices=WeatherStyleList)
+config.plugins.XionHDF.OAWeatherSetup = ConfigSelection(default="oaweather", choices=[("oaweather", "    ")])
 
 config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showNever", choices=[
 				("showOnDemand", _("On")),
@@ -261,10 +268,18 @@ class XionHDF(ConfigListScreen, Screen):
 		self["help"] = StaticText()
 		self.searchString = str(config.plugins.XionHDF.weather_cityname.value)
 
-		ConfigListScreen.__init__(self, self.mylist(), session=session, on_change=self.__selectionChanged)
+		list = []
+		ConfigListScreen.__init__(self, list)
 
 		self["actions"] = ActionMap(["OkCancelActions", "DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft, "down": self.keyDown, "up": self.keyUp, "right": self.keyRight, "red": self.exit, "yellow": self.reboot, "blue": self.showInfo, "green": self.checkWeather, "cancel": self.exit, "ok": self.keyOK}, -1)
-		self.onLayoutFinish.append(self.UpdatePicture)
+
+		self.timer = eTimer()
+		self.timer.callback.append(self.mylist)
+		self.onLayoutFinish.append(self.mylist)
+		self.onLayoutFinish.append(self.updatePicture)
+
+	def updateMylist(self):
+		self.timer.start(50, True)
 
 	def mylist(self):
 		list = []
@@ -278,8 +293,12 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("EnhancedMovieCenter"), config.plugins.XionHDF.EMCStyle, _("This option changes the view of cover inside from EnhancedMovieCenter.")))
 		list.append(getConfigListEntry(_("MovieSelection"), config.plugins.XionHDF.MovieStyle, _("This option changes the view of cover inside from MovieSelection.")))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
-		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_cityname, _("Here you can insert your city, district, zip code or alltogether.\nLeave blank to automatically detect your location via the IP adress.\nPress OK to insert your location manually.")))
-		list.append(getConfigListEntry(_("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
+		if not config.plugins.XionHDF.WeatherStyle.value in ("weather-off", "weather-info"):
+			if "_oaweather" in config.plugins.XionHDF.WeatherStyle.value:
+				list.append(getConfigListEntry("   " + _("OAWeather setup"), config.plugins.XionHDF.OAWeatherSetup, _("Press OK to setup the 'OAWeather' plugin.")))
+			if config.plugins.XionHDF.WeatherStyle.value in ("weather-big", "weather-slim", "weather-small"):
+				list.append(getConfigListEntry("   " + _("Weather ID"), config.plugins.XionHDF.weather_cityname, _("Here you can insert your city, district, zip code or alltogether.\nLeave blank to automatically detect your location via the IP adress.\nPress OK to insert your location manually.")))
+				list.append(getConfigListEntry("   " + _("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
 		list.append(getConfigListEntry(_("Line"), config.plugins.XionHDF.Line, _("Please select the color of lines inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection"), config.plugins.XionHDF.SelectionBackground, _("Please select the color of listselection inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection border"), config.plugins.XionHDF.SelectionBorder, _("Please select the bordercolor of selection bars or deactivate borders completely.")))
@@ -291,13 +310,11 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Button text"), config.plugins.XionHDF.ButtonText, _("Please select the color of button text inside the skin.")))
 		list.append(getConfigListEntry(_("Font normal height in %"), config.plugins.XionHDF.FontStyleHeight_1, _("This option changes the height of normal font.")))
 		list.append(getConfigListEntry(_("Font bold height in %"), config.plugins.XionHDF.FontStyleHeight_2, _("This option changes the height of bold font.")))
-		return list
 
-	def __selectionChanged(self):
-		returnValue = self["config"].getCurrent()
-		self.debug(str(returnValue))
-		if str(returnValue) == 'Weather ID' or str(returnValue) == 'Wetter ID':
-			self["config"].setList(self.mylist())
+		self["config"].list = list
+		self["config"].l.setList(list)
+		self.showPicture()
+		self.updateHelp()
 
 	def updateHelp(self):
 		cur = self["config"].getCurrent()
@@ -384,41 +401,46 @@ class XionHDF(ConfigListScreen, Screen):
 		except:
 			return "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/fb.jpg"
 
-	def UpdatePicture(self):
-		self.PicLoad.PictureData.get().append(self.DecodePicture)
-		self.onLayoutFinish.append(self.ShowPicture)
+	def updatePicture(self):
+		self.PicLoad.PictureData.get().append(self.decodePicture)
+		self.onLayoutFinish.append(self.showPicture)
 
-	def ShowPicture(self):
+	def showPicture(self):
 		self.PicLoad.setPara([self["helperimage"].instance.size().width(), self["helperimage"].instance.size().height(), 1, 1, 0, 1, "#002C2C39"])
 		self.PicLoad.startDecode(self.GetPicturePath())
 
-	def DecodePicture(self, PicInfo=""):
+	def decodePicture(self, PicInfo=""):
 		ptr = self.PicLoad.getData()
 		self["helperimage"].instance.setPixmap(ptr)
 
 	def keyLeft(self):
 		ConfigListScreen.keyLeft(self)
-		self.ShowPicture()
+		self.updateMylist()
 
 	def keyRight(self):
 		ConfigListScreen.keyRight(self)
-		self.ShowPicture()
+		self.updateMylist()
 
 	def keyDown(self):
 		self["config"].instance.moveSelection(self["config"].instance.moveDown)
-		self.ShowPicture()
-		self.updateHelp()
+		self.updateMylist()
 
 	def keyUp(self):
 		self["config"].instance.moveSelection(self["config"].instance.moveUp)
-		self.ShowPicture()
-		self.updateHelp()
+		self.updateMylist()
 
 	def keyOK(self):
-		if isinstance(self["config"].getCurrent()[1], ConfigText):
+		option = self["config"].getCurrent()[1]
+		if option == config.plugins.XionHDF.weather_cityname:
 			text = self["config"].getCurrent()[1].value
 			title = _("Enter the city name of your location:")
 			self.session.openWithCallback(self.keyVirtualKeyBoardCallBack, VirtualKeyBoard, title=title, text=text)
+		elif option == config.plugins.XionHDF.OAWeatherSetup:
+			try:
+				from Plugins.Extensions.OAWeather.plugin import WeatherSettingsViewNew
+				self.session.open(WeatherSettingsViewNew)
+			except:
+				pass
 
 	def keyVirtualKeyBoardCallBack(self, callback):
 		try:

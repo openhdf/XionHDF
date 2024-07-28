@@ -619,3 +619,9 @@ msgstr "Gewitter mit leichtem Hagel"
 
 msgid "thunderstorm with heavy hail"
 msgstr "Gewitter mit starkem Hagel"
+
+msgid "OAWeather setup"
+msgstr "OAWeather Einstellungen"
+
+msgid "Press OK to setup the 'OAWeather' plugin."
+msgstr "Drücken Sie OK, um das 'OAWeather' Plugin einzurichten."

@@ -1,0 +1,99 @@
+		<!-- /* Weather -->
+		<widget backgroundColor="XionBackground" font="Regular2; 20" foregroundColor="XionFont2" render="Label" position="22,22" size="60,25" source="session.OAWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+			<convert type="OAWeather">weekshortday,day1</convert>
+		</widget>
+		<widget source="session.OAWeather" position="83,10" transparent="1" zPosition="8" size="50,50" render="OAWeatherPixmap" alphatest="blend" scale="1">
+			<convert type="OAWeather">weathericon,current</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 16" foregroundColor="XionFont2" render="Label" position="40,60" size="148,42" source="session.OAWeather" halign="center" transparent="1" zPosition="8" valign="center">
+			<convert type="OAWeather">temperature_text,current</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="133,10" size="60,25" source="session.OAWeather" zPosition="8" halign="center" transparent="1">
+			<convert type="OAWeather">temperature_high,day1</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="133,35" size="60,25" source="session.OAWeather" zPosition="8" halign="center" transparent="1">
+			<convert type="OAWeather">temperature_low,day1</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 20" foregroundColor="XionFont2" render="Label" position="208,22" size="60,25" source="session.OAWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+			<convert type="OAWeather">weekshortday,day2</convert>
+		</widget>
+		<widget source="session.OAWeather" position="269,10" transparent="1" zPosition="8" size="50,50" render="OAWeatherPixmap" alphatest="blend" scale="1">
+			<convert type="OAWeather">weathericon,day2</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 16" foregroundColor="XionFont2" render="Label" position="226,61" size="148,42" source="session.OAWeather" halign="center" transparent="1" zPosition="8" valign="center">
+			<convert type="OAWeather">temperature_text,day2</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="319,10" size="60,25" source="session.OAWeather" zPosition="8" halign="center" transparent="1">
+			<convert type="OAWeather">temperature_high,day2</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="319,35" size="60,25" source="session.OAWeather" zPosition="8" halign="center" transparent="1">
+			<convert type="OAWeather">temperature_low,day2</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 20" foregroundColor="XionFont2" render="Label" position="394,22" size="60,25" source="session.OAWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+			<convert type="OAWeather">weekshortday,day3</convert>
+		</widget>
+		<widget source="session.OAWeather" position="455,10" transparent="1" zPosition="8" size="50,50" render="OAWeatherPixmap" alphatest="blend" scale="1">
+			<convert type="OAWeather">weathericon,day3</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 16" foregroundColor="XionFont2" render="Label" position="412,61" size="148,42" source="session.OAWeather" halign="center" transparent="1" zPosition="8" valign="center">
+			<convert type="OAWeather">temperature_text,day3</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="505,10" size="60,25" source="session.OAWeather" zPosition="8" halign="center" transparent="1">
+			<convert type="OAWeather">temperature_high,day3</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="505,35" size="60,25" source="session.OAWeather" zPosition="8" halign="center" transparent="1">
+			<convert type="OAWeather">temperature_low,day3</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 20" foregroundColor="XionFont2" render="Label" position="580,22" size="60,25" source="session.OAWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+			<convert type="OAWeather">weekshortday,day4</convert>
+		</widget>
+		<widget source="session.OAWeather" position="641,10" transparent="1" zPosition="8" size="50,50" render="OAWeatherPixmap" alphatest="blend" scale="1">
+			<convert type="OAWeather">weathericon,day4</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 16" foregroundColor="XionFont2" render="Label" position="598,61" size="148,42" source="session.OAWeather" halign="center" transparent="1" zPosition="8" valign="center">
+			<convert type="OAWeather">temperature_text,day4</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="691,10" size="60,25" source="session.OAWeather" zPosition="8" halign="center" transparent="1">
+			<convert type="OAWeather">temperature_high,day4</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="691,35" size="60,25" source="session.OAWeather" zPosition="8" halign="center" transparent="1">
+			<convert type="OAWeather">temperature_low,day4</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 20" foregroundColor="XionFont2" render="Label" position="766,22" size="60,25" source="session.OAWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+			<convert type="OAWeather">weekshortday,day5</convert>
+		</widget>
+		<widget source="session.OAWeather" position="827,10" transparent="1" zPosition="8" size="50,50" render="OAWeatherPixmap" alphatest="blend" scale="1">
+			<convert type="OAWeather">weathericon,day5</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 16" foregroundColor="XionFont2" render="Label" position="784,61" size="148,42" source="session.OAWeather" halign="center" transparent="1" zPosition="8" valign="center">
+			<convert type="OAWeather">temperature_text,day5</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="877,10" size="60,25" source="session.OAWeather" zPosition="8" halign="center" transparent="1">
+			<convert type="OAWeather">temperature_high,day5</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="877,35" size="60,25" source="session.OAWeather" zPosition="8" halign="center" transparent="1">
+			<convert type="OAWeather">temperature_low,day5</convert>
+		</widget>
+		<eLabel text="Temp:" position="982,8" size="64,23" zPosition="5" font="Regular2;18" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1" />
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular;18" foregroundColor="XionFont1" render="Label" position="1046,8" size="50,23" source="session.OAWeather" zPosition="3" valign="center" transparent="1">
+			<convert type="OAWeather">temperature_current</convert>
+		</widget>
+		<eLabel text=", gefühlt" position="1096,8" size="70,23" zPosition="3" font="Regular;18" backgroundColor="XionBackground" foregroundColor="XionFont1" valign="center" noWrap="1" transparent="1" />
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular;18" foregroundColor="XionFont1" render="Label" position="1168,8" size="60,23" source="session.OAWeather" zPosition="3" valign="center" transparent="1">
+			<convert type="OAWeather">feelslike</convert>
+		</widget>
+		<eLabel text="Wind:" position="982,32" size="64,23" zPosition="5" font="Regular2;18" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1" />
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular;18" foregroundColor="XionFont1" render="Label" position="1046,32" size="215,23" source="session.OAWeather" zPosition="3" transparent="1">
+			<convert type="OAWeather">winddisplay</convert>
+		</widget>
+		<eLabel text="Klima:" position="982,56" size="64,23" zPosition="5" font="Regular2;18" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1" />
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular;18" foregroundColor="XionFont1" render="Label" position="1046,56" size="52,23" source="session.OAWeather" zPosition="3" valign="center" transparent="1">
+			<convert type="OAWeather">humidity</convert>
+		</widget>
+		<eLabel text="Luftfeuchtigkeit" position="1098,56" size="148,23" zPosition="3" font="Regular;18" backgroundColor="XionBackground" foregroundColor="XionFont1" halign="left" valign="center" noWrap="1" transparent="1" />
+		<eLabel text="Ort:" position="982,80" size="64,23" zPosition="5" font="Regular2;18" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1" />
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular;18" foregroundColor="XionFont1" render="Label" position="1046,80" size="216,23" source="session.OAWeather" zPosition="3" transparent="1">
+			<convert type="OAWeather">city</convert>
+		</widget>
+		<ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,443" zPosition="-9" />
+		<!-- Weather */-->
