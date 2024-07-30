@@ -2813,11 +2813,9 @@
 		<widget name="spinner_3" zPosition="1" position="190,420" size="16,16" transparent="1" alphatest="blend" />
 		<widget name="spinner_4" zPosition="1" position="206,420" size="16,16" transparent="1" alphatest="blend" />
 		<panel name="template_menu_full" />
-		<panel name="TemplateXionRed"/>
+		<panel name="template_colorkey" />
 		<widget font="Regular; 20" halign="left" valign="center" name="key_green_ext" position="264,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
-		<panel name="TemplateXionYellow"/>
-		<panel name="TemplateXionBlue"/>
 	</screen>
 	<screen name="IPTVDMWidget" position="0,0" title="E2iPlayer Download Manager" size="1280,720" backgroundColor="transparent">
 		<widget name="list" position="50,80" zPosition="2" size="1200,460" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" backgroundColor="XionBackground" enableWrapAround="1" />
