@@ -3255,7 +3255,7 @@
 		<widget name="green" pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
 	<screen name="HDFRadioYTPlayer" position="0,0" size="1280,720" flags="wfNoBorder" title="InfoBar" backgroundColor="transparent">
-		<widget backgroundColor="transparent" name="cover" position="55,615" size="100,100" />
+		<widget backgroundColor="transparent" name="cover" position="24,556" size="160,160" />
 		<widget backgroundColor="XionBackground" font="HDFRadioRegular;30" foregroundColor="XionFont2" noWrap="1" position="257,620" render="Label" size="653,38" source="session.CurrentService" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
