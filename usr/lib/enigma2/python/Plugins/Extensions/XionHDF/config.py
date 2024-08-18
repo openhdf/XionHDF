@@ -150,23 +150,20 @@ config.plugins.XionHDF.RunningText = ConfigSelection(default="movetype=running",
 				("movetype=none", _("Off"))
 				])
 
-IconsList = [("none", _("off"))]
-IconDir = "/usr/share/enigma2/WeatherIconSets"
-if os.path.exists(IconDir):
-	folders = os.listdir(IconDir)
-	for folder in folders:
-		folderpath = os.path.join(IconDir, folder)
-		if os.path.isdir(folderpath):
-			IconsList.append((folder, folder))
-config.plugins.XionHDF.CustomWeatherFolder = ConfigSelection(default="none", choices=IconsList)
+WeatherStyleList = [
+	("weather-off", _("Off")),
+	("weather-info", _("Infos in place of weather")),
+	("weather-big", _("Big")),
+	("weather-slim", _("Slim")),
+	("weather-small", _("Small"))
+	]
+if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/OAWeather/plugin.pyc"):
+	WeatherStyleList.append(("weather-big_oaweather", _("Big") + " (OAWeather)"))
+	WeatherStyleList.append(("weather-slim_oaweather", _("Slim") + " (OAWeather)"))
+	WeatherStyleList.append(("weather-small_oaweather", _("Small") + " (OAWeather)"))
 
-config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", choices=[
-				("weather-off", _("Off")),
-				("weather-info", _("Infos in place of weather")),
-				("weather-big", _("Big")),
-				("weather-slim", _("Slim")),
-				("weather-small", _("Small"))
-				])
+config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", choices=WeatherStyleList)
+config.plugins.XionHDF.OAWeatherSetup = ConfigSelection(default="oaweather", choices=[("oaweather", "    ")])
 
 config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showNever", choices=[
 				("showOnDemand", _("On")),
