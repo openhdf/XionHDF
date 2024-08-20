@@ -7589,6 +7589,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" name="lyrics" font="Regular;24" foregroundColor="XionFont2" position="470,120" size="780,510" scrollbarMode="showOnDemand" transparent="1" />
 		<widget backgroundColor="XionBackground" source="running" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=4000,steptime=50,wrap=1,always=0,oneshot=1" font="Regular;24" foregroundColor="XionFont2" position="470,120" size="780,510" transparent="1" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<ePixmap pixmap="XionHDF/buttons/key_epg.png" position="1130,670" size="32,32" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1190,670" size="32,32" alphatest="blend" />
 		<panel name="template_menu_left_logo_off" />
 		<panel name="TemplateXionRed" />
