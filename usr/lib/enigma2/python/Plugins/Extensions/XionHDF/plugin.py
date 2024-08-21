@@ -273,13 +273,13 @@ class XionHDF(ConfigListScreen, Screen):
 
 		self["actions"] = ActionMap(["OkCancelActions", "DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft, "down": self.keyDown, "up": self.keyUp, "right": self.keyRight, "red": self.exit, "yellow": self.reboot, "blue": self.showInfo, "green": self.checkWeather, "cancel": self.exit, "ok": self.keyOK}, -1)
 
+		self.updatePicture()
 		self.timer = eTimer()
 		self.timer.callback.append(self.mylist)
-		self.onLayoutFinish.append(self.mylist)
-		self.onLayoutFinish.append(self.updatePicture)
+		self.onLayoutFinish.append(self.updateMylist)
 
 	def updateMylist(self):
-		self.timer.start(50, True)
+		self.timer.start(100, True)
 
 	def mylist(self):
 		list = []
@@ -407,7 +407,11 @@ class XionHDF(ConfigListScreen, Screen):
 
 	def showPicture(self):
 		self.PicLoad.setPara([self["helperimage"].instance.size().width(), self["helperimage"].instance.size().height(), 1, 1, 0, 1, "#002C2C39"])
-		self.PicLoad.startDecode(self.GetPicturePath())
+		if self.picPath is not None:
+			self.picPath = None
+			self.PicLoad.startDecode(self.picPath)
+		else:
+			self.PicLoad.startDecode(self.GetPicturePath())
 
 	def decodePicture(self, PicInfo=""):
 		ptr = self.PicLoad.getData()
