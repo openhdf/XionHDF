@@ -2950,9 +2950,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- PluginBrowser -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser">
 		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" enableWrapAround="1" name="list" position="20,80" size="708,555" transparent="1" />
-		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Remove Plugins" position="64,660" size="148,52" transparent="1" zPosition="1" />
-		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Download Plugins" position="264,660" size="148,52" transparent="1" zPosition="1" />
-		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Lock Plugins" position="664,660" size="148,52" transparent="1" zPosition="1" />
+		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" name="red" position="64,660" size="148,52" transparent="1" zPosition="1" />
+		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" name="green" position="264,660" size="148,52" transparent="1" zPosition="1" />
+		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" name="blue" position="664,660" size="148,52" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
