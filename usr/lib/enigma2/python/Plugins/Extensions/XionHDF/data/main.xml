@@ -10,7 +10,7 @@
 	</screen>
 	<screen name="ChoiceBox" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1280,720">
 		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont2" position="70,12" size="1148,46" render="Label" source="Title" halign="left" valign="center" transparent="1" />
-		<widget name="list" backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;20" position="70,125" size="1100,480" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="list" backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;20" position="70,125" size="1100,480" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget name="text" backgroundColor="XionBackground" font="Regular;20" halign="left" position="35,71" size="1248,145" foregroundColor="XionFont2" transparent="1" />
 		<panel name="template_choicebox" />
 	</screen>
@@ -24,7 +24,7 @@
 		<panel name="template_menu_left" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HdmiCECSetupScreen" position="0,0" size="1280,720" title="HDMI CEC setup">
-		<widget name="config" itemHeight="27" font="Regular;22" position="20,80" size="708,547" transparent="1" zPosition="2" foregroundColor="XionFont1" />
+		<widget name="config" itemHeight="27" font="Regular;22" position="20,80" size="708,547" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="2" foregroundColor="XionFont1" />
 		<widget source="current_address" render="Label" position="10,623" size="500,30" zPosition="10" font="Regular2; 16" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
 		<widget source="fixed_address" render="Label" position="280,623" size="500,30" zPosition="10" font="Regular2; 16" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
 		<widget name="description" position="820,360" size="420,280" zPosition="1" font="Regular;20" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="center" transparent="1" valign="top" />
@@ -32,7 +32,7 @@
 		<panel name="template_menu_left" />
 	</screen>
 	<screen name="HistoryZapSelector" position="0,0" size="1280,720" title="History Zap" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="menu" render="Listbox" position="10,80" size="1260,540" backgroundColor="XionBackground" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="menu" render="Listbox" position="10,80" size="1260,540" backgroundColor="XionBackground" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 10), size = (10, 20), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -58,17 +58,17 @@
 		<widget name="key_green" position="180,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
 		<widget name="key_yellow" position="320,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
 		<widget name="key_blue" position="460,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
-		<widget name="list" position="10,40" size="540,475" scrollbarMode="showOnDemand" itemHeight="48" font="Regular2;27" backgroundColor="XionBackground" enableWrapAround="1" transparent="1" />
+		<widget name="list" position="10,40" size="540,475" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="48" font="Regular2;27" backgroundColor="XionBackground" enableWrapAround="1" transparent="1" />
 	</screen>
 	<screen name="ZapHistoryConfigurator" position="center,center" size="545,90" >
-		<widget name="config" position="center,center" itemHeight="27" font="Regular;22" size="540,90" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+		<widget name="config" position="center,center" itemHeight="27" font="Regular;22" size="540,90" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColor="XionBackground" transparent="1" />
 	<panel name="template_colorkey_text_kp" />
 	</screen>
 	<screen name="ZapHistoryBrowserList" position="670,440" size="560,210" title="" flags="wfNoBorder" backgroundColor="XionBackground" >
-		<widget name="list" position="10,40" size="540,180" scrollbarMode="showOnDemand" itemHeight="27" font="Regular;25" backgroundColor="XionBackground" transparent="1" />
+		<widget name="list" position="10,40" size="540,180" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="27" font="Regular;25" backgroundColor="XionBackground" transparent="1" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="LanguageSelection" position="0,0" size="1280,720" title="Language selection">
-		<widget position="70,120" render="Listbox" size="708,420" source="languages" transparent="1" zPosition="3">
+		<widget position="70,120" render="Listbox" size="708,420" scrollbarMode="showOnDemand" scrollbarWidth="10" source="languages" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (130, 17), size = (550, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -83,13 +83,13 @@
 		<panel name="template_colorkey" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="LEDBrightnessSetup" position="0,0" size="1280,720" title="LED Brightness Setup">
-		<widget name="config" position="70,120" size="708,455" transparent="1" zPosition="2" foregroundColor="XionFont1" />
+		<widget name="config" position="70,120" size="708,455" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="2" foregroundColor="XionFont1" />
 		<widget font="Regular2; 18" halign="center" name="current_entry" position="70,585" size="708,40" valign="center" foregroundColor="XionFont2" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ManualFancontrol" position="0,0" size="1280,720" title="Fancontrol Settings in Standby mode">
-		<widget name="config" position="70,120" size="708,420" transparent="1" zPosition="2" foregroundColor="XionFont1" />
+		<widget name="config" position="70,120" size="708,420" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="2" foregroundColor="XionFont1" />
 		<widget backgroundColor="XionBackground" font="Regular2; 24" foregroundColor="XionFont2" position="70,560" render="Label" size="708,30" source="current" transparent="1" zPosition="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
@@ -99,12 +99,12 @@
 		<eLabel backgroundColor="XionBackground" position="0,0" size="70,70" zPosition="-10" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RecordPathsSettings" position="0,0" size="1280,720" title="Recording paths...">
-		<widget backgroundColor="XionBackground" itemHeight="30" name="config" position="70,120" size="708,500" transparent="1" foregroundColor="XionFont1" />
+		<widget backgroundColor="XionBackground" itemHeight="30" name="config" scrollbarMode="showOnDemand" scrollbarWidth="10" position="70,120" size="708,500" transparent="1" foregroundColor="XionFont1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RemoteControlCode" position="0,0" size="1280,720" title="Position Setup">
-		<widget name="config" position="20,80" itemHeight="30" font="Regular;22" size="708,500" transparent="1" zPosition="2" foregroundColor="XionFont1" />
+		<widget name="config" position="20,80" itemHeight="30" font="Regular;22" size="708,500" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="2" foregroundColor="XionFont1" />
 		<panel name="template_menu_left" />
 	</screen>
 	<screen name="ScriptRunner" position="0,0" size="1280,720" title="Script Runner" flags="wfNoBorder" backgroundColor="transparent">
@@ -118,7 +118,7 @@
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector">
 		<widget name="preview" position="780,120" size="480,410" zPosition="1" transparent="1" alphatest="on" />
-		<widget backgroundColor="XionBackground" enableWrapAround="1" position="50,100" render="Listbox" size="450,450" source="skins" transparent="1">
+		<widget backgroundColor="XionBackground" enableWrapAround="1" position="50,100" render="Listbox" size="450,450" scrollbarMode="showOnDemand" scrollbarWidth="10" source="skins" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [
@@ -140,7 +140,7 @@
 		<widget backgroundColor="XionBackground" name="infos" position="70,530" zPosition="1" size="708,30" font="Regular2; 20" halign="left" valign="center" transparent="1" foregroundColor="XionFont2" />
 		<widget backgroundColor="XionBackground" name="bouquets" position="70,560" zPosition="1" size="708,30" font="Regular2; 20" halign="left" valign="center" transparent="1" foregroundColor="XionFont2" />
 		<widget backgroundColor="XionBackground" name="netservers" position="70,590" zPosition="1" size="708,30" font="Regular2; 20" halign="left" valign="center" transparent="1" foregroundColor="XionFont2" />
-		<widget backgroundColor="XionBackground" name="config" itemHeight="32" font="Regular;20" foregroundColor="XionFont1" position="20,80" size="708,320" alphatest="blend" transparent="1" />
+		<widget backgroundColor="XionBackground" name="config" itemHeight="32" font="Regular;20" foregroundColor="XionFont1" position="20,80" size="708,320" scrollbarMode="showOnDemand" scrollbarWidth="10" alphatest="blend" transparent="1" />
 		<widget font="Regular; 20" halign="left" valign="center" name="btt_red" position="64,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular; 20" halign="left" valign="center" name="btt_green" position="264,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular; 20" halign="left" valign="center" name="btt_yellow" position="464,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
@@ -179,7 +179,7 @@
 	<screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="lab1" render="Label" position="70,90" size="708,35" font="Regular2;30" backgroundColor="XionBackground" transparent="1" zPosition="2" foregroundColor="XionFont2" />
 		<widget source="lab2" render="Label" position="70,135" size="708,25" font="Regular2;19" backgroundColor="XionBackground" transparent="1" zPosition="2" foregroundColor="XionFont2" />
-		<widget name="AboutScrollLabel" scrollbarMode="showOnDemand" position="70,180" size="708,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
+		<widget name="AboutScrollLabel" scrollbarMode="showOnDemand" scrollbarWidth="10" position="70,180" size="708,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
 		<panel name="template_menu_left" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="UnhandledKey" position="49,40" size="70,70" title="UnhandledKey" zPosition="100">
@@ -210,7 +210,7 @@
 		<!-- ********** EPG ********** -->
 		<!-- EPGSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection">
-		<widget backgroundColor="XionBackground" itemHeight="32" foregroundColor="XionFont1" font="Regular; 22" name="list" enableWrapAround="1" scrollbarMode="showOnDemand" position="20,80" size="848,570" transparent="1" zPosition="3" />
+		<widget backgroundColor="XionBackground" itemHeight="32" foregroundColor="XionFont1" font="Regular; 22" name="list" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="10" position="20,80" size="848,570" transparent="1" zPosition="3" />
 		<widget alphatest="blend" position="894,12" render="Picon" size="67,40" source="Service" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -257,7 +257,7 @@
 	</screen>
 		<!-- EventView -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="EventView" position="0,0" size="1280,720" title="Eventview">
-		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" font="Regular2; 26" name="epg_description" position="45,155" size="1190,443" transparent="1" />
+		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular2; 26" name="epg_description" position="45,155" size="1190,443" transparent="1" />
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_on.png" position="63,615" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
 			<convert type="XionHDFServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
@@ -296,7 +296,7 @@
 	</screen>
 		<!-- EventViewSimple -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="EventViewSimple" position="0,0" size="1280,720" title="Eventview">
-		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" font="Regular2; 26" name="epg_description" position="45,155" size="1190,443" transparent="1" />
+		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular2; 26" name="epg_description" position="45,155" size="1190,443" transparent="1" />
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_on.png" position="63,615" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
 			<convert type="XionHDFServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
@@ -459,7 +459,7 @@
 		<widget name="jump" position="1030,40" size="200,20" font="Regular;16" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
 		<widget name="lab1" position="9,75" size="1256,145" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="XionBackground" transparent="1" />
 		<widget name="timeline_text" position="10,75" size="1260,25" foregroundColor="XionFont1" font="Regular;20" transparent="1" zPosition="21" />
-		<widget name="bouquetlist" position="8,99" size="1260,120" itemHeight="40" foregroundColor="XionFont1" backgroundColor="XionBackground" foregroundColorSelected="white" backgroundColorSelected="XionBackground" scrollbarMode="showNever" zPosition="6" transparent="1" />
+		<widget name="bouquetlist" position="8,99" size="1260,120" itemHeight="40" foregroundColor="XionFont1" backgroundColor="XionBackground" foregroundColorSelected="XionSelFont" backgroundColorSelected="XionBackground" scrollbarMode="showNever" zPosition="6" transparent="1" />
 		<widget name="list" position="10,100" size="1260,120" backgroundColor="XionBackground" scrollbarMode="showNever" zPosition="1" EntryFontWrap="no" transparent="1" />
 		<widget name="timeline_now" position="10,75" zPosition="40" size="3,25" pixmap="XionHDF/epg/SelectedZapEvent.png" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="100,230" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
@@ -505,7 +505,7 @@
 		<!-- ********** Menu ********** -->
 		<!-- Menu -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1280,720" title="Main menu">
-		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" size="708,540" source="menu" transparent="1">
+		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="10" size="708,540" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (16, 10), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 30)],
@@ -517,7 +517,7 @@
 	</screen>
 		<!-- menu_setup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_setup" position="0,0" size="1280,720" title="Main menu" >
-		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" size="708,540" source="menu" transparent="1">
+		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="10" size="708,540" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (16, 10), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 30)],
@@ -529,7 +529,7 @@
 	</screen>
 		<!-- menu_system -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_system" position="0,0" size="1280,720" title="Main menu" >
-		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" size="708,540" source="menu" transparent="1">
+		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="10" size="708,540" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (16, 10), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 30)],
@@ -541,7 +541,7 @@
 	</screen>
 		<!-- menu_information -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" title="Main menu">
-		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" size="708,540" source="menu" transparent="1">
+		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="10" size="708,540" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (16, 10), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 30)],
@@ -553,7 +553,7 @@
 	</screen>
 		<!-- menu_scan -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_scan" position="0,0" size="1280,720" title="Main menu">
-		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" size="708,540" source="menu" transparent="1">
+		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="10" size="708,540" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (16, 10), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 30)],
@@ -565,7 +565,7 @@
 	</screen>
 		<!-- menu_mainmenu -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_mainmenu" position="0,0" size="1280,720" title="Main menu">
-		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" size="708,540" source="menu" transparent="1">
+		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="10" size="708,540" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (16, 10), size = (600, 50), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 30)],
@@ -577,7 +577,7 @@
 	</screen>
 		<!-- menu_timermenu -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_timermenu" position="0,0" size="1280,720" title="Main menu" >
-		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" size="708,540" source="menu" transparent="1">
+		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="10" size="708,540" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (16, 10), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 30)],
@@ -589,7 +589,7 @@
 	</screen>
 		<!-- menu_shutdown -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1283,723" title="Main menu">
-		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" size="708,540" source="menu" transparent="1">
+		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="10" size="708,540" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (16, 10), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 30)],
@@ -601,7 +601,7 @@
 	</screen>
 		<!-- ChannelContextMenu -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelContextMenu" position="center,center" size="1280,720" title="Channellist menu" >
-		<widget enableWrapAround="1" itemHeight="30" name="menu" position="20,80" scrollbarMode="showOnDemand" size="708,560" transparent="1" zPosition="3" />
+		<widget enableWrapAround="1" itemHeight="30" name="menu" position="20,80" scrollbarMode="showOnDemand" scrollbarWidth="10" size="708,560" transparent="1" zPosition="3" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- ********** NumberZap ********** -->
@@ -682,7 +682,7 @@
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_red.png" position="500,305" size="30,40" />
 		<widget backgroundColor="XionBackground" font="Regular2;21" name="languagetext" position="535,310" size="150,23" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" name="text" position="670,120" size="540,300" transparent="1" />
-		<widget position="510,430" render="Listbox" size="700,160" source="list" transparent="1" zPosition="13">
+		<widget position="510,430" render="Listbox" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1" zPosition="13">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -690,12 +690,12 @@
 				}
 			</convert>
 		</widget>
-		<widget itemHeight="32" name="config" position="510,430" size="700,160" transparent="1" zPosition="14" />
+		<widget itemHeight="32" name="config" position="510,430" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="14" />
 		<panel name="template_menu_full" />
 	</screen>
 		<!-- CleanupWizardConfiguration -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="CleanupWizardConfiguration" position="0,0" size="1280,720" title="CleanupWizard settings">
-		<widget backgroundColor="XionBackground" itemHeight="30" name="config" position="20,80" size="708,450" transparent="1" />
+		<widget backgroundColor="XionBackground" itemHeight="30" name="config" scrollbarMode="showOnDemand" scrollbarWidth="10" position="20,80" size="708,450" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" halign="center" position="70,560" render="Label" size="708,25" source="status" transparent="1" foregroundColor="XionFont2" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
@@ -706,7 +706,7 @@
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_red.png" position="500,305" size="30,40" />
 		<widget backgroundColor="XionBackground" font="Regular2;21" name="languagetext" position="535,310" size="150,23" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" name="text" position="670,120" size="540,300" transparent="1" />
-		<widget position="510,430" render="Listbox" size="700,160" source="list" transparent="1" zPosition="13">
+		<widget position="510,430" render="Listbox" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1" zPosition="13">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -714,7 +714,7 @@
 				}
 			</convert>
 		</widget>
-		<widget itemHeight="32" name="config" position="510,430" size="700,160" transparent="1" zPosition="14" />
+		<widget itemHeight="32" name="config" position="510,430" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="14" />
 		<panel name="template_menu_full" />
 	</screen>
 		<!-- DefaultWizard -->
@@ -723,7 +723,7 @@
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_red.png" position="500,305" size="30,40" />
 		<widget backgroundColor="XionBackground" font="Regular2;21" name="languagetext" position="535,310" size="150,23" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" name="text" position="670,120" size="540,300" transparent="1" />
-		<widget position="510,430" render="Listbox" size="700,160" source="list" transparent="1" zPosition="13">
+		<widget position="510,430" render="Listbox" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1" zPosition="13">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -731,7 +731,7 @@
 				}
 			</convert>
 		</widget>
-		<widget itemHeight="32" name="config" position="510,430" size="700,160" transparent="1" zPosition="14" />
+		<widget itemHeight="32" name="config" position="510,430" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="14" />
 		<panel name="template_menu_full" />
 	</screen>
 		<!-- DreamPackageWizard -->
@@ -740,7 +740,7 @@
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_red.png" position="500,305" size="30,40" />
 		<widget backgroundColor="XionBackground" font="Regular2;21" name="languagetext" position="535,310" size="150,23" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" name="text" position="671,120" size="540,300" transparent="1" />
-		<widget position="510,430" render="Listbox" size="700,160" source="list" transparent="1" zPosition="13">
+		<widget position="510,430" render="Listbox" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1" zPosition="13">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -748,7 +748,7 @@
 				}
 			</convert>
 		</widget>
-		<widget itemHeight="32" name="config" position="510,430" size="700,160" transparent="1" zPosition="14" />
+		<widget itemHeight="32" name="config" position="510,430" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="14" />
 		<panel name="template_menu_full" />
 	</screen>
 		<!-- ImageWizard -->
@@ -762,7 +762,7 @@
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_red.png" position="500,305" size="30,40" />
 		<widget backgroundColor="XionBackground" font="Regular2;21" name="languagetext" position="535,310" size="150,23" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" name="text" position="670,120" size="540,300" transparent="1" />
-		<widget position="510,430" render="Listbox" size="700,160" source="list" transparent="1" zPosition="13">
+		<widget position="510,430" render="Listbox" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1" zPosition="13">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -770,7 +770,7 @@
 				}
 			</convert>
 		</widget>
-		<widget itemHeight="32" name="config" position="510,430" size="700,160" transparent="1" zPosition="14" />
+		<widget itemHeight="32" name="config" position="510,430" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="14" />
 		<panel name="template_menu_full" />
 	</screen>
 		<!-- LanguageWizard -->
@@ -782,7 +782,7 @@
 		<widget alphatest="blend" name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="11" />
 		<widget alphatest="blend" name="wizard" pixmap="skin_default/wizard.png" position="500,120" size="110,174" transparent="1" zPosition="10" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" name="text" position="671,120" size="540,300" transparent="1" />
-		<widget position="511,430" render="Listbox" size="700,180" source="languages" transparent="1" zPosition="13">
+		<widget position="511,430" render="Listbox" size="700,180" scrollbarMode="showOnDemand" scrollbarWidth="10" source="languages" transparent="1" zPosition="13">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (130, 17), size = (530, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -812,7 +812,7 @@
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_red1.png" position="500,305" size="32,40" />
 		<widget backgroundColor="XionBackground" font="Regular2;21" name="languagetext" position="535,310" size="150,23" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" name="text" position="670,120" size="540,300" transparent="1" />
-		<widget position="510,430" render="Listbox" size="700,160" source="list" transparent="1" zPosition="13">
+		<widget position="510,430" render="Listbox" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1" zPosition="13">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -820,7 +820,7 @@
 				}
 			</convert>
 		</widget>
-		<widget itemHeight="32" name="config" position="510,430" size="700,160" transparent="1" zPosition="14" />
+		<widget itemHeight="32" name="config" position="510,430" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="14" />
 		<panel name="template_menu_full" />
 		<panel name="template_colorkey" />
 	</screen>
@@ -835,7 +835,7 @@
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_red1.png" position="500,305" size="32,40" />
 		<widget backgroundColor="XionBackground" font="Regular2;21" name="languagetext" position="535,310" size="150,23" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" name="text" position="671,120" size="540,300" transparent="1" />
-		<widget position="510,430" render="Listbox" size="700,160" source="list" transparent="1" zPosition="13">
+		<widget position="510,430" render="Listbox" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1" zPosition="13">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -843,7 +843,7 @@
 				}
 			</convert>
 		</widget>
-		<widget itemHeight="32" name="config" position="510,430" size="700,160" transparent="1" zPosition="14" />
+		<widget itemHeight="32" name="config" position="510,430" size="700,160" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="14" />
 		<panel name="template_menu_full" />
 	</screen>
 		<!-- VideoWizard -->
@@ -858,7 +858,7 @@
 		<widget backgroundColor="XionBackground" font="Regular2;21" name="languagetext" position="535,310" size="150,23" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" name="text" position="670,120" size="540,300" transparent="1" />
 		<widget alphatest="blend" name="portpic" position="510,435" size="128,128" transparent="1" zPosition="10" />
-		<widget position="700,430" render="Listbox" size="510,160" source="list" transparent="1" zPosition="13">
+		<widget position="700,430" render="Listbox" size="510,160" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1" zPosition="13">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -866,14 +866,14 @@
 				}
 			</convert>
 		</widget>
-		<widget itemHeight="32" name="config" position="700,430" size="510,160" transparent="1" zPosition="14" />
+		<widget itemHeight="32" name="config" position="700,430" size="510,160" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="14" />
 		<panel name="template_menu_full" />
 	</screen>
 		<!-- HelpMenu -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HelpMenu" position="0,0" size="1280,720" title="Menu">
 		<widget alphatest="blend" name="rc" pixmaps="rc.png,rcold.png" position="160,115" size="154,500" zPosition="10" />
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="yellow" halign="center" name="long_key" position="90,620" size="300,30" transparent="1" />
-		<widget itemHeight="38" name="list" position="500,120" size="720,494" scrollbarMode="showOnDemand" transparent="1" />
+		<widget itemHeight="38" name="list" position="500,120" size="720,494" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget alphatest="blend" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" />
 		<widget alphatest="blend" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" />
 		<widget alphatest="blend" name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="11" />
@@ -884,7 +884,7 @@
 		<!-- VideoEnhancementPreview -->
 	<screen backgroundColor="transparent" name="VideoEnhancementPreview" position="0,60" size="1280,720" title="VideoEnhancementPreview">
 		<ePixmap pixmap="XionHDF/ibar.png" position="0,540" size="1280,200" alphatest="blend" />
-		<widget name="config" backgroundColor="XionBackground" position="400,575" size="520,200" zPosition="2" transparent="1"/>
+		<widget name="config" backgroundColor="XionBackground" position="400,575" size="520,200" scrollbarMode="showOnDemand" scrollbarWidth="10" zPosition="2" transparent="1"/>
 		<widget font="Regular;22" backgroundColor="XionBackground" halign="center" valign="center" zPosition="2" position="800,390" render="Label" size="620,450" source="introduction" transparent="1" />
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_red.png" position="25,600" size="25,25" zPosition="2" />
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_green.png" position="244,600" size="25,25" zPosition="2" />
@@ -893,7 +893,7 @@
 	</screen>
 		<!-- VideoEnhancementSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="VideoEnhancementSetup" position="0,0" size="1280,720" title="VideoEnhancementSetup">
-		<widget backgroundColor="XionBackground" itemHeight="30" name="config" position="20,80" size="700,450" transparent="1" />
+		<widget backgroundColor="XionBackground" itemHeight="30" name="config" position="20,80" size="700,450" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" halign="center" name="introduction" position="70,560" size="700,25" transparent="1" foregroundColor="XionFont2" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
@@ -902,7 +902,7 @@
 		<!-- AdapterSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AdapterSetup" position="0,0" size="1280,720" title="Network Setup">
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" position="20,80" render="Label" size="495,30" source="Adapter" transparent="1" />
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="26" font="Regular;22" name="config" position="70,130" size="708,230" transparent="1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="26" font="Regular;22" name="config" position="70,130" size="708,230" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="center" position="70,585" render="Label" size="708,30" source="introduction2" transparent="1" />
 		<widget source="IPtext" render="Label" position="200,400" size="210,24" font="Regular;20" halign="right" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<widget source="Netmasktext" render="Label" position="200,430" size="210,24" font="Regular;20" halign="right" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
@@ -929,7 +929,7 @@
 	</screen>
 		<!-- NetworkAdapterSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkAdapterSelection" position="0,0" size="1280,720" title="Select Network Adapter">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" position="20,80" render="Listbox" size="708,450" source="list" transparent="1">
+		<widget backgroundColor="XionBackground" enableWrapAround="1" position="20,80" render="Listbox" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (54, 54), png = 3), # index 3 is the interface pixmap
@@ -980,7 +980,7 @@
 	</screen>
 		<!-- NetworkBrowser -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkBrowser" position="0,0" size="1280,720" title="Network Neighbourhood">
-		<widget position="20,80" render="Listbox" size="708,480" source="list" itemHeight="26" font="Regular;22" transparent="1" zPosition="3">
+		<widget position="20,80" render="Listbox" size="708,480" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" itemHeight="26" font="Regular;22" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
@@ -1001,7 +1001,7 @@
 	</screen>
 		<!-- AutoMountEdit -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AutoMountEdit" position="0,0" size="1280,720" title="MountEdit">
-		<widget itemHeight="26" font="Regular;22" name="config" position="20,80" size="708,450" transparent="1" />
+		<widget itemHeight="26" font="Regular;22" name="config" position="20,80" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget alphatest="blend" name="HelpWindow" position="120,470" size="1,1" transparent="1" zPosition="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,585" render="Label" size="708,28" source="introduction" transparent="1" />
 		<panel name="template_menu_left" />
@@ -1009,7 +1009,7 @@
 	</screen>
 		<!-- AutoMountManager -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AutoMountManager" position="0,0" size="1280,720" title="AutoMountManager">
-		<widget backgroundColor="XionBackground" position="20,80" render="Listbox" size="708,480" itemHeight="85" font="Regular;22" source="config" transparent="1">
+		<widget backgroundColor="XionBackground" position="20,80" render="Listbox" size="708,480" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="85" font="Regular;22" source="config" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 5), size = (620, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
@@ -1030,7 +1030,7 @@
 		<widget font="Regular2;20" foregroundColor="XionFont2" halign="center" position="20,80" render="Label" size="130,90" source="legend1" transparent="1" valign="center" />
 		<widget font="Regular2;20" foregroundColor="XionFont2" halign="center" position="230,80" render="Label" size="400,90" source="legend2" transparent="1" valign="center" />
 		<widget font="Regular2;20" foregroundColor="XionFont2" halign="center" position="650,80" render="Label" size="120,90" source="legend3" transparent="1" valign="center" />
-		<widget position="70,220" render="Listbox" size="708,320" source="config" itemHeight="60" font="Regular;22" transparent="1">
+		<widget position="70,220" render="Listbox" size="708,320" scrollbarMode="showOnDemand" scrollbarWidth="10" source="config" itemHeight="60" font="Regular;22" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
@@ -1051,7 +1051,7 @@
 	</screen>
 		<!-- UserDialog -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="UserDialog" position="0,0" size="1280,720" title="UserDialog">
-		<widget name="config" itemHeight="26" font="Regular;22" position="20,80" size="708,350" transparent="1" zPosition="3" />
+		<widget name="config" itemHeight="26" font="Regular;22" position="20,80" size="708,350" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="3" />
 		<widget alphatest="blend" name="HelpWindow" position="120,430" size="1,1" transparent="1" zPosition="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,558" render="Label" size="708,28" source="introduction" transparent="1" />
 		<panel name="template_menu_left" />
@@ -1059,7 +1059,7 @@
 	</screen>
 		<!-- UserManager -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="UserManager" position="0,0" size="1280,720" title="UserManager">
-		<widget backgroundColor="XionBackground" position="70,80" render="Listbox" size="708,450" source="config" font="Regular;22" transparent="1" zPosition="3">
+		<widget backgroundColor="XionBackground" position="70,80" render="Listbox" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" source="config" font="Regular;22" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (80, 2), size = (500, 46), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -1077,7 +1077,7 @@
 		<!-- WlanScan -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="WlanScan" position="0,0" size="1280,720" title="Choose a Wireless Network">
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" position="20,80" render="Label" size="708,30" source="info" transparent="1" />
-		<widget backgroundColor="XionBackground" position="70,125" render="Listbox" size="708,450" source="list" itemHeight="75" font="Regular;22" transparent="1">
+		<widget backgroundColor="XionBackground" position="70,125" render="Listbox" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" itemHeight="75" font="Regular;22" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 8), size = (650, 35), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
@@ -1130,7 +1130,7 @@
 	</screen>
 		<!-- WlanConfig -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="WlanConfig" position="0,0" size="1280,720" title="Wireless Network Configuration...">
-		<widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="config" position="70,180" size="708,380" transparent="1" zPosition="10" />
+		<widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="config" position="70,180" size="708,380" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="10" />
 		<eLabel backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" position="70,471" size="200,26" text="IP Address : " transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" halign="center" position="285,471" render="Label" size="200,26" source="ipaddress" transparent="1" valign="center" zPosition="1" />
 		<eLabel backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" position="70,511" size="200,26" text="NetMask : " transparent="1" />
@@ -1142,7 +1142,7 @@
 	</screen>
 		<!-- WlanScanAp -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="WlanScanAp" position="0,0" size="1280,720" title="Wireless Network Configuration...">
-		<widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="menulist" position="20,80" size="360,480" transparent="1" zPosition="10" />
+		<widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="menulist" position="20,80" size="360,480" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="10" />
 		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont1" halign="center" position="470,80" render="Label" size="300,30" source="Address" transparent="1" valign="center" zPosition="1" />
 		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont1" halign="center" position="470,109" render="Label" size="300,30" source="ESSID" transparent="1" valign="center" zPosition="1" />
 		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont1" halign="center" position="470,140" render="Label" size="300,30" source="Protocol" transparent="1" valign="center" zPosition="1" />
@@ -1172,7 +1172,7 @@
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="LocationBox" position="0,0" size="1280,720" title="Location Box">
 		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" name="text" position="20,80" size="708,28" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" name="target" position="70,115" size="708,28" transparent="1" />
-		<widget itemHeight="26" font="Regular;22" name="filelist" position="70,160" selectionDisabled="1" size="708,315" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+		<widget itemHeight="26" font="Regular;22" name="filelist" position="70,160" selectionDisabled="1" size="708,315" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1" />
 		<eLabel backgroundColor="XionLine" position="70,483" size="708,1" zPosition="2" />
 		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" name="textbook" position="70,488" size="708,28" transparent="1" />
 		<widget itemHeight="20" name="booklist" font="Regular;15" position="70,523" size="708,125" transparent="1" />
@@ -1181,14 +1181,14 @@
 	</screen>
 		<!-- NameserverSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NameserverSetup" position="0,0" size="1280,720" title="Nameserver Setup">
-		<widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="config" position="20,80" size="708,450" transparent="1" />
+		<widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="config" position="20,80" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="introduction" position="70,560" size="708,28" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- NetworkPassword -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkPassword" position="0,0" size="1280,720" title="Nameserver Setup">
-		<widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="config" position="20,180" size="708,450" transparent="1" />
+		<widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="config" position="20,180" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget name="HelpWindow" position="60,300" size="532,170" flags="wfNoBorder" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="introduction" position="70,560" size="708,28" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="10,485" render="Label" size="708,100" source="description" transparent="1" valign="center" />
@@ -1218,7 +1218,7 @@
 	</screen>
 		<!-- NetworkMountsMenu -->
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" title="Mounts Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="menulist" position="20,80" size="708,510" itemHeight="26" font="Regular;22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="menulist" position="20,80" size="708,510" itemHeight="26" font="Regular;22" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -1268,7 +1268,7 @@
 	</screen>
 		<!-- NetworkInadynSetup -->
 	<screen name="NetworkInadynSetup" title="Inadyn Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="config" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget name="HelpWindow" position="120,405" size="708,160" zPosition="1" backgroundColor="XionBackground" transparent="0" alphatest="on" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
@@ -1355,7 +1355,7 @@
 	</screen>
 		<!-- NetworkSambaLog -->
 	<screen name="NetworkSambaLog" title="Samba Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="infotext" position="20,80" size="708,500" zPosition="3" itemHeight="25" font="Regular; 18" scrollbarMode="showOnDemand" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" transparent="0" />
+		<widget name="infotext" position="20,80" size="708,500" zPosition="3" itemHeight="25" font="Regular; 18" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" transparent="0" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- NetworkTelnet -->
@@ -1387,20 +1387,20 @@
 	</screen>
 		<!-- NetworkuShareSetup -->
 	<screen name="NetworkuShareSetup" title="uShare Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="config" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget name="HelpWindow" position="120,405" size="708,160" zPosition="1" backgroundColor="XionBackground" transparent="0" alphatest="on" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- uShareSelection -->
 	<screen name="uShareSelection" title="uShare Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="checkList" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="checkList" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- ScanIP -->
 	<screen name="ScanIP" title="Scan IP" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,500" font="Regular;22" zPosition="3" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="config" position="20,80" size="708,500" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular;22" zPosition="3" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -1439,14 +1439,14 @@
 	</screen>
 		<!-- NetworkMacSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkMacSetup" position="0,0" size="1280,720" title="MAC-adress settings">
-		<widget backgroundColor="XionBackground" font="Regular;22" itemHeight="30" name="config" position="20,80" size="708,100" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;22" itemHeight="30" name="config" position="20,80" size="708,100" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" valign="center" position="70,485" render="Label" size="708,100" source="introduction" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- IPv6MacSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="IPv6Setup" position="0,0" size="1280,720" title="IPv6 setup">
-		<widget backgroundColor="XionBackground" font="Regular;22" itemHeight="30" name="config" position="20,80" size="708,100" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;22" itemHeight="30" name="config" position="20,80" size="708,100" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" valign="center" position="70,485" render="Label" size="708,100" source="introduction" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
@@ -1454,7 +1454,7 @@
 		<!-- ********** Timer ********** -->
 		<!-- TimeInput -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="TimeInput" position="148,281" size="500,155" title="Time Input">
-		<widget itemHeight="30" name="config" position="10,54" size="480,90" backgroundColor="XionBackground" foregroundColor="XionFont1" />
+		<widget itemHeight="30" name="config" position="10,54" size="480,90" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColor="XionBackground" foregroundColor="XionFont1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
@@ -1473,7 +1473,7 @@
 	</screen>
 		<!-- TimerEntry -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" title="Timer entry">
-		<widget itemHeight="30" font="Regular;20" name="config" position="20,80" size="708,390" backgroundColor="XionBackground" transparent="1" />
+		<widget itemHeight="30" font="Regular;20" name="config" position="20,80" size="708,390" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColor="XionBackground" transparent="1" />
 		<widget name="HelpWindow" position="156,479" size="532,170" flags="wfNoBorder" />
 		<eLabel font="Regular;20" halign="left" valign="center" text="Abort" position="64,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<eLabel font="Regular;20" halign="left" valign="center" text="OK" position="264,660" size="148,52" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
@@ -1491,9 +1491,9 @@
 		<!-- TimerSanityConflict -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSanityConflict" position="0,0" size="1280,720" title="Timer sanity error">
 		<widget itemHeight="25" name="list" position="20,80" size="300,90" backgroundColor="XionBackground" transparent="1" />
-		<widget itemHeight="50" name="timer1" position="45,190" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
+		<widget itemHeight="50" name="timer1" position="45,190" scrollbarMode="showOnDemand" scrollbarWidth="10" size="766,100" transparent="1" foregroundColor="XionFont1" />
 		<eLabel backgroundColor="XionLine" position="20,380" size="820,2" zPosition="2" />
-		<widget itemHeight="50" name="timer2" position="45,400" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
+		<widget itemHeight="50" name="timer2" position="45,400" scrollbarMode="showOnDemand" scrollbarWidth="10" size="766,100" transparent="1" foregroundColor="XionFont1" />
 		<ePixmap pixmap="XionHDF/buttons/key_red.png" position="70,338" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_green.png" position="370,338" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_yellow.png" position="70,622" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
@@ -1506,13 +1506,13 @@
 	</screen>
 		<!-- TimerSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSelection" position="0,0" size="1280,720" title="Timer selection">
-		<widget name="timerlist" itemHeight="50" position="20,80" size="708,550" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+		<widget name="timerlist" itemHeight="50" position="20,80" size="708,550" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- SleepTimerEdit -->
 		<!-- SleepTimer -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="SleepTimerEdit" position="0,0" size="1280,720" title="Sleep Timer">
-		<widget name="config" position="20,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="config" position="20,80" size="708,120" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<widget name="description" position="70,545" size="708,54" font="Regular;22" halign="center" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
@@ -1533,7 +1533,7 @@
 	</screen>
 		<!-- CronTimers -->
 	<screen name="CronTimers" position="0,0" size="1280,720" title="CronManager" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="list" render="Listbox" position="70,120" size="708,450" transparent="1" backgroundColor="XionBackground">
+		<widget source="list" render="Listbox" position="70,120" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" backgroundColor="XionBackground">
 			<convert type="TemplatedMultiContent">
 					{"template": [
 							MultiContentEntryText(pos = (2, 2), size = (590, 27), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
@@ -1802,7 +1802,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ********** Plugin Browser ********** -->
 		<!-- PluginBrowser -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser">
-		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" enableWrapAround="1" name="list" position="20,80" size="708,555" transparent="1" />
+		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" name="list" position="20,80" size="708,555" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" name="red" position="64,660" size="148,52" transparent="1" zPosition="1" />
 		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" name="green" position="264,660" size="148,52" transparent="1" zPosition="1" />
 		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" name="blue" position="664,660" size="148,52" transparent="1" zPosition="1" />
@@ -1819,13 +1819,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!--Extensionslist-->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ExtensionsList" position="0,0" size="1280,720" title="Extensions">
-		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" itemHeight="32" enableWrapAround="1" name="list" position="20,80" size="708,550" transparent="1" />
+		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="32" enableWrapAround="1" name="list" position="20,80" size="708,550" transparent="1" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- ********** Channel Selection and Infobar ********** -->
 		<!-- SlimChannelSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SlimChannelSelection" position="-1,0" size="1280,720" title="Channel Selection">
-		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" foregroundColorMarkedSelected="green" foregroundColor="XionFont1" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionLine" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="white" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="17,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="816,564" transparent="1" />
+		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" scrollbarWidth="10" foregroundColorMarkedSelected="green" foregroundColor="XionFont1" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionLine" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="XionSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="17,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="816,564" transparent="1" />
 		<widget source="ServiceEvent" render="XionHDFSingleEpgList" position="891,561" size="362,113" noWrap="1" font="Regular2;22" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
 		</widget>
 		<widget alphatest="blend" position="891,15" render="Picon" size="47,28" source="ServiceEvent" transparent="1" zPosition="4">
@@ -1852,13 +1852,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- SimpleChannelSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
-		<widget colorEventProgressbarBorder="XionFont1" colorEventProgressbarBorderSelected="XionFont1" colorServiceDescription="XionFont1" colorServiceDescriptionSelected="yellow" foregroundColorServiceNotAvail="#777777" name="list" position="20,80" serviceInfoFont="Regular2;21" serviceItemHeight="30" serviceNameFont="Regular;22" serviceNumberFont="Regular;22" size="708,540" transparent="1" />
+		<widget colorEventProgressbarBorder="XionFont1" colorEventProgressbarBorderSelected="XionFont1" colorServiceDescription="XionFont1" colorServiceDescriptionSelected="XionSelFont" foregroundColorServiceNotAvail="#777777" name="list" position="20,80" serviceInfoFont="Regular2;21" serviceItemHeight="30" serviceNameFont="Regular;22" serviceNumberFont="Regular;22" size="708,540" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- ChannelSelectionRadio -->
 	<screen name="ChannelSelectionRadio" position="center,100" size="1280,720" backgroundColor="XionBackground" transparent="0">
-		<widget name="list" position="20,80" size="730,364" zPosition="3" scrollbarMode="showOnDemand" foregroundColor="XionFont2" backgroundColor="XionBackground" foregroundColorEvent="darkgrey" foregroundColorEventSelected="XionFont1" foregroundColorServiceNotAvail="#2c2c2c" serviceItemHeight="30" serviceNumberFont="Regular;16" serviceNameFont="Regular;16" serviceInfoFont="Regular;16" transparent="0"/>
+		<widget name="list" position="20,80" size="730,364" zPosition="3" scrollbarMode="showOnDemand" scrollbarWidth="10" foregroundColor="XionFont2" backgroundColor="XionBackground" foregroundColorEvent="darkgrey" foregroundColorEventSelected="XionFont1" foregroundColorServiceNotAvail="#2c2c2c" serviceItemHeight="30" serviceNumberFont="Regular;16" serviceNameFont="Regular;16" serviceInfoFont="Regular;16" transparent="0"/>
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
@@ -2017,7 +2017,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ********** Parental Control ********** -->
 		<!-- ParentalControlChangePin -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ParentalControlChangePin" position="0,0" size="1280,720" title="Change pin code">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" transparent="1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
@@ -2029,14 +2029,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- ParentalControlSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ParentalControlSetup" position="0,0" size="1280,720" title="Parental control setup">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" transparent="1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- ********** Audio and Video ********** -->
 		<!-- 3D AutoSwitch -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ThreeDSettings" position="0,0" size="1280,720" title="AutoSwitch 3D">
-		<widget name="config" itemHeight="30" font="Regular;22" position="20,80" size="708,540" transparent="1" zPosition="2" />
+		<widget name="config" itemHeight="30" font="Regular;22" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="2" />
 		<panel name="template_menu_left" />
 		<widget font="Regular; 20" halign="left" valign="center" source="red" position="64,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular; 20" halign="left" valign="center" source="green" position="264,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
@@ -2046,7 +2046,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- UI3DSetupScreen -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="UI3DSetupScreen" position="0,0" size="1280,720" title="UI 3D setup">
-		<widget name="config" position="20,80" itemHeight="30" font="Regular;22" size="708,540" transparent="1" zPosition="2" />
+		<widget name="config" position="20,80" itemHeight="30" font="Regular;22" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="2" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
@@ -2058,7 +2058,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_green1.png" position="703,506" size="32,32" />
 		<widget font="Regular2;20" halign="left" position="411,510" render="Label" size="180,24" source="key_red" transparent="0" valign="center" zPosition="1" backgroundColor="XionBackground" />
 		<widget font="Regular2;20" halign="left" position="742,510" render="Label" size="180,24" source="key_green" transparent="0" valign="center" zPosition="1" backgroundColor="XionBackground" />
-		<widget name="config" position="308,285" size="664,208" transparent="0" zPosition="2" backgroundColor="XionBackground" foregroundColor="XionFont1" />
+		<widget name="config" position="308,285" size="664,208" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="0" zPosition="2" backgroundColor="XionBackground" foregroundColor="XionFont1" />
 		<eLabel backgroundColor="red" position="0,0" size="20,20" foregroundColor="foreground" />
 		<eLabel backgroundColor="red" position="1260,0" size="20,20" />
 		<eLabel backgroundColor="red" position="1260,700" size="20,20" />
@@ -2074,14 +2074,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- Automatic Volume Adjustment -->
 	<screen name="AutomaticVolumeAdjustmentConfigScreen" position="0,0" size="1280,720" title="Automatic Volume Adjust" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,450" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="config" position="20,80" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- AudioSelection -->
 	<screen name="AudioSelection" title="Audio" position="center,center" size="600,426" flags="wfNoBorder" backgroundColor="XionBackground">
 		<widget source="Title" render="Label" position="25,5" size="550,40" backgroundColor="Xionbackground" transparent="1" font="Regular2;34" foregroundColor="XionFont2" valign="center" halign="left" noWrap="1" />
-		<widget name="config" position="74,64" font="Regular;24" scrollbarMode="showOnDemand" foregroundColor="XionFont1" size="500,200" itemHeight="40" transparent="1" zPosition="3" />
+		<widget name="config" position="74,64" font="Regular;24" scrollbarMode="showOnDemand" scrollbarWidth="10" foregroundColor="XionFont1" size="500,200" itemHeight="40" transparent="1" zPosition="3" />
 		<widget source="key_red" render="Pixmap" pixmap="XionHDF/buttons/key_red.png" position="25,70" size="32,32" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -2094,7 +2094,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="key_blue" render="Pixmap" pixmap="XionHDF/buttons/key_blue.png" position="25,190" size="32,32" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="streams" render="Listbox" position="25,277" size="550,100" zPosition="3" transparent="1">
+		<widget source="streams" render="Listbox" position="25,277" size="550,100" scrollbarMode="showOnDemand" scrollbarWidth="10" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (23, [
@@ -2131,19 +2131,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- Change_volume -->
 	<screen name="Change_volume" position="0,0" size="1280,720" title="Change Volume offset" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,540" itemHeight="30" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="30" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- AC3LipSyncSetup -->
 	<screen name="AC3LipSyncSetup" position="0,0" size="1280,720" title="AC3 Lip Sync Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,540" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- Volume_Config -->
 	<screen name="Volume_Config" position="0,0" size="1280,720" title="Volume Config" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" zPosition="1" size="708,242" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" transparent="1" backgroundColor="XionBackground" />
+		<widget name="config" position="20,80" zPosition="1" size="708,242" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" transparent="1" backgroundColor="XionBackground" />
 		<widget name="infotext" position="70,340" size="708,242" font="Regular2;22" foregroundColor="XionFont2" halign="left" valign="top" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
@@ -2162,7 +2162,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- Subtitles -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="Subtitles" position="0,0" size="1280,720" title="Subtitle selection">
-		<widget backgroundColor="XionBackground" itemHeight="30" name="config" position="20,80" size="708,540" transparent="1" />
+		<widget backgroundColor="XionBackground" itemHeight="30" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- SubtitleDisplay -->
@@ -2189,7 +2189,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- AutoTimeshift -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimeshift" position="0,0" size="1280,720" title="Auto Timeshift Configuration">
-		<widget name="config" position="20,80" size="708,540" transparent="1" />
+		<widget name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey_text_button" />
 	</screen>
@@ -2215,7 +2215,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- MultiBootWizard -->
 	<screen name="MultiBootWizard" position="0,0" size="1280,720" title="MultiBoot Manager" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,540" transparent="1" />
+		<widget name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget source="options" render="Label" position="40,272" size="730,35" halign="left" font="Regular; 20" backgroundColor="XionBackground" />
 		<widget source="description" render="Label" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" position="840,370" size="430,350" transparent="1" />
 		<panel name="template_menu_left" />
@@ -2242,7 +2242,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="job_progress" render="Progress" position="70,220" size="708,36" borderWidth="2" foregroundColor="blue" backgroundColor="XionBackground" />
 		<widget backgroundColor="XionBackground" source="job_task" render="Label" position="70,160" size="708,50" font="Regular2;22" foregroundColor="XionFont2" />
 		<widget backgroundColor="XionBackground" source="job_status" render="Label" position="70,291" size="480,28" font="Regular2;22" foregroundColor="XionFont2" />
-		<widget name="config" position="70,335" size="480,20" />
+		<widget name="config" position="70,335" size="480,20" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- ********** Tuner Setup ********** -->
@@ -2251,7 +2251,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="statusbar" render="Label" itemHeight="30" position="80,150" size="500,60" font="Regular;24" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<eLabel position="80,250" size="500,1" backgroundColor="XionLine" />
 		<widget source="tunerstatusbar" render="Label" itemHeight="30" position="80,300" size="500,60" font="Regular;24" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
-		<widget name="config" itemHeight="30" position="80,350" size="500,250" font="Regular;24" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="0" />
+		<widget name="config" itemHeight="30" position="80,350" size="500,250" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular;24" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="0" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
@@ -2261,7 +2261,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- NimSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NimSelection" position="0,0" size="1280,720" title="Choose Tuner">
-		<widget enableWrapAround="1" position="20,80" font="Regular;22" render="Listbox" size="708,440" source="nimlist" transparent="1">
+		<widget enableWrapAround="1" position="20,80" font="Regular;22" render="Listbox" size="708,440" scrollbarMode="showOnDemand" scrollbarWidth="10" source="nimlist" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 8), size = (680, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
@@ -2276,7 +2276,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- NimSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NimSetup" position="0,0" size="1280,720" title="Reception Settings">
-		<widget itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" transparent="1" />
+		<widget itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<ePixmap pixmap="XionHDF/logo2.png" position="914,120" size="300,300" backgroundColor="XionBackground" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont1">
 			<convert type="XionHDFClockToText">Default</convert>
@@ -2351,14 +2351,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget itemHeight="30" name="config" position="120,259" size="600,360" transparent="1" font="Regular;18" foregroundColor="XionFont1" />
+		<widget itemHeight="30" name="config" position="120,259" size="600,360" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" font="Regular;18" foregroundColor="XionFont1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="introduction" position="70,625" size="708,28" transparent="1" />
 		<panel name="template_menu_full" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- ScanSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ScanSetup" position="0,0" size="1280,720" title="Service scan">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,480" transparent="1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,480" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="introduction" position="70,595" size="708,28" transparent="1" />
 		<panel name="template_menu_full" />
 		<panel name="template_colorkey" />
@@ -2366,7 +2366,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ScanSimple -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ScanSimple" position="0,0" size="1280,720" title="Service scan">
 		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular2;22" foregroundColor="XionFont2" name="header" position="20,80" size="708,30" transparent="1" />
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,130" size="708,450" transparent="1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,130" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="footer" position="70,595" size="708,28" transparent="1" />
 		<panel name="template_menu_full" />
 		<panel name="template_colorkey" />
@@ -2399,12 +2399,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>	
 		<!-- CableScanScreen -->
 	<screen name="CableScanScreen" position="0,0" size="1280,720" title="Cable Scan" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" itemHeight="30" font="Regular;22" position="20,80" size="500,250" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
+		<widget name="config" itemHeight="30" font="Regular;22" position="20,80" size="500,240" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColor="XionBackground" transparent="1" />
 		<widget name="introduction" position="70,595" size="500,28" font="Regular2;22" foregroundColor="XionFont2" halign="center" backgroundColor="XionBackground" transparent="1" />
 		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
-	</screen>	
+	</screen>
 		<!-- CableScanStatus -->
 	<screen name="CableScanStatus" position="0,0" size="1280,720" title="Cable Scan" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="frontend" pixmap="icons/scan-c.png" position="105,556" size="64,64" transparent="1" alphatest="on" />
@@ -2415,7 +2415,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- ServiceInfo -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo">
-		<widget backgroundColor="XionBackground" itemHeight="35" font="Regular; 19" scrollbarMode="showOnDemand" name="infolist" position="20,100" selectionDisabled="1" size="1280,550" transparent="1" />
+		<widget backgroundColor="XionBackground" itemHeight="35" font="Regular; 19" scrollbarMode="showOnDemand" scrollbarWidth="10" name="infolist" position="20,100" selectionDisabled="1" size="1280,550" transparent="1" />
 		<eLabel text="HbbTV URL:" position="700,630" size="150,32" font="Regular;15" halign="left" noWrap="1" backgroundColor="black" transparent="1" />
 		<widget source="session.CurrentService" render="Label" position="780,630" size="950,30" transparent="1" noWrap="1" zPosition="1" backgroundColor="background" font="Regular;15" valign="top" halign="left">
 			<convert type="ServiceInfo">HasHBBTV</convert>
@@ -2425,7 +2425,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- Setup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="Setup" position="0,0" size="1280,720" title="Setup">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="28" font="Regular;22" name="config" position="20,80" size="800,560" scrollbarMode="showOnDemand" transparent="1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="28" font="Regular;22" name="config" position="20,80" size="800,560" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget name="footnote" position="10,620" size="550,30" zPosition="1" font="Regular;20" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="left" transparent="1" valign="top" />
 		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" name="description" position="840,370" size="430,350" transparent="1" />
 		<widget name="HelpWindow" position="100,300" size="532,170" flags="wfNoBorder" />
@@ -2434,53 +2434,39 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- Videosetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="VideoSetup" position="0,0" size="1280,720" title="VideoSetup">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="VideoEnhancementSetup" position="0,0" size="1280,720" title="VideoEnhancementSetup">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- Blindscan -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="Blindscan" position="0,0" size="1280,720" title="Blindscan">
-		<widget name="config" itemHeight="30" font="Regular;22" position="20,80" size="850,450" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="config" itemHeight="30" font="Regular;22" position="20,80" size="850,450" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="BlindscanState" position="0,0" size="1280,720" title="Satellite Blindscan">
-		<widget name="config" position="40,160" size="708,450" alphatest="blend" font="Regular;16" transparent="1" halign="center" />
+		<widget name="config" position="40,160" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular;16" transparent="1" halign="center" />
 		<widget name="progress" position="40,70" size="800,80" alphatest="blend" font="Regular;20" transparent="1" />
 		<widget name="post_action" position="870,402" size="380,340" alphatest="blend" font="Regular;19" halign="center" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
-		<!-- CableScanScreen -->
-	<screen name="CableScanScreen" position="0,0" size="1280,720" title="Cable Scan" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" itemHeight="30" font="Regular;22" position="20,80" size="500,250" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
-		<widget name="introduction" position="70,595" size="500,28" font="Regular2;22" foregroundColor="XionFont2" halign="center" backgroundColor="XionBackground" transparent="1" />
-		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-		<panel name="template_menu_left" />
-	</screen>
-		<!-- CableScanStatus -->
-	<screen name="CableScanStatus" position="0,0" size="1280,720" title="Cable Scan" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="frontend" pixmap="icons/scan-c.png" position="105,556" size="64,64" transparent="1" alphatest="on" />
-		<widget name="scan_state" position="173,557" zPosition="2" size="400,30" font="Regular2;18" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
-		<widget name="scan_progress" position="174,602" size="400,15" pixmap="progress_big.png" borderWidth="2" borderColor="white" />
-		<panel name="template_menu_left" />
-	</screen>
 		<!-- ********** Software Manager Screens ********** -->
 		<!-- SoftwareManagerSetup -->
 	<screen name="SoftwareManagerSetup" position="0,0" size="1280,720" title="SoftwareManager setup" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" font="Regular;22" itemHeight="32" foregroundColor="XionFont1" position="20,80" zPosition="1" size="708,360" halign="left" valign="top" transparent="1" backgroundColor="XionBackground" />
+		<widget name="config" font="Regular;22" itemHeight="32" foregroundColor="XionFont1" position="20,80" zPosition="1" size="708,360" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" backgroundColor="XionBackground" />
 		<widget source="introduction" render="Label" position="70,587" size="708,60" font="Regular2;22" foregroundColor="XionFont2" halign="left" valign="center" transparent="1" backgroundColor="XionBackground" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- SoftwareManagerInfo -->
 	<screen name="SoftwareManagerInfo" position="center,center" size="1280,720" title="SoftwareManager information" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="list" render="Listbox" position="20,80" size="708,390" scrollbarMode="showOnDemand" selectionDisabled="0">
+		<widget source="list" render="Listbox" position="20,80" size="708,390" scrollbarMode="showOnDemand" scrollbarWidth="10" selectionDisabled="0" transparent="1">
 			<convert type="TemplatedMultiContent">
 			{"template": [
 						MultiContentEntryText(pos = (15, 6), size = (600, 30), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_CENTER, text = 0), # index 0 is the name
@@ -2501,7 +2487,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey" />
 	</screen>
 	<screen name="SoftwareUpdateChoices" position="center,center" size="560,225">
-		<widget name="list" position="0,0" size="560,150" itemHeight="28" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="list" position="0,0" size="560,150" itemHeight="28" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1"/>
 		<widget name="text" position="0,150" size="560,75" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" transparent="0"/>
 	</screen>
 		<!-- PluginDetails -->
@@ -2515,7 +2501,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- PluginManager -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginManager" position="0,0" size="1280,720" title="Plugin manager">
-		<widget position="20,80" render="Listbox" size="708,525" source="list" transparent="1" scrollbarMode="showOnDemand">
+		<widget position="20,80" render="Listbox" size="708,525" source="list" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="10">
 			<convert type="TemplatedMultiContent">
 			{"templates":
 				{"default": (105,[
@@ -2539,7 +2525,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- PluginManagerInfo -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginManagerInfo" position="0,0" size="1280,720" title="Plugin manager activity">
-		<widget position="20,80" render="Listbox" size="708,450" source="list" transparent="1">
+		<widget position="20,80" render="Listbox" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (18, 14), size = (48, 48), png = 2), # index 2 is the status pixmap
@@ -2557,7 +2543,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- PluginManagerHelp -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginManagerHelp" position="0,0" size="1280,720" title="Plugin manager help">
-		<widget position="20,80" render="Listbox" size="708,450" source="list" transparent="1">
+		<widget position="20,80" render="Listbox" size="708,450" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (90, 5), size = (565, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -2591,7 +2577,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- IpkgInstaller -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="IpkgInstaller" position="0,0" size="1280,720" title="Ipk Installer">
-		<widget itemHeight="35" font="Regular;22" name="list" position="20,80" size="808,450" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+		<widget itemHeight="35" font="Regular;22" name="list" position="20,80" size="808,450" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,595" render="Label" size="708,28" source="introduction" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
@@ -2610,7 +2596,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- PacketManager -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PacketManager" position="0,0" size="1280,720" title="PacketManager">
-		<widget position="20,80" render="Listbox" size="708,540" source="list" transparent="1">
+		<widget position="20,80" render="Listbox" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" source="list" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (18, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
@@ -2660,7 +2646,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- InputDeviceSelection -->
 	<screen name="InputDeviceSelection" position="0,0" size="1280,720" title="Select input device" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="list" render="Listbox" position="68,80" size="708,490" zPosition="10" transparent="1">
+		<widget source="list" render="Listbox" position="68,80" size="708,490" scrollbarMode="showOnDemand" scrollbarWidth="10" zPosition="10" transparent="1">
 			<convert type="TemplatedMultiContent">
 							{"template": [
 									MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
@@ -2677,7 +2663,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- InputDeviceSetup -->
 	<screen name="InputDeviceSetup" position="0,0" size="1280,720" title="Input device setup" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" font="Regular;22" foregroundColor="XionFont1" position="20,80" size="708,480" transparent="1" />
+		<widget name="config" font="Regular;22" foregroundColor="XionFont1" position="20,80" size="708,480" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget source="introduction" render="Label" position="70,595" size="708,28" zPosition="10" font="Regular2;22" foregroundColor="XionFont2" halign="center" valign="center" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
@@ -2685,26 +2671,26 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ********** Cron Manager ********** -->
 		<!-- CronManager -->
 	<screen flags="wfNoBorder" name="CronManager" position="0,0" size="1280,720" title="CronManager" backgroundColor="transparent">
-		<widget name="showjobs" position="20,80" size="708,540" transparent="1" foregroundColor="XionFont1" />
+		<widget name="showjobs" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" foregroundColor="XionFont1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- addJob -->
 	<screen flags="wfNoBorder" name="addJob" position="0,0" size="1280,720" title="Add Cron Job" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,540" transparent="1" />
+		<widget name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- modifyJob -->
 	<screen flags="wfNoBorder" name="modifyJob" position="0,0" size="1280,720" title="Modify Cron Job" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,540" transparent="1" />
+		<widget name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- CronManagerFile -->
 	<screen flags="wfNoBorder" name="CronManagerFile" position="0,0" size="1280,720" title="Select file to execute" backgroundColor="transparent">
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" name="executable" position="20,80" size="708,30" transparent="1" />
-		<widget backgroundColor="XionBackground" itemHeight="30" name="filelist" font="Regular;20" position="70,130" size="708,480" transparent="1" zPosition="3" />
+		<widget backgroundColor="XionBackground" itemHeight="30" name="filelist" font="Regular;20" position="70,130" size="708,480" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="3" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
@@ -2717,27 +2703,27 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- addExe -->
 	<screen flags="wfNoBorder" name="addExe" position="0,0" size="1280,720" backgroundColor="transparent" title="Add executable">
-		<widget name="config" position="20,80" size="708,540" transparent="1" />
+		<widget name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- modifyExe -->
 	<screen flags="wfNoBorder" name="modifyExe" position="0,0" size="1280,720" backgroundColor="transparent" title="Modify executable">
-		<widget name="config" position="20,80" size="708,540" transparent="1" />
+		<widget name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- ExeManagerFile -->
 	<screen flags="wfNoBorder" name="ExeManagerFile" position="0,0" backgroundColor="transparent" size="1280,720" title="Select file to execute">
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" name="executable" position="70,75" size="708,28" transparent="1" />
-		<widget backgroundColor="XionBackground" itemHeight="30" name="filelist" font="Regular;20" position="70,110" size="708,540" transparent="1" zPosition="3" />
+		<widget backgroundColor="XionBackground" itemHeight="30" name="filelist" font="Regular;20" position="70,110" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="3" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- ********** Crashlog ********** -->
 		<!-- CrashlogAutoSubmitConfiguration -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="CrashlogAutoSubmitConfiguration" position="0,0" size="1280,720" title="CrashlogAutoSubmit settings">
-		<widget enableWrapAround="1" itemHeight="30" name="config" position="20,80" size="708,480" transparent="1" />
+		<widget enableWrapAround="1" itemHeight="30" name="config" position="20,80" size="708,480" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,580" render="Label" size="708,28" source="status" transparent="1" />
 		<widget name="HelpWindow" position="120,470" size="1,1" zPosition="10" />
 		<panel name="template_menu_left" />
@@ -2745,7 +2731,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- CrashlogReportConfiguration -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="CrashlogReportConfiguration" position="center,center" size="1280,720" title="CrashlogReport Setting">
-		<widget itemHeight="36" name="config" position="20,80" size="708,432" transparent="1" zPosition="2" foregroundColor="XionFont1" />
+		<widget itemHeight="36" name="config" position="20,80" size="708,432" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="2" foregroundColor="XionFont1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,552" render="Label" size="708,70" source="status" transparent="1" valign="center" zPosition="10" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
@@ -2754,7 +2740,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- FPGAUpgrade -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="FPGAUpgrade" position="0,0" size="1280,720" title="FPGA Upgrade">
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="left" position="20,80" render="Label" size="708,30" source="status" transparent="1" zPosition="1" />
-		<widget name="file_list" position="70,130" size="708,480" transparent="1" />
+		<widget name="file_list" position="70,130" size="708,480" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -2768,7 +2754,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- TempFanControl -->
 	<screen name="TempFanControl" position="0,0" size="1280,720" title="Fan Control" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,120" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="config" position="20,80" size="708,120" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget source="SensorTempText0" render="Label" position="80,220" zPosition="1" size="90,30" font="Regular;20" foregroundColor="XionFont1" halign="left" valign="center" backgroundColor="XionBackground" transparent="1" />
 		<widget source="SensorTemp0" render="Label" position="170,220" zPosition="1" size="100,30" font="Regular;20" foregroundColor="XionFont1" halign="right" valign="center" backgroundColor="XionBackground">
 			<convert type="SensorToText">
@@ -2890,7 +2876,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel text="https://github.com/oe-alliance" position="460,160" size="354,28" font="Regular2;19" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
 		<eLabel text="Designed by" position="890,460" size="355,40" font="Regular2;24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" valign="center" halign="center" />
 		<eLabel text="Team Kraven" position="890,510" size="355,40" font="Regular2;24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="center" />
-		<widget name="AboutScrollLabel" position="70,200" size="655,450" scrollbarMode="showOnDemand" font="Regular;16" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+		<widget name="AboutScrollLabel" position="70,200" size="655,450" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular;16" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_info1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<eLabel font="Regular; 20" halign="left" valign="center" text="HDF Update Info" position="64,660" size="248,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
@@ -2899,7 +2885,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- UpdatePluginMenu -->
 	<screen name="UpdatePluginMenu" flags="wfNoBorder" position="0,0" size="1280,720" title="Update Plugin Menu" backgroundColor="transparent">
 		<widget name="hdfStatusPic" position="90,500" size="100,118" backgroundColor="XionBackground" transparent="1" alphatest="on" />
-		<widget source="menu" render="Listbox" position="44,90" size="590,340" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="menu" render="Listbox" position="44,90" size="590,340" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1">
 			<convert type="TemplatedMultiContent">
 					{"template": [
 							MultiContentEntryText(pos = (2, 2), size = (590, 27), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
@@ -2939,23 +2925,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- HotkeySetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HotkeySetup" position="0,0" size="1280,720" title="Tasteneinstellungen">
-		<widget name="list" position="40,80" size="450,565" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="XionFont1" enableWrapAround="1" backgroundColor="XionBackground" zPosition="-8" />
-		<widget name="choosen" position="522,80" size="385,540" scrollbarMode="showOnDemand" font="Regular2; 22" itemHeight="28" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="-8" />
+		<widget name="list" position="40,80" size="450,565" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="XionFont1" enableWrapAround="1" backgroundColor="XionBackground" zPosition="-8" />
+		<widget name="choosen" position="522,80" size="385,540" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular2; 22" itemHeight="28" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="-8" />
 		<widget name="description" position="935,228" size="302,250" font="Regular2; 16" foregroundColor="XionFont2" valign="center" halign="center" backgroundColor="XionBackground" zPosition="-8" />
 		<panel name="template_menu_full" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- ButtonSetupSelect -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ButtonSetupSelect" position="0,0" size="1280,720" title="Tasteneinstellungen">
-		<widget name="list" position="40,99" size="477,529" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="XionFont1" enableWrapAround="1" backgroundColor="XionBackground" zPosition="-8" />
-		<widget name="choosen" position="522,99" size="385,530" scrollbarMode="showOnDemand" font="Regular2; 22" itemHeight="28" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="-8" />
+		<widget name="list" position="40,99" size="477,529" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="XionFont1" enableWrapAround="1" backgroundColor="XionBackground" zPosition="-8" />
+		<widget name="choosen" position="522,99" size="385,530" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular2; 22" itemHeight="28" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="-8" />
 		<widget name="description" position="935,228" size="302,250" font="Regular2; 16" foregroundColor="XionFont2" valign="center" halign="center" backgroundColor="XionBackground" zPosition="-8" />
 		<panel name="template_menu_full" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- HddSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HddSetup" position="0,0" size="1280,720" title="Hard Drive Setup">
-		<widget source="menu" render="Listbox" font="Regular;22" itemHeight="50" position="70,136" size="708,488" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1">
+		<widget source="menu" render="Listbox" font="Regular;22" itemHeight="50" position="70,136" size="708,488" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColor="XionBackground" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
@@ -2973,7 +2959,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- HddPartitions -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HddPartitions" position="0,0" size="1280,720" title="Hard Drive Partitions">
 		<widget name="label_disk" position="20,80" font="Regular2; 26" size="708,30" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-		<widget source="menu" render="Listbox" position="70,136" size="708,488" scrollbarMode="showOnDemand" itemHeight="50" transparent="1">
+		<widget source="menu" render="Listbox" position="70,136" size="708,488" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="50" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (2, 0), size = (48, 48), png = 0),
@@ -2990,7 +2976,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- HddMounts -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HddMount" position="0,0" size="1280,720" title="Hard Drive Mount">
-		<widget name="menu" render="Listbox" position="20,80" size="708,540" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="50" transparent="1">
+		<widget name="menu" render="Listbox" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular;22" itemHeight="50" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (2, 0), size = (48, 48), png = 0),
@@ -3007,7 +2993,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- HddInfo -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HddInfo" position="0,0" size="1280,720" title="Hard Drive Info">
-		<widget name="config" position="95,107" size="585,30" font="Regular;22" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+		<widget name="config" position="95,107" size="585,30" font="Regular;22" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColor="XionBackground" transparent="1" />
 		<widget font="Regular;20" halign="left" name="model" position="95,200" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
 		<widget font="Regular;20" halign="left" name="serial" position="95,230" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
 		<widget font="Regular;20" halign="left" name="firmware" position="95,260" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
@@ -3022,7 +3008,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- HddFastRemove -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HddFastRemove" position="0,0" size="1280,720" title="Hard Drive Fast Umount">
-		<widget name="menu" render="Listbox" position="20,80" size="708,540" scrollbarMode="showOnDemand" itemHeight="50" transparent="1">
+		<widget name="menu" render="Listbox" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="50" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (2, 0), size = (48, 48), png = 0),
@@ -3059,7 +3045,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ExtraMessageBox -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ExtraMessageBox" position="0,0" size="1280,720" title=" ">
 		<widget name="message" backgroundColor="XionBackground" flags="wfNoBorder" position="20,80" size="708,30" foregroundColor="XionFont2" font="Regular;22" />
-		<widget backgroundColor="XionBackground" source="menu" render="Listbox" position="70,120" size="708,480" scrollbarMode="showOnDemand">
+		<widget backgroundColor="XionBackground" source="menu" render="Listbox" position="70,120" size="708,480" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
@@ -3081,24 +3067,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- LED_GigaSetup -->
 	<screen name="LED_GigaSetup" position="0,0" size="1280,720" title="LED Setup" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,540" font="Regular;22" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="config" position="20,80" size="708,540" font="Regular;22" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- LED_VFD_INISetup -->
 	<screen name="VFD_INISetup" position="0,0" size="1280,720" title="LED Setup" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>		
 		<!-- HFD Toolbox -->
 	<screen name="Fantastic" position="0,0" size="1280,720" title="HDF Toolbox" backgroundColor="transparent">
-		<widget name="menu" position="70,165" size="510,469" itemHeight="28" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="menu" position="70,165" size="510,469" itemHeight="28" font="Regular;22" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<ePixmap position="70,100" size="380,57" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDF-Toolbox/banner.png" zPosition="2" alphatest="on" />
 		<panel name="template_menu_left" />
 	</screen>
 	<screen backgroundColor="transparent" name="ConfigMenu" position="0,0" size="1280,720">
-		<widget name="config" backgroundColor="XionBackground" position="20,80" zPosition="1" font="Regular;22" size="650,480" itemHeight="30" scrollbarMode="showOnDemand" />
+		<widget name="config" backgroundColor="XionBackground" position="20,80" zPosition="1" font="Regular;22" size="650,480" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="10" />
 		<widget backgroundColor="XionBackground" font="Regular2;20" position="70,600" render="Label" size="708,50" source="help" transparent="1" foregroundColor="XionFont2" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey_text_kp" />
@@ -3117,7 +3103,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- DownloadMenu -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="Hdf_Downloader" position="0,0" size="1280,720" title="Select your Download">
-		<widget name="downloadmenu" position="68,115" size="400,290" itemHeight="26" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="downloadmenu" position="68,115" size="400,290" itemHeight="26" font="Regular;22" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget source="introduction" render="Label" position="12,438" size="560,30" zPosition="10" font="Regular;21" foregroundColor="XionFont1" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
 		<widget source="size" render="Label" position="545,116" size="100,30" zPosition="10" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
 		<widget source="size2" render="Label" position="485,116" size="100,30" zPosition="10" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
@@ -3151,7 +3137,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- RestorePlugins -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RestorePlugins" position="0,0" size="1280,720" title="Restore Plugins">
 		<widget itemHeight="30" name="list" position="20,80" size="708,540" transparent="1" />
-		<widget source="menu" render="Listbox" position="40,80" size="740,540" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="menu" render="Listbox" position="40,80" size="740,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (50, 3), size = (650, 23), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -3196,39 +3182,39 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- UserInterfacePositioner -->
 	<screen backgroundColor="#00000000" flags="wfNoBorder" name="UserInterfacePositioner2" position="0,0" size="1280,720" title="UserInterfacePositioner2">
-		<widget backgroundColor="#00000000" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" transparent="0" />
+		<widget backgroundColor="#00000000" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="0" />
 		<eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 	<screen backgroundColor="#00000000" flags="wfNoBorder" name="UserInterfacePositioner" position="0,0" size="1280,720" title="UserInterfacePositioner">
-		<widget backgroundColor="#00000000" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" transparent="0" />
+		<widget backgroundColor="#00000000" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="0" />
 		<eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="OSD3DSetupScreen" position="0,0" size="1280,720" title="OSD3DSetupScreen">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- DeviceBrowser -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="DeviceBrowser" position="0,0" size="1280,720" >
 		<widget source="message" render="Label" backgroundColor="XionBackground" position="5,50" size="710,450" font="Regular;16" />
-		<widget name="filelist" backgroundColor="XionBackground" enableWrapAround="1" position="0,80" itemHeight="30" font="Regular;22" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="filelist" backgroundColor="XionBackground" enableWrapAround="1" position="0,80" itemHeight="30" font="Regular;22" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- StreamingClientsInfo -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="StreamingClientsInfo" position="0,0" size="1280,720" >
-		<widget name="ScrollLabel" scrollbarMode="showNever" position="20,80" size="708,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
-		<widget name="ScrollLabel2" scrollbarMode="showOnDemand" position="70,110" size="1108,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
+		<widget name="ScrollLabel" scrollbarMode="showOnDemand" scrollbarWidth="10" position="20,80" size="708,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
+		<widget name="ScrollLabel2" scrollbarMode="showOnDemand" scrollbarWidth="10" position="70,110" size="1108,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- Multiboot Selector -->
 	<screen name="MultiBootSelector" position="0,0" size="1280,720" title="Multiboot Image Selector" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,540" transparent="1" />
+		<widget name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget source="options" render="Label" position="40,542" size="730,65" halign="left" font="Regular; 20" backgroundColor="XionBackground" />
 		<widget source="description" render="Label" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" position="840,370" size="430,350" transparent="1" />
 		<panel name="template_menu_left" />
@@ -3260,7 +3246,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- ShowUpdatePackages -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ShowUpdatePackages" position="0,0" size="1280,720" title="New Packages">
-		<widget source="list" render="Listbox" position="70,90" size="808,520" backgroundColor="XionBackground" itemHeight="50" alphatest="blend" transparent="1">
+		<widget source="list" render="Listbox" position="70,90" size="808,520" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColor="XionBackground" itemHeight="50" alphatest="blend" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (6, 2), size = (700, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -3281,8 +3267,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="status" position="0,0" size="400,35" transparent="1" zPosition="-1" font="Regular;26" valign="center" halign="center"/>
 	</screen>
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="ServiceInfoSimple" position="0,0" size="1280,720" >
-		<widget name="infolist" render="Listbox" scrollbarMode="showOnDemand" selectionDisabled="1" position="70,100" size="708,450" itemHeight="30" font="Regular;23" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
+		<widget name="infolist" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="10" selectionDisabled="1" position="70,100" size="708,450" itemHeight="30" font="Regular;23" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
 		<panel name="template_menu_left" />
-	</screen>	
+	</screen>
 	<!-- main-custom-openhdf */ -->
 	<!-- Main */ -->
