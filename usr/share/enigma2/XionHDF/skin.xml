@@ -7519,6 +7519,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="blue" pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
 	<screen name="HDFRadioLyrics" position="0,0" size="1280,720" flags="wfNoBorder" title="HDF-Radio Lyrics" backgroundColor="transparent">
+		<widget name="waiting" position="680,16" size="400,30" font="Regular;24" backgroundColor="XionBackground" transparent="1" valign="center" noWrap="1" foregroundColor="#1ebf28" />
+		<widget name="record" position="910,10" size="300,40" font="Regular;26" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="red" />
 		<widget backgroundColor="XionBackground" name="cover" position="1038,120" size="200,200" zPosition="1" />
 		<widget backgroundColor="XionBackground" source="songtitle" render="Label" font="Regular;30" foregroundColor="XionFont1" position="42,73" size="1196,38" noWrap="1" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" source="lyrics" font="Regular;22" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=4000,steptime=50,wrap=1,always=0,oneshot=1" foregroundColor="XionFont2" position="42,120" size="960,480" transparent="1" />
@@ -7537,6 +7539,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="blue" pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
 	<screen name="HDFRadioLyricsBrowser" position="0,0" size="1280,720" flags="wfNoBorder" title="HDF-Radio Lyrics Browser" backgroundColor="transparent">
+		<widget name="waiting" position="680,16" size="400,30" font="Regular;24" backgroundColor="XionBackground" transparent="1" valign="center" noWrap="1" foregroundColor="#1ebf28" />
+		<widget name="record" position="910,10" size="300,40" font="Regular;26" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="red" />
 		<widget backgroundColor="XionBackground" source="song" render="Label" font="Regular;30" foregroundColor="XionFont2" position="42,73" size="1196,38" noWrap="1" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" name="list" font="Regular;22" position="42,120" size="400,510" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="lyrics" font="Regular;24" foregroundColor="XionFont2" position="470,120" size="780,510" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
