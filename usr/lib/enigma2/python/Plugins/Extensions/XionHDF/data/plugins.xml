@@ -3066,7 +3066,7 @@
 		<eLabel backgroundColor="XionBackground" text="Favorites" font="Regular;24" position="655,80" size="541,30" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="favorites" font="Regular;24" position="655,130" size="541,416" itemHeight="32" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" source="instruction" render="Label" font="Regular;22" foregroundColor="XionFont2" position="42,580" size="1100,60" halign="center" valign="center" transparent="1" />
-		<widget backgroundColor="XionBackground" name="sort" font="Regular;24" position="655,130" size="541,416" itemHeight="32" foregroundColorSelected="#ffffff" backgroundColorSelected="#ff0000" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="sort" font="Regular;24" position="655,130" size="541,416" itemHeight="32" foregroundColorSelected="XionSelFont" backgroundColorSelected="XionSelection" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
 		<ePixmap pixmap="XionHDF/buttons/key_ok.png" position="1130,670" size="32,32" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1190,670" size="32,32" alphatest="blend" />
 		<panel name="template_menu_left_logo_off" />
@@ -3083,7 +3083,7 @@
 		<widget backgroundColor="XionBackground" name="ownlist" font="Regular;24" position="42,120" size="566,450" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="playlistname" font="Regular;27" foregroundColor="XionFont2" position="650,75" size="541,36" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="playlist" font="Regular;20" position="650,120" size="580,450" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
-		<widget backgroundColor="XionBackground" name="sort" font="Regular;20" position="650,120" size="580,450" itemHeight="30" foregroundColorSelected="#ffffff" backgroundColorSelected="#ff0000" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="sort" font="Regular;20" position="650,120" size="580,450" itemHeight="30" foregroundColorSelected="XionSelFont" backgroundColorSelected="XionSelection" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
 		<eLabel backgroundColor="XionLine" position="42,115" size="566,1" zPosition="2" />
 		<eLabel backgroundColor="XionLine" position="650,115" size="580,1" zPosition="2" />
 		<widget backgroundColor="XionBackground" source="instruction" render="Label" font="Regular;22" foregroundColor="XionFont2" position="42,580" size="1100,60" halign="center" valign="center" transparent="1" />
@@ -3215,7 +3215,7 @@
 	<screen name="HDFRadioSearch" position="0,0" size="1280,720" flags="wfNoBorder" title="Search result:" backgroundColor="transparent">
 		<eLabel position="0,570" size="1280,1" backgroundColor="XionLine" />
 		<widget source="instruction" render="Label" position="42,585" size="1200,60" font="Regular;22" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="2" transparent="1" />
-		<widget name="resultlist" position="center,80" size="1200,480" font="Regular;24" foregroundColor="XionFont2" backgroundColor="#0F3E6C" foregroundColorSelected="#ffffff" backgroundColorSelected="#216b9c" itemHeight="60" scrollbarMode="showOnDemand" scrollbarWidth="10" scrollbarSliderBorderWidth="1" enableWrapAround="1" zPosition="2" transparent="1" />
+		<widget name="resultlist" position="center,80" size="1200,480" font="Regular;24" foregroundColor="XionFont2" backgroundColor="#0F3E6C" foregroundColorSelected="XionSelFont" backgroundColorSelected="XionSelection" itemHeight="60" scrollbarMode="showOnDemand" scrollbarWidth="10" scrollbarSliderBorderWidth="1" enableWrapAround="1" zPosition="2" transparent="1" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<ePixmap pixmap="XionHDF/divider.png" position="center,140" size="1200,1" scale="1" alphatest="blend" zPosition="3" />
 		<ePixmap pixmap="XionHDF/divider.png" position="center,200" size="1200,1" scale="1" alphatest="blend" zPosition="3" />
@@ -3242,44 +3242,41 @@
 		<widget backgroundColor="XionBackground" source="session.CurrentService" render="Label" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="938,676" size="80,26" halign="right" transparent="1">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" text="16:9" source="session.CurrentService" render="FixedLabel" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="210,676" size="50,26" transparent="1">
+		<widget name="fav" pixmap="/usr/share/enigma2/XionHDF/icons/hdfradio_fav.png" position="210,682" size="18,16" alphatest="blend" zPosition="2" />
+		<widget backgroundColor="XionBackground" text="16:9" source="session.CurrentService" render="FixedLabel" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="257,676" size="50,26" transparent="1">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget backgroundColor="XionBackground" text="4:3" source="session.CurrentService" render="FixedLabel" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="210,676" size="50,26" transparent="1">
+		<widget backgroundColor="XionBackground" text="4:3" source="session.CurrentService" render="FixedLabel" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="257,676" size="50,26" transparent="1">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" text="SD" source="session.CurrentService" render="FixedLabel" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="260,676" size="50,26" halign="center" transparent="1">
+		<widget backgroundColor="XionBackground" text="SD" source="session.CurrentService" render="FixedLabel" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="307,676" size="50,26" halign="center" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 			<convert type="ValueRange">0,719</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget backgroundColor="XionBackground" text="HD" source="session.CurrentService" render="FixedLabel" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="260,676" size="50,26" halign="center" transparent="1">
+		<widget backgroundColor="XionBackground" text="HD" source="session.CurrentService" render="FixedLabel" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="307,676" size="50,26" halign="center" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 			<convert type="ValueRange">720,1080</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget backgroundColor="XionBackground" text="UHD" source="session.CurrentService" render="FixedLabel" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="260,676" size="50,26" halign="center" transparent="1">
+		<widget backgroundColor="XionBackground" text="UHD" source="session.CurrentService" render="FixedLabel" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="307,676" size="50,26" halign="center" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 			<convert type="ValueRange">1081,5000</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget backgroundColor="XionBackground" source="session.CurrentService" render="Label" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="310,676" size="56,26" halign="right" transparent="1">
+		<widget backgroundColor="XionBackground" source="session.CurrentService" render="Label" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="357,676" size="56,26" halign="right" transparent="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel backgroundColor="XionBackground" text="x" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="366,676" size="14,26" halign="center" transparent="1" />
-		<widget backgroundColor="XionBackground" source="session.CurrentService" render="Label" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="380,676" size="56,26" transparent="1">
+		<eLabel backgroundColor="XionBackground" text="x" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="413,676" size="14,26" halign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" source="session.CurrentService" render="Label" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="427,676" size="56,26" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" name="track" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="474,676" size="80,26" halign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="track" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="500,676" size="160,26" halign="center" transparent="1" />
 		<eLabel backgroundColor="XionBackground" position="210,666" size="858,1" zPosition="1" />
 		<widget source="session.CurrentService" render="Progress" foregroundColor="#ffffff" position="210,664" size="858,5" zPosition="2" transparent="1">
 			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget backgroundColor="XionBackground" text="Dolby Digital" source="session.CurrentService" render="FixedLabel" font="HDFRadioRegular;20" foregroundColor="#ffffff" position="444,676" size="120,26" transparent="1">
-			<convert type="ServiceInfo">IsMultichannel</convert>
-			<convert type="ConditionalShowHide" />
 		</widget>
 		<eLabel backgroundColor="XionBackground" position="210,666" size="808,1" zPosition="1" />
 		<widget source="session.CurrentService" render="Progress" foregroundColor="XionProgress" position="210,664" size="808,5" zPosition="2" transparent="1">
@@ -3307,4 +3304,19 @@
 	</screen>
 	<screen name="HDFRadioPVRState" position="210,620" size="40,38" flags="wfNoBorder" backgroundColor="XionBackground" zPosition="99">
 		<widget backgroundColor="transparent" name="state" font="HDFRadioRegular;30" foregroundColor="XionFont2" position="0,0" size="40,38" transparent="1" />
+	</screen>
+	<screen name="HDFRadioYouTubeRemove" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="#ff000000">
+		<widget backgroundColor="XionBackground" name="favlist" position="42,80" size="700,570" font="HDFRadioRegular;22" textOffset="4,1" foregroundColor="XionFont1" itemHeight="30" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" scrollbarMode="showOnDemand" scrollbarSliderBorderWidth="1" scrollbarWidth="8" enableWrapAround="1" zPosition="2" transparent="1" />
+		<panel name="TemplateXionRed" />
+		<widget source="key_green" render="Label" position="264,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget source="key_yellow" render="Label" position="464,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget source="key_blue" render="Label" position="664,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget name="green" pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<widget name="yellow" pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<widget name="blue" pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1190,670" size="32,32" alphatest="blend" />
+		<widget backgroundColor="XionBackground" source="version" render="Label" font="HDFRadioRegular;30" foregroundColor="XionFont2" position="800,120" size="400,42" halign="center" valign="center" transparent="1" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/logo.jpg" position="800,180" size="400,400" transparent="1" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" zPosition="-1" />
+		<panel name="template_menu_left_logo_off" />
 	</screen>

@@ -1218,7 +1218,7 @@
 	</screen>
 		<!-- NetworkMountsMenu -->
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" title="Mounts Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="menulist" position="20,80" size="708,510" itemHeight="26" font="Regular;22" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="menulist" position="20,80" size="708,510" itemHeight="26" font="Regular;22" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -1268,14 +1268,14 @@
 	</screen>
 		<!-- NetworkInadynSetup -->
 	<screen name="NetworkInadynSetup" title="Inadyn Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
+		<widget name="config" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget name="HelpWindow" position="120,405" size="708,160" zPosition="1" backgroundColor="XionBackground" transparent="0" alphatest="on" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- NetworkInadynLog -->
 	<screen name="NetworkInadynLog" title="Inadyn Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="infotext" position="20,80" size="708,500" font="Regular;18" zPosition="3" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="infotext" position="20,80" size="708,500" font="Regular;18" zPosition="3" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- NetworkMiniDLNA -->
@@ -1330,7 +1330,7 @@
 	</screen>
 		<!-- NetworkOpenvpnLog -->
 	<screen name="NetworkVpnLog" title="OpenVpn Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="infotext" position="20,80" size="708,500" font="Regular;18" zPosition="3" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="infotext" position="20,80" size="708,500" font="Regular;18" zPosition="3" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<panel name="template_menu_left" />
 	</screen>		
 		<!-- NetworkSABnzbd -->
@@ -1355,7 +1355,7 @@
 	</screen>
 		<!-- NetworkSambaLog -->
 	<screen name="NetworkSambaLog" title="Samba Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="infotext" position="20,80" size="708,500" zPosition="3" itemHeight="25" font="Regular; 18" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" transparent="0" />
+		<widget name="infotext" position="20,80" size="708,500" zPosition="3" itemHeight="25" font="Regular; 18" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" transparent="0" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- NetworkTelnet -->
@@ -1387,20 +1387,20 @@
 	</screen>
 		<!-- NetworkuShareSetup -->
 	<screen name="NetworkuShareSetup" title="uShare Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
+		<widget name="config" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<widget name="HelpWindow" position="120,405" size="708,160" zPosition="1" backgroundColor="XionBackground" transparent="0" alphatest="on" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- uShareSelection -->
 	<screen name="uShareSelection" title="uShare Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="checkList" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
+		<widget name="checkList" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- ScanIP -->
 	<screen name="ScanIP" title="Scan IP" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,500" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular;22" zPosition="3" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="config" position="20,80" size="708,500" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular;22" zPosition="3" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -2754,7 +2754,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- TempFanControl -->
 	<screen name="TempFanControl" position="0,0" size="1280,720" title="Fan Control" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="20,80" size="708,120" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="config" position="20,80" size="708,120" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" scrollbarWidth="10" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget source="SensorTempText0" render="Label" position="80,220" zPosition="1" size="90,30" font="Regular;20" foregroundColor="XionFont1" halign="left" valign="center" backgroundColor="XionBackground" transparent="1" />
 		<widget source="SensorTemp0" render="Label" position="170,220" zPosition="1" size="100,30" font="Regular;20" foregroundColor="XionFont1" halign="right" valign="center" backgroundColor="XionBackground">
 			<convert type="SensorToText">
