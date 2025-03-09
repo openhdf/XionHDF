@@ -202,7 +202,7 @@
 		<eLabel text="Exit" position="50,381" size="124,30" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" valign="center" noWrap="1" transparent="1" />
 		<eLabel text="OK" position="206,381" size="74,30" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" valign="center" noWrap="1" transparent="1" />
 		<eLabel text="Language" position="322,381" size="164,30" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" valign="center" noWrap="1" transparent="1" />
-		<eLabel text="Switch" position="528,381" size="114,30" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" valign="center" noWrap="1" transparent="1" />
+		<eLabel text="Shift" position="528,381" size="114,30" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" valign="center" noWrap="1" transparent="1" />
 		<eLabel backgroundColor="XionBackground" position="2,2" size="660,421" zPosition="-1" />
 	</screen>
 		<!-- ********** EPG ********** -->
