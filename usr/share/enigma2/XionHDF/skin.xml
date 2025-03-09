@@ -7478,13 +7478,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 	<screen name="HDFRadioFavorites" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
-		<widget backgroundColor="XionBackground" name="stations" font="Regular;24" position="42,130" size="541,448" itemHeight="32" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="stations" font="Regular;24" position="42,130" size="541,416" itemHeight="32" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
 		<eLabel backgroundColor="XionBackground" text="HDF-Streams" font="Regular;24" position="42,80" size="541,30" transparent="1"/>
 		<eLabel backgroundColor="XionLine" position="42,115" size="541,1" zPosition="2" />
 		<eLabel backgroundColor="XionLine" position="655,115" size="541,1" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" text="Favorites" font="Regular;24" position="655,80" size="541,30" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="favorites" font="Regular;24" position="655,130" size="541,416" itemHeight="32" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
-		<widget backgroundColor="XionBackground" source="instruction" render="Label" font="Regular;22" foregroundColor="XionFont2" position="42,580" size="1100,60" halign="center" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" source="instruction" render="Label" font="Regular;22" foregroundColor="XionFont2" position="42,554" size="1100,90" halign="center" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" name="sort" font="Regular;24" position="655,130" size="541,416" itemHeight="32" foregroundColorSelected="XionSelFont" backgroundColorSelected="XionSelection" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1"/>
 		<ePixmap pixmap="XionHDF/buttons/key_ok.png" position="1130,670" size="32,32" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1190,670" size="32,32" alphatest="blend" />
