@@ -66,9 +66,9 @@
 		<alias name="iptvlistitem" font="Regular" size="20" height="25"/>
 	</fonts>
 	<parameters>
-		<parameter name="SelectionListDescr" value="40,4,1042,41" />
-		<parameter name="SelectionListLock" value="5,8,30,30" />
-		<parameter name="SelectionListLockOff" value="5,8,30,30" />
+		<parameter name="SelectionListDescr" value="36,1,694,27" />
+		<parameter name="SelectionListLock" value="3,5,20,20" />
+		<parameter name="SelectionListLockOff" value="3,5,20,20" />
 		<parameter name="ChoicelistName" value="33,3,800,30"/>
 		<parameter name="ChoicelistIcon" value="1,1,35,35"/>
 		<parameter name="ChoicelistItemHeight" value="35" />
