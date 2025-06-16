@@ -3320,3 +3320,8 @@
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" zPosition="-1" />
 		<panel name="template_menu_left_logo_off" />
 	</screen>
+	<screen name="HDFRadioClock" position="1160,15" size="80,30" title="Clock" flags="wfNoBorder" zPosition="1">
+		<widget source="global.CurrentTime" render="RunningText" options="movetype=running,direction=top,startpoint=0,steptime=50,wrap=0,always=1,repeat=-1,oneshot=15000" position="0,0" size="80,30" font="LCD;28" foregroundColor="XionFont2" valign="center" halign="center" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+	</screen>
