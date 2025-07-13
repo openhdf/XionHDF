@@ -3054,6 +3054,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 				}
 			</convert>
 		</widget>
+		<panel name="template_colorkey" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- DriverManagerFile -->
