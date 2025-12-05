@@ -7567,16 +7567,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen name="HDFRadioInfo" position="0,0" size="1280,720" flags="wfNoBorder" title="HDF-Radio Info" backgroundColor="transparent">
 		<widget name="waiting" position="670,16" size="400,30" font="Regular;24" backgroundColor="XionBackground" transparent="1" valign="center" noWrap="1" foregroundColor="green" />
 		<widget name="record" position="900,10" size="300,40" font="Regular;26" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="red" />
-		<widget backgroundColor="XionBackground" name="artistname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,78" size="160,27" noWrap="1" valign="center" transparent="1" />
-		<widget backgroundColor="XionBackground" name="artist" render="Label" font="Regular;22" foregroundColor="XionFont1" position="202,78" size="1036,27" noWrap="1" valign="center" transparent="1" />
-		<widget backgroundColor="XionBackground" name="songname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,108" size="160,27" noWrap="1" valign="center" transparent="1" />
-		<widget backgroundColor="XionBackground" name="song" render="Label" font="Regular;22" foregroundColor="XionFont1" position="202,108" size="1036,27" noWrap="1" valign="center" transparent="1" />
-		<widget backgroundColor="XionBackground" name="albumname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,138" size="160,27" noWrap="1" valign="center" transparent="1" />
-		<widget backgroundColor="XionBackground" name="album" render="Label" font="Regular;22" foregroundColor="XionFont1" position="202,138" size="1036,27" noWrap="1" valign="center" transparent="1" />
-		<widget backgroundColor="XionBackground" name="stationname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,168" size="160,27" noWrap="1" valign="center" transparent="1" />
-		<widget backgroundColor="XionBackground" name="station" render="Label" font="Regular;22" foregroundColor="XionFont1" position="202,168" size="1036,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="artistname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,78" size="170,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="artist" render="Label" font="Regular;22" foregroundColor="XionFont1" position="220,78" size="1018,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="songname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,108" size="170,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="song" render="Label" font="Regular;22" foregroundColor="XionFont1" position="220,108" size="1018,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="albumname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,138" size="170,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="album" render="Label" font="Regular;22" foregroundColor="XionFont1" position="220,138" size="1018,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="stationname" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,168" size="170,27" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="station" render="Label" font="Regular;22" foregroundColor="XionFont1" position="220,168" size="1018,27" noWrap="1" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" name="description" font="Regular;24" foregroundColor="XionFont1" position="42,210" size="960,390" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" />
-		<widget backgroundColor="XionBackground" source="source" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,612" size="960,27" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" source="source" render="Label" font="Regular2;22" foregroundColor="XionFont2" position="42,612" size="170,27" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" source="type" render="Label" font="Regular;22" foregroundColor="XionFont1" position="220,612" size="400,27" valign="center" transparent="1" />
 		<widget backgroundColor="#00000000" name="cover" position="1038,210" size="200,200" zPosition="1" />
 		<widget backgroundColor="XionBackground" name="bitratename" position="1018,612" size="116,27" font="Regular2;22" foregroundColor="XionFont2" halign="center" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" name="bitrate" position="1142,612" size="116,27" font="Regular;22" foregroundColor="XionFont1" halign="center" valign="center" transparent="1" />
