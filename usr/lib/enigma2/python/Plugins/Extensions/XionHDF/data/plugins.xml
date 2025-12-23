@@ -2823,6 +2823,24 @@
 		<panel name="template_menu_full" />
 		<panel name="template_colorkey" />
 	</screen>
+	<screen name="IPTVDMScreen" position="0,0" title="E2iPlayer Download Manager" size="1280,720" backgroundColor="transparent">
+		<widget source="downloadlist" render="Listbox" position="50,80" zPosition="2" size="1200,460" font="Regular;22" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" backgroundColor="XionBackground" enableWrapAround="1" >
+			<convert type="TemplatedMultiContent">
+			{"template": [
+				MultiContentEntryPixmapAlphaBlend(pos = (10, 10), size = (42, 42), flags = BT_SCALE, png = 0),  # Flag.
+				MultiContentEntryText(pos = (80, 0), size = (1140, 32), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),  # title
+				MultiContentEntryText(pos = (80, 32), size = (500, 26), font = 1, color=0xffffff,color_sel=0xffffff, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),  # size
+				MultiContentEntryText(pos = (820, 32), size = (300, 26), font = 1, color=0xffffff,color_sel=0xffffff, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4),  # status
+				],
+				"fonts": [gFont("Regular",22), gFont("Regular",18)],
+				"itemHeight": 56
+			}
+			</convert>
+		</widget>
+		<widget name="titel" position="50,560" zPosition="1" size="300,27" font="Regular;22" transparent="1" backgroundColor="XionBackground" />
+		<panel name="template_menu_full" />
+		<panel name="template_colorkey" />
+	</screen>
 	<screen name="IPTVArticleRichVisualizer" position="center,center" size="1280,720" title="Info..." flags="wfNoBorder" backgroundColor="XionBackground">
 		<widget name="title" position="30,12" size="1280,44" font="Regular; 30" backgroundColor="background" borderColor="black" borderWidth="2" foregroundColor="#000E83F5" shadowColor="black" shadowOffset="-1,-1" transparent="1" halign="center" />
 		<eLabel backgroundColor="XionLine" position="center,293" size="950,1" zPosition="2" />
