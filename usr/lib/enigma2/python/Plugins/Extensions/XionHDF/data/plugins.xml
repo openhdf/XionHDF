@@ -2871,7 +2871,6 @@
 		<widget name="text" position="340,80" size="840,470" font="Regular;20" transparent="1" backgroundColor="background" foregroundColor="white" shadowColor="black" />
 		<widget name="playerlogo" zPosition="4" position="110,20" size="120,40" alphatest="blend" transparent="1" backgroundColor="black" />
 	</screen>
-
 		<!-- Quad PiP -->
 	<screen name="CreateQuadPipChannelEntry" position="0,0" size="1280,720" flags="wfNoBorder" title="CreateQuadPipChannelEntry" backgroundColor="transparent">
 		<widget name="list" position="50,80" zPosition="2" serviceItemHeight="35" size="500,550" serviceNumberFont="Regular;20" serviceNameFont="Regular;20" foregroundColor="XionFont1" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1" backgroundColor="XionBackground" />

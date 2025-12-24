@@ -7243,6 +7243,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_full" />
 		<panel name="template_colorkey" />
 	</screen>
+	<screen name="IPTVDMScreen" position="0,0" title="E2iPlayer Download Manager" size="1280,720" backgroundColor="transparent">
+		<widget source="downloadlist" render="Listbox" position="50,80" zPosition="2" size="1200,460" font="Regular;22" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" backgroundColor="XionBackground" enableWrapAround="1" >
+			<convert type="TemplatedMultiContent">
+			{"template": [
+				MultiContentEntryPixmapAlphaBlend(pos = (10, 10), size = (42, 42), flags = BT_SCALE, png = 0),  # Flag.
+				MultiContentEntryText(pos = (80, 0), size = (1140, 32), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),  # title
+				MultiContentEntryText(pos = (80, 32), size = (500, 26), font = 1, color=0xffffff,color_sel=0xffffff, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),  # size
+				MultiContentEntryText(pos = (820, 32), size = (300, 26), font = 1, color=0xffffff,color_sel=0xffffff, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4),  # status
+				],
+				"fonts": [gFont("Regular",22), gFont("Regular",18)],
+				"itemHeight": 56
+			}
+			</convert>
+		</widget>
+		<widget name="titel" position="50,560" zPosition="1" size="300,27" font="Regular;22" transparent="1" backgroundColor="XionBackground" />
+		<panel name="template_menu_full" />
+		<panel name="template_colorkey" />
+	</screen>
 	<screen name="IPTVArticleRichVisualizer" position="center,center" size="1280,720" title="Info..." flags="wfNoBorder" backgroundColor="XionBackground">
 		<widget name="title" position="30,12" size="1280,44" font="Regular; 30" backgroundColor="background" borderColor="black" borderWidth="2" foregroundColor="#000E83F5" shadowColor="black" shadowOffset="-1,-1" transparent="1" halign="center" />
 		<eLabel backgroundColor="XionLine" position="center,293" size="950,1" zPosition="2" />
@@ -7258,6 +7276,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="dsc_text_4" noWrap="1" position="240,200" zPosition="10" size="750,40" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="background" foregroundColor="#00EFEFEF" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="dsc_label_5" noWrap="1" position="0,240" zPosition="10" size="220,40" font="Regular;32" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="#000E83F5" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="dsc_text_5" noWrap="1" position="240,240" zPosition="10" size="750,40" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="background" foregroundColor="#00EFEFEF" shadowColor="black" shadowOffset="-1,-1" />
+	</screen>
+	<screen name="IPTVArticleView" position="center,center" size="1280,720" title="Info..." flags="wfNoBorder" backgroundColor="XionBackground">
+		<widget name="title" position="340,20" size="840,40" foregroundColor="#0066ccff" backgroundColor="black" borderWidth="1" borderColor="black" transparent="1" zPosition="1" font="Regular;24" valign="center" />
+		<widget name="cover" position="20,80" size="296,470" zPosition="3" alphatest="blend" />
+		<widget name="spinner" zPosition="2" position="252,34" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_1" zPosition="1" position="252,34" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_2" zPosition="1" position="268,34" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_3" zPosition="1" position="284,34" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_4" zPosition="1" position="300,34" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="text" position="340,80" size="840,470" font="Regular;20" transparent="1" backgroundColor="background" foregroundColor="white" shadowColor="black" />
+		<widget name="playerlogo" zPosition="4" position="110,20" size="120,40" alphatest="blend" transparent="1" backgroundColor="black" />
 	</screen>
 	<screen name="IPTVDMNotificationWidget" position="center,70" zPosition="10" size="550,60" title="IPTVPlayer downloader" backgroundColor="XionBackground" >
 		<widget name="message_label" font="Regular;22" position="0,0" zPosition="2" valign="center" halign="center" size="550,60" backgroundColor="XionBackground" transparent="1" />
