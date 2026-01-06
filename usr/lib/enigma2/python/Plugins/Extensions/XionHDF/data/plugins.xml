@@ -3358,3 +3358,32 @@
 			<convert type="ClockToText">Default</convert>
 		</widget>
 	</screen>
+	<screen name="ForecaPreview" position="fill" title="Foreca Weather Preview" backgroundColor="transparent" flags="wfNoBorder">
+		<widget source="Titel" render="Label" position="72,152" size="985,61" font="Regular; 32" foregroundColor="yellow" backgroundColor="XionBackground" zPosition="1" />
+		<widget source="Titel4" render="Label" position="1272,700" size="590,60" font="Regular; 34" foregroundColor="yellow" backgroundColor="XionBackground" halign="center" zPosition="1" />
+		<widget name="MainList" position="70,190" size="1170,735" zPosition="3" backgroundColor="XionBackground"
+		font0="Regular;30"
+		font1="Regular;30"
+		font2="Regular;25"
+		font3="Regular;30"
+		itemHeight="150"
+		setTime="15,51,90,36"
+		setPict="125,30,105,105"
+		setPictScale="1"
+		setTemp="218,23,120,36"
+		setTempUnits="218,68,120,36"
+		setWindPict="345,36,42,42"
+		setWindPictScale="1"
+		setWind="398,23,143,36"
+		setWindUnits="398,68,143,36"
+		text1Pos="548,3,600,42"
+		text2Pos="548,45,600,42"
+		text3Pos="548,75,600,42"
+		text4Pos="548,105,600,42"
+		enableWrapAround="1" 
+		scrollbarMode="showOnDemand" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Foreca/foreca_logo.png" position="1420,550" size="400,120" zPosition="3" transparent="1" alphatest="blend" />
+		<panel name="template_menu_left_button" />
+		<ePixmap pixmap="XionHDF/buttons/key_ok.png" position="1848,1011" size="48,48" alphatest="blend" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
