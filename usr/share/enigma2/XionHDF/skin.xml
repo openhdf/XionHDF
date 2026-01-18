@@ -7434,6 +7434,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" source="video" render="Label" position="80,10" size="150,27" foregroundColor="XionFont1" font="Regular;22" halign="right" transparent="1"/>
 		<widget backgroundColor="XionBackground" source="audio" render="Label" position="80,44" size="150,27" foregroundColor="XionFont1" font="Regular;22" halign="right" transparent="1"/>
 	</screen>
+		<!-- HDFE2iInstallerSetup -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="HDFE2iInstallerSetup" position="0,0" size="1280,720" title="HDF E2i Installer" >
+		<widget backgroundColor="XionBackground" font="Regular;22" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+		<widget font="Regular;20" halign="left" valign="center" source="key_red" position="64,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" source="key_green" position="264,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" source="key_yellow" position="464,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" source="key_blue" position="664,660" size="148,52" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<panel name="template_menu_left" />
+	</screen>
 		<!-- HDF Radio -->
 	<screen name="HDFRadio" position="0,0" size="1280,720" flags="wfNoBorder" title="HDFRadio" backgroundColor="transparent">
 		<widget name="waiting" position="670,16" size="400,30" font="Regular;24" backgroundColor="XionBackground" transparent="1" valign="center" noWrap="1" foregroundColor="green" />
