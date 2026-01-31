@@ -7565,6 +7565,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="waiting" position="670,16" size="400,30" font="Regular;24" backgroundColor="XionBackground" transparent="1" valign="center" noWrap="1" foregroundColor="green" />
 		<widget name="record" position="900,10" size="300,40" font="Regular;26" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="red" />
 		<widget backgroundColor="XionBackground" name="cover" position="1038,120" size="200,200" zPosition="1" />
+		<widget backgroundColor="XionBackground" name="station" font="Regular;22" foregroundColor="XionFont1" position="1038,343" size="200,135" halign="center" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="logo" position="1088,500" size="100,100" />
 		<widget backgroundColor="XionBackground" source="songtitle" render="Label" font="Regular;30" foregroundColor="XionFont1" position="42,73" size="1196,38" noWrap="1" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" source="lyrics" font="Regular;22" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=4000,steptime=50,wrap=1,always=0,oneshot=1" foregroundColor="XionFont2" position="42,120" size="960,480" transparent="1" />
 		<widget backgroundColor="XionBackground" name="lyrics2" font="Regular;22" foregroundColor="XionFont2" position="42,120" size="960,480" transparent="1" />
