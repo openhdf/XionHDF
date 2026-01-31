@@ -1554,8 +1554,8 @@
 		<!-- ********** Common Interface ********** -->
 		<!-- CiSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="CiSelection" position="0,0" size="1280,720" title="Common Interface">
-		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" name="text" position="20,80" size="700,28" transparent="1" />
-		<widget backgroundColor="XionBackground" enableWrapAround="1" font="Regular;24" itemHeight="30" name="entries" position="70,130" size="708,450" transparent="1" foregroundColor="XionFont1" />
+		<widget backgroundColor="XionBackground" name="entries" position="70,80" size="708,480" font="Regular;24" foregroundColor="XionFont1" itemHeight="30" enableWrapAround="1" transparent="1" />
+		<widget backgroundColor="XionBackground" name="text" position="70,585" size="708,30" font="Regular2;24" foregroundColor="XionFont2" halign="center" transparent="1" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- MMIDialog -->
