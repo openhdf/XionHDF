@@ -2708,7 +2708,7 @@
 		<!-- MMIDialog -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="MMIDialog" position="0,0" size="1280,720" title="Common Interface">
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" name="title" position="20,80" size="708,28" transparent="1" />
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="entries" position="70,131" size="708,420" transparent="1" foregroundColor="XionFont1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" font="Regular;24" itemHeight="30" name="entries" position="70,131" size="708,420" transparent="1" foregroundColor="XionFont1" />
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="center" name="bottom" position="70,562" size="708,28" transparent="1" />
 		<panel name="template_menu_left" />
 	</screen>
