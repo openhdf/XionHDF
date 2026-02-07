@@ -423,7 +423,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_off.png" position="655,35" size="32,32" zPosition="1" />
-		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_on.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_on.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
 			<convert type="XionHDFServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -455,7 +455,7 @@
 		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_unstable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_softcsa.png" position="100,69" render="Pixmap" size="37,23" source="session.CurrentService" zPosition="3">
+		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_softcsa.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="3">
 			<convert type="ServiceInfo">IsSoftCSA</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
