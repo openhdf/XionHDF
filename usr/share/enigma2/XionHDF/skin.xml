@@ -576,9 +576,13 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_off.png" position="655,35" size="32,32" zPosition="1" />
-		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_on.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_on.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
 			<convert type="XionHDFServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_softcsa.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="3">
+			<convert type="ServiceInfo">IsSoftCSA</convert>
+			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;38" halign="center" noWrap="1" position="39,88" foregroundColor="XionFont1" render="Label" size="1203,42" source="session.Event_Now" transparent="1" zPosition="1" valign="bottom">
 			<convert type="XionHDFEventName">Name</convert>
@@ -777,9 +781,13 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_off.png" position="655,35" size="32,32" zPosition="1" />
-		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_on.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_on.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
 			<convert type="XionHDFServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_softcsa.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="3">
+			<convert type="ServiceInfo">IsSoftCSA</convert>
+			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;30" halign="center" noWrap="1" position="37,81" foregroundColor="XionFont1" render="Label" size="1203,38" source="session.Event_Now" transparent="1" zPosition="1" valign="bottom">
 			<convert type="XionHDFEventName">Name</convert>
@@ -981,9 +989,13 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_off.png" position="655,35" size="32,32" zPosition="1" />
-		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_on.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_on.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
 			<convert type="XionHDFServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_softcsa.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="3">
+			<convert type="ServiceInfo">IsSoftCSA</convert>
+			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;30" halign="center" noWrap="1" position="37,81" foregroundColor="XionFont1" render="Label" size="595,38" source="session.Event_Now" transparent="1" zPosition="1" valign="bottom">
 			<convert type="XionHDFEventName">Name</convert>
