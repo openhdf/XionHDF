@@ -7562,6 +7562,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="yellow" pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<widget name="blue" pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
+	<screen name="HDFRadioFavoritesBox" position="center,center" size="740,384" title="Input" backgroundColor="XionBackground" zPosition="98">
+		<widget backgroundColor="XionBackground" name="list" textOffset="6,1" font="Regular;22" foregroundColor="XionFont1" itemHeight="30" position="10,14" size="720,360" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderBorderWidth="1" scrollbarWidth="10" transparent="1"/>
+	</screen>
 	<screen name="HDFRadioEditPlaylist" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<widget backgroundColor="XionBackground" name="directoriesname" font="Regular;27" foregroundColor="XionFont2" position="42,75" size="566,36" transparent="1"/>
