@@ -1004,21 +1004,21 @@
 		<widget name="entrylist" position="70,146" zPosition="1" size="708,450" font="Regular; 22" halign="left" valign="top" transparent="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
 		<widget source="city" render="Label" position="70,105" size="220,28" font="Regular2; 20" halign="left" valign="center" transparent="1" backgroundColor="XionBackground" foregroundColor="XionFont2" />
 		<widget source="text" render="Label" position="297,105" size="480,28" font="Regular2; 22" halign="left" valign="center" transparent="1" backgroundColor="XionBackground" foregroundColor="XionFont2" />
-		<widget name="HelpWindow" position="778,72" size="496,118" zPosition="98" transparent="1" />
+		<widget name="HelpWindow" position="784,72" size="496,118" zPosition="98" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- MSNWeatherPluginEntryConfigScreen -->
 	<screen name="MSNWeatherPluginEntryConfigScreen" position="0,0" size="1280,720" title="WeatherPlugin: Edit Entry" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="config" position="70,80" zPosition="1" size="708,540" scrollbarMode="showOnDemand" scrollbarWidth="10" font="Regular; 22" transparent="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
-		<widget name="HelpWindow" position="778,72" size="496,118" zPosition="98" transparent="1" />
+		<widget name="HelpWindow" position="784,72" size="496,118" zPosition="98" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
 		<!-- MSNWeatherPluginSearch -->
 	<screen name="MSNWeatherPluginSearch" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="entrylist" position="70,80" zPosition="1" size="708,540" font="Regular; 22" halign="left" valign="top" transparent="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
-		<widget name="HelpWindow" position="778,72" size="496,118" zPosition="98" transparent="1" />
+		<widget name="HelpWindow" position="784,72" size="496,118" zPosition="98" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey" />
 	</screen>
