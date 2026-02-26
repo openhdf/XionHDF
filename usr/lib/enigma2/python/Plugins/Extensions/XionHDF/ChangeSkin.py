@@ -1,6 +1,6 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
-# written and © by .:TBX:.
+#!/usr/bin/python
+# written and (c) by .:TBX:.
 # on Sat-Soft.net/forum
 # 10/2015
 
