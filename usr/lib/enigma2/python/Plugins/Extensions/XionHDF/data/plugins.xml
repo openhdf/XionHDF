@@ -3066,7 +3066,8 @@
 		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1190,670" size="32,32" alphatest="blend" />
 		<panel name="template_menu_left_logo_off" />
 		<panel name="TemplateXionRed" />
-		<panel name="TemplateXionGreen" />
+		<widget source="key_green" render="Label" position="264,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget name="green" pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<panel name="TemplateXionBlue" />
 	</screen>
 	<screen name="HDFRadioBrowser" position="0,0" size="1280,720" flags="wfNoBorder" title="HDFRadioBrowser" backgroundColor="transparent">
@@ -3130,9 +3131,10 @@
 		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1190,670" size="32,32" alphatest="blend" />
 		<panel name="template_menu_left_logo_off" />
 		<panel name="TemplateXionRed" />
-		<panel name="TemplateXionGreen" />
+		<widget source="key_green" render="Label" position="264,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
 		<widget source="key_yellow" render="Label" position="464,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
 		<widget source="key_blue" render="Label" position="664,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget name="green" pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<widget name="yellow" pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<widget name="blue" pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
@@ -3153,9 +3155,10 @@
 		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1190,670" size="32,32" alphatest="blend" />
 		<panel name="template_menu_left_logo_off" />
 		<panel name="TemplateXionRed" />
-		<panel name="TemplateXionGreen" />
+		<widget source="key_green" render="Label" position="264,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
 		<widget source="key_yellow" render="Label" position="464,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
 		<widget source="key_blue" render="Label" position="664,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget name="green" pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<widget name="yellow" pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<widget name="blue" pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
@@ -3209,7 +3212,8 @@
 		<widget backgroundColor="XionBackground" name="bitratename" position="1018,612" size="116,27" font="Regular2;22" foregroundColor="XionFont2" halign="center" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" name="bitrate" position="1142,612" size="116,27" font="Regular;22" foregroundColor="XionFont1" halign="center" valign="center" transparent="1" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
-		<widget name="epg" pixmap="XionHDF/buttons/key_epg.png" position="1130,670" size="32,32" alphatest="blend" />
+		<widget name="epg" pixmap="XionHDF/buttons/key_epg.png" position="1070,670" size="32,32" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_ok.png" position="1130,670" size="32,32" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1190,670" size="32,32" alphatest="blend" />
 		<panel name="template_menu_left_logo_off" />
 		<panel name="TemplateXionRed" />
@@ -3375,6 +3379,30 @@
 		<widget source="global.CurrentTime" render="RunningText" options="movetype=running,direction=top,startpoint=0,steptime=50,wrap=0,always=1,repeat=-1,oneshot=15000" position="0,0" size="80,30" font="LCD;28" foregroundColor="XionFont2" valign="center" halign="center" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
+	</screen>
+	<screen name="HDFRadioDBViewer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<widget backgroundColor="#000000" name="cover" position="42,74" size="150,150" zPosition="2" />
+		<widget backgroundColor="XionBackground" name="artist" font="Regular;29" foregroundColor="XionFont2" position="208,90" size="864,37" halign="center" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="album" font="Regular;26" foregroundColor="XionFont1" position="208,133" size="864,33" halign="center" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="song" font="Regular;24" foregroundColor="XionFont1" position="208,173" size="864,30" halign="center" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="info" font="Regular;22" foregroundColor="XionFont1" position="42,78" size="1196,270" transparent="1" />
+		<widget backgroundColor="XionBackground" name="albumsname" font="Regular;23" foregroundColor="XionFont2" position="42,231" size="584,29" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="albums" position="42,262" size="584,330" font="Regular;22" foregroundColor="XionFont1" itemHeight="30" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" scrollbarMode="showOnDemand" scrollbarSliderBorderWidth="1" scrollbarWidth="8" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="songsname" font="Regular;23" foregroundColor="XionFont2" position="658,231" size="580,29" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="songs" position="654,262" size="584,330" font="Regular;22" textOffset="4,1" foregroundColor="XionFont1" itemHeight="30" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" scrollbarMode="showOnDemand" scrollbarSliderBorderWidth="1" scrollbarWidth="8" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" source="instruction" render="Label" position="42,596" size="1196,52" font="Regular;20" foregroundColor="XionFont2" halign="center" valign="center" transparent="1" />
+		<ePixmap pixmap="XionHDF/buttons/key_ok.png" position="1130,670" size="32,32" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1190,670" size="32,32" alphatest="blend" />
+		<panel name="template_menu_left_logo_off" />
+		<widget source="key_red" render="Label" position="64,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget source="key_green" render="Label" position="264,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget source="key_yellow" render="Label" position="464,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget source="key_blue" render="Label" position="664,660" size="148,52" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" transparent="1" halign="left" valign="center" zPosition="1" />
+		<widget name="red" pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<widget name="green" pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<widget name="yellow" pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<widget name="blue" pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 	</screen>
 	<screen name="ForecaPreview" position="fill" title="Foreca Weather Preview" backgroundColor="transparent" flags="wfNoBorder">
 		<widget source="Titel" render="Label" position="72,152" size="985,61" font="Regular; 32" foregroundColor="yellow" backgroundColor="XionBackground" zPosition="1" />
